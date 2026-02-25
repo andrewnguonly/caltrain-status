@@ -1,0 +1,13 @@
+{
+  "name": "caltrain-status-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npx serve .",
+    "ingest:imap": "node scripts/ingest_emails_imap.js"
+  },
+  "dependencies": {
+    "imapflow": "^1.0.190",
+    "mailparser": "^3.7.4"
+  }
+}

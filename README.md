@@ -49,6 +49,39 @@ Uptime values shown on the page are computed dynamically in `app.js` from all in
   - `data/incidents/index.json` (only when creating a new shard)
 - Keep the frontend unchanged.
 
+## IMAP/Gmail ingestion (implemented)
+
+This repo includes a polling script that reads a dedicated Gmail inbox via IMAP and updates the data files.
+
+- Script: `scripts/ingest_emails_imap.js`
+- Command: `npm run ingest:imap`
+- Dependencies: `imapflow`, `mailparser`
+
+### Setup (Gmail)
+
+1. Create a dedicated Gmail inbox (recommended).
+2. Enable 2-Step Verification on that Google account.
+3. Create a Gmail App Password.
+4. Copy `.env.example` to `.env` and fill in:
+   - `GMAIL_USER`
+   - `GMAIL_APP_PASSWORD`
+5. (Recommended) Set filters:
+   - `INGEST_FROM_MATCH`
+   - `INGEST_SUBJECT_MATCH`
+
+### What the script updates
+
+- `data/incidents/YYYY-MM/incidents.json` (append/update incident shards)
+- `data/incidents/index.json` (adds new shard paths)
+- `data/current-status.json` (recomputes active incident summary)
+- `data/ingestion-state.json` (local dedupe state; gitignored)
+
+### Notes
+
+- The parser is intentionally heuristic because the Caltrain email format is not finalized yet.
+- It stores one update per email and tries to match/update incidents by normalized subject.
+- Once you have the exact email format, tighten `buildParsedEvent()` parsing rules in `scripts/ingest_emails_imap.js`.
+
 ## Local preview
 
 Because the page fetches JSON/text files, open it through a local web server (not `file://`).
