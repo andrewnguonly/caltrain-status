@@ -52,14 +52,6 @@
 
       <section class="panel">
         <div class="section-head">
-          <h2>Uptime Trend (Last 12 Months)</h2>
-          <p class="muted">Monthly service availability percentage</p>
-        </div>
-        <div id="uptimeChart" class="uptime-chart loading-chart" role="img" aria-label="Uptime trend chart"></div>
-      </section>
-
-      <section class="panel">
-        <div class="section-head">
           <h2>Recent Service Days</h2>
           <p class="muted">Color shows daily severity impact</p>
         </div>
@@ -96,19 +88,12 @@
         <ol id="incidentTimeline" class="timeline"></ol>
       </section>
 
-      <section class="panel architecture">
+      <section class="panel">
         <div class="section-head">
-          <h2>Simple Architecture</h2>
-          <p class="muted">Static-site friendly and GitHub Pages ready</p>
+          <h2>Uptime Trend (Last 12 Months)</h2>
+          <p class="muted">Monthly service availability percentage</p>
         </div>
-        <ul>
-          <li><span class="mono">index.html + app.js + styles.css</span> renders the status page in the browser.</li>
-          <li><span class="mono">data/incidents/index.json</span> lists time-series incident shard files to load.</li>
-          <li><span class="mono">data/incidents/YYYY-MM/incidents.json</span> stores incidents in append-only monthly shards.</li>
-          <li><span class="mono">data/alert-template.txt</span> is a placeholder for raw email alerts until parsing rules are defined.</li>
-          <li>Uptime percentages and trends are computed in the browser from incident timestamps and states.</li>
-          <li>When email details are known, a small script (or GitHub Action) can convert emails into the same JSON files.</li>
-        </ul>
+        <div id="uptimeChart" class="uptime-chart loading-chart" role="img" aria-label="Uptime trend chart"></div>
       </section>
     </main>
 
