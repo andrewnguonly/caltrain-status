@@ -106,6 +106,14 @@ function percent(value) {
   return `${Number(value).toFixed(2)}%`;
 }
 
+function severityForUptimePercent(value) {
+  const n = Number(value);
+  if (n >= 99.95) return "operational";
+  if (n >= 99.0) return "degraded";
+  if (n >= 97.0) return "major";
+  return "critical";
+}
+
 function parseDate(value) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? null : date;
@@ -238,6 +246,12 @@ function addMonths(date, months) {
   return new Date(date.getFullYear(), date.getMonth() + months, 1);
 }
 
+function formatMonthYearShort(date) {
+  const month = date.toLocaleString([], { month: "short" });
+  const year = String(date.getFullYear()).slice(-2);
+  return `${month} '${year}`;
+}
+
 function computeUptimeFromIncidents(incidents, current) {
   const referenceNow = parseDate(current.updated_at) || new Date();
   const segments = buildOutageSegments(incidents, referenceNow);
@@ -250,12 +264,12 @@ function computeUptimeFromIncidents(incidents, current) {
 
   const monthly = [];
   const currentMonthStart = startOfMonth(referenceNow);
-  for (let offset = -11; offset <= 0; offset += 1) {
+  for (let offset = 0; offset >= -11; offset -= 1) {
     const monthStart = addMonths(currentMonthStart, offset);
     const monthEndCandidate = addMonths(monthStart, 1);
     const monthEnd = monthEndCandidate > referenceNow ? referenceNow : monthEndCandidate;
     monthly.push({
-      month: monthStart.toLocaleString([], { month: "short" }),
+      month: formatMonthYearShort(monthStart),
       uptime_percent: uptimeForWindow(segments, monthStart, monthEnd),
     });
   }
@@ -309,7 +323,7 @@ function renderUptime(uptime) {
     track.className = "chart-track";
 
     const fill = document.createElement("div");
-    fill.className = "chart-fill";
+    fill.className = `chart-fill chart-fill--${severityForUptimePercent(row.uptime_percent)}`;
     fill.style.width = `${Math.max(0, Math.min(100, Number(row.uptime_percent)))}%`;
     fill.title = `${row.month}: ${percent(row.uptime_percent)}`;
     track.appendChild(fill);

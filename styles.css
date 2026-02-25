@@ -210,9 +210,25 @@ h1 {
 
 .chart-fill {
   height: 100%;
-  background: linear-gradient(90deg, #d64654, #b1202f);
+  background: rgba(42, 211, 159, 0.7);
   border-radius: inherit;
   transition: width 500ms ease;
+}
+
+.chart-fill--operational {
+  background: rgba(42, 211, 159, 0.7);
+}
+
+.chart-fill--degraded {
+  background: rgba(255, 190, 79, 0.75);
+}
+
+.chart-fill--major {
+  background: rgba(255, 107, 95, 0.78);
+}
+
+.chart-fill--critical {
+  background: rgba(255, 75, 116, 0.78);
 }
 
 .day-strip {
