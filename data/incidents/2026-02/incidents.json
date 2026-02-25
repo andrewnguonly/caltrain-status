@@ -1,0 +1,88 @@
+{
+  "period": "2026-02",
+  "items": [
+    {
+      "id": "inc-2026-02-25-signal-san-bruno",
+      "title": "Signal issue near San Bruno causing system-wide delays",
+      "severity": "major",
+      "status": "investigating",
+      "started_at": "2026-02-25T17:58:00-08:00",
+      "resolved_at": null,
+      "affected_segments": [
+        "Northbound",
+        "Southbound"
+      ],
+      "summary": "A signal fault near San Bruno is forcing trains to move at reduced speeds through the affected corridor.",
+      "updates": [
+        {
+          "timestamp": "2026-02-25T17:58:00-08:00",
+          "state": "major",
+          "message": "Reports received of trains holding between Millbrae and San Bruno."
+        },
+        {
+          "timestamp": "2026-02-25T18:14:00-08:00",
+          "state": "degraded",
+          "message": "Operations teams confirmed a signal issue and initiated manual dispatch procedures."
+        },
+        {
+          "timestamp": "2026-02-25T18:36:00-08:00",
+          "state": "degraded",
+          "message": "Delays are currently averaging 10-20 minutes in both directions."
+        }
+      ]
+    },
+    {
+      "id": "inc-2026-02-17-trespasser-hold",
+      "title": "Temporary police activity hold near Redwood City",
+      "severity": "minor",
+      "status": "resolved",
+      "started_at": "2026-02-17T07:11:00-08:00",
+      "resolved_at": "2026-02-17T07:39:00-08:00",
+      "affected_segments": [
+        "Midline"
+      ],
+      "summary": "Trains were briefly held while police activity was cleared near Redwood City.",
+      "updates": [
+        {
+          "timestamp": "2026-02-17T07:11:00-08:00",
+          "state": "major",
+          "message": "Trains holding near Redwood City pending police clearance."
+        },
+        {
+          "timestamp": "2026-02-17T07:27:00-08:00",
+          "state": "degraded",
+          "message": "Limited movement restored; expect residual delays."
+        },
+        {
+          "timestamp": "2026-02-17T07:39:00-08:00",
+          "state": "operational",
+          "message": "Police activity cleared. Service returning to schedule."
+        }
+      ]
+    },
+    {
+      "id": "inc-2026-02-08-overhead-wire-inspection",
+      "title": "Speed restrictions during overhead wire inspection",
+      "severity": "minor",
+      "status": "resolved",
+      "started_at": "2026-02-08T13:03:00-08:00",
+      "resolved_at": "2026-02-08T14:22:00-08:00",
+      "affected_segments": [
+        "San Jose to Santa Clara"
+      ],
+      "summary": "Precautionary inspection created moderate delays while trains moved at reduced speed.",
+      "updates": [
+        {
+          "timestamp": "2026-02-08T13:03:00-08:00",
+          "state": "degraded",
+          "message": "Reduced speeds in effect during overhead wire inspection."
+        },
+        {
+          "timestamp": "2026-02-08T14:22:00-08:00",
+          "state": "operational",
+          "message": "Inspection complete. Normal speeds restored."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+:root {
+  --bg: #081218;
+  --panel: rgba(11, 24, 33, 0.88);
+  --panel-border: rgba(167, 197, 212, 0.14);
+  --text: #ecf4f7;
+  --muted: #99b0bd;
+  --ok: #2ad39f;
+  --warn: #ffbe4f;
+  --major: #ff6b5f;
+  --critical: #ff4b74;
+  --accent: #5ad6ff;
+  --shadow: 0 20px 60px rgba(2, 7, 10, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(90, 214, 255, 0.15), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(255, 107, 95, 0.18), transparent 45%),
+    linear-gradient(180deg, #071015 0%, #0a171f 55%, #071015 100%);
+  min-height: 100vh;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+}
+
+.page-shell {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 1.25rem auto 3rem;
+  display: grid;
+  gap: 1rem;
+  position: relative;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.2rem 1.2rem 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  margin: 0;
+  line-height: 1;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.headline {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.hero-meta {
+  text-align: right;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.status-pill {
+  justify-self: end;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #061017;
+}
+
+.status-pill--loading {
+  background: #8397a3;
+}
+
+.status-pill--operational {
+  background: var(--ok);
+}
+
+.status-pill--degraded {
+  background: var(--warn);
+}
+
+.status-pill--major {
+  background: var(--major);
+  color: #fff1ee;
+}
+
+.status-pill--critical {
+  background: var(--critical);
+  color: #fff0f5;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metric-card {
+  padding: 1rem;
+}
+
+.metric-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.metric-value {
+  margin: 0.35rem 0;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+}
+
+.metric-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.uptime-chart {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr 4.3rem;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.chart-label,
+.chart-value {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.chart-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.chart-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #36d7a8, #68dcff);
+  border-radius: inherit;
+  transition: width 500ms ease;
+}
+
+.day-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22px, 1fr));
+  gap: 0.35rem;
+}
+
+.day-cell {
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  padding: 0;
+  appearance: none;
+  cursor: help;
+}
+
+.day-cell::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  transform: translateX(-50%);
+  background: rgba(5, 10, 14, 0.95);
+  color: var(--text);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.day-cell:hover::after,
+.day-cell:focus-visible::after {
+  opacity: 1;
+}
+
+.day-operational {
+  background: rgba(42, 211, 159, 0.85);
+}
+
+.day-degraded {
+  background: rgba(255, 190, 79, 0.85);
+}
+
+.day-major {
+  background: rgba(255, 107, 95, 0.85);
+}
+
+.day-critical {
+  background: rgba(255, 75, 116, 0.85);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+}
+
+.incident-card.loading,
+.loading {
+  color: var(--muted);
+}
+
+.incident-summary {
+  margin: 0 0 0.75rem;
+}
+
+.incident-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text);
+}
+
+.badge.severity-operational {
+  background: rgba(42, 211, 159, 0.15);
+}
+
+.badge.severity-minor {
+  background: rgba(255, 190, 79, 0.13);
+}
+
+.badge.severity-major {
+  background: rgba(255, 107, 95, 0.14);
+}
+
+.badge.severity-critical {
+  background: rgba(255, 75, 116, 0.15);
+}
+
+.updates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.updates-list li {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  padding-left: 0.75rem;
+}
+
+.updates-list p {
+  margin: 0;
+}
+
+.updates-list time {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.alert-template {
+  border-radius: 12px;
+  background: rgba(4, 10, 14, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: auto;
+  max-height: 380px;
+}
+
+.alert-template pre {
+  margin: 0;
+  padding: 0.85rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.4;
+  font-size: 0.8rem;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.65rem 0.25rem 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.timeline-item:first-child {
+  border-top: 0;
+  padding-top: 0.25rem;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+  background: var(--warn);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.03);
+}
+
+.timeline-dot.severity-major {
+  background: var(--major);
+}
+
+.timeline-dot.severity-critical {
+  background: var(--critical);
+}
+
+.timeline-dot.severity-minor {
+  background: var(--warn);
+}
+
+.timeline-dot.severity-operational {
+  background: var(--ok);
+}
+
+.timeline-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.timeline-meta {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.timeline-desc {
+  margin: 0.35rem 0 0;
+  color: #d8e6ec;
+  font-size: 0.92rem;
+}
+
+.architecture ul {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.35rem;
+  color: #d8e6ec;
+}
+
+.loading-chart::before {
+  content: "Loading chart...";
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-meta {
+    text-align: left;
+  }
+
+  .status-pill {
+    justify-self: start;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chart-row {
+    grid-template-columns: 3.8rem 1fr 3.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart-fill {
+    transition: none;
+  }
+
+  .day-cell::after {
+    transition: none;
+  }
+}

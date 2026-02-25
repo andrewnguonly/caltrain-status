@@ -1,0 +1,25 @@
+SUBJECT: [PLACEHOLDER] Caltrain Service Alert - {SEVERITY} - {SEGMENT}
+
+EMAIL_METADATA
+- received_at: {ISO_TIMESTAMP}
+- source: alerts@caltrain.example
+- message_id: {MESSAGE_ID}
+- parser_version: placeholder-v1
+
+ALERT_FIELDS (to map later)
+- incident_id: {INCIDENT_ID}
+- severity: {operational|minor|major|critical}
+- status: {investigating|identified|monitoring|resolved}
+- started_at: {ISO_TIMESTAMP}
+- affected_segments: {comma-separated list}
+- headline: {short human-readable title}
+- summary: {1-3 sentence description}
+- expected_resolution: {optional timestamp or text}
+
+RAW_BODY_EXAMPLE
+"Caltrain Advisory: Delays of 10-20 minutes in both directions due to signal issue near San Bruno.
+Crews have been dispatched. We will provide another update in 20 minutes."
+
+NOTES
+- This text file is a placeholder until the real email format is available.
+- A future script/GitHub Action can parse incoming alerts and update data/current-status.json + data/incidents.json.

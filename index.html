@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caltrain Status</title>
+    <meta
+      name="description"
+      content="Caltrain service status page with uptime tracking and incident history."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <main class="page-shell">
+      <header class="hero panel">
+        <div>
+          <p class="eyebrow">Transit Reliability Monitor</p>
+          <h1>Caltrain Service Status</h1>
+          <p id="statusHeadline" class="headline loading">Loading current status...</p>
+        </div>
+        <div class="hero-meta">
+          <div id="overallPill" class="status-pill status-pill--loading">Checking</div>
+          <p class="muted">Auto-refresh every 60 seconds</p>
+          <p id="lastRefreshed" class="muted mono">Last refresh: --</p>
+        </div>
+      </header>
+
+      <section class="metrics-grid" aria-label="Uptime metrics">
+        <article class="panel metric-card">
+          <p class="metric-label">24h uptime</p>
+          <p id="uptime24h" class="metric-value">--</p>
+          <p class="metric-note">Rolling estimate from incident durations</p>
+        </article>
+        <article class="panel metric-card">
+          <p class="metric-label">30d uptime</p>
+          <p id="uptime30d" class="metric-value">--</p>
+          <p class="metric-note">Customer-facing service availability</p>
+        </article>
+        <article class="panel metric-card">
+          <p class="metric-label">90d uptime</p>
+          <p id="uptime90d" class="metric-value">--</p>
+          <p class="metric-note">Trend used for reliability baseline</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>Uptime Trend (Last 12 Months)</h2>
+          <p class="muted">Monthly service availability percentage</p>
+        </div>
+        <div id="uptimeChart" class="uptime-chart loading-chart" role="img" aria-label="Uptime trend chart"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>Recent Service Days</h2>
+          <p class="muted">Color shows daily severity impact</p>
+        </div>
+        <div id="dayStrip" class="day-strip" aria-label="Daily uptime strip"></div>
+      </section>
+
+      <section class="two-col">
+        <section class="panel">
+          <div class="section-head">
+            <h2>Active Incident</h2>
+            <p class="muted">Most recent unresolved service issue</p>
+          </div>
+          <div id="activeIncident" class="incident-card loading">
+            Loading incident details...
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-head">
+            <h2>Email Alert Placeholder</h2>
+            <p class="muted">Template for future inbox parsing</p>
+          </div>
+          <div class="alert-template">
+            <pre id="alertTemplate" class="mono">Loading template...</pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>Incident History</h2>
+          <p class="muted">Recent delays, disruptions, and recoveries</p>
+        </div>
+        <ol id="incidentTimeline" class="timeline"></ol>
+      </section>
+
+      <section class="panel architecture">
+        <div class="section-head">
+          <h2>Simple Architecture</h2>
+          <p class="muted">Static-site friendly and GitHub Pages ready</p>
+        </div>
+        <ul>
+          <li><span class="mono">index.html + app.js + styles.css</span> renders the status page in the browser.</li>
+          <li><span class="mono">data/incidents/index.json</span> lists time-series incident shard files to load.</li>
+          <li><span class="mono">data/incidents/YYYY-MM/incidents.json</span> stores incidents in append-only monthly shards.</li>
+          <li><span class="mono">data/alert-template.txt</span> is a placeholder for raw email alerts until parsing rules are defined.</li>
+          <li>Uptime percentages and trends are computed in the browser from incident timestamps and states.</li>
+          <li>When email details are known, a small script (or GitHub Action) can convert emails into the same JSON files.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+  </html>
