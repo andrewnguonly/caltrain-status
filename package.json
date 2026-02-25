@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "npx serve .",
-    "ingest:imap": "node scripts/ingest_emails_imap.js"
+    "ingest:imap": "node scripts/ingest_emails_imap.js",
+    "ingest:imap:test": "node scripts/ingest_emails_imap.js --local-test"
   },
   "dependencies": {
     "imapflow": "^1.0.190",

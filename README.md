@@ -82,6 +82,17 @@ This repo includes a polling script that reads a dedicated Gmail inbox via IMAP 
 - It stores one update per email and tries to match/update incidents by normalized subject.
 - Once you have the exact email format, tighten `buildParsedEvent()` parsing rules in `scripts/ingest_emails_imap.js`.
 
+### Local parser test mode (no IMAP)
+
+Parse a raw email file and print the parsed event JSON without connecting to Gmail or writing repo data:
+
+- Default example file: `data/alert-example.txt`
+- Run: `npm run ingest:imap:test`
+
+Optional custom file:
+
+- `node scripts/ingest_emails_imap.js --local-test --test-file path/to/email.eml`
+
 ## Local preview
 
 Because the page fetches JSON/text files, open it through a local web server (not `file://`).

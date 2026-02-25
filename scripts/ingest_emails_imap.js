@@ -10,6 +10,7 @@ const DATA_DIR = path.join(ROOT, "data");
 const CURRENT_STATUS_PATH = path.join(DATA_DIR, "current-status.json");
 const INCIDENTS_INDEX_PATH = path.join(DATA_DIR, "incidents", "index.json");
 const INGESTION_STATE_PATH = path.join(DATA_DIR, "ingestion-state.json");
+const DEFAULT_LOCAL_TEST_FILE = path.join(DATA_DIR, "alert-example.txt");
 
 function parseDotEnvFile(filePath) {
   if (!fs.existsSync(filePath)) return;
@@ -85,15 +86,125 @@ function firstNonEmptyLine(text) {
   return "";
 }
 
+function htmlishToText(text) {
+  return String(text || "")
+    .replace(/=\r?\n/g, "")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/p>\s*<p>/gi, "\n")
+    .replace(/<\/?[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/\u00a0/g, " ")
+    .replace(/\r/g, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function summarizeBody(text) {
   const oneLine = String(text || "").replace(/\s+/g, " ").trim();
   if (!oneLine) return "Email alert received; parser placeholder used.";
   return oneLine.slice(0, 300);
 }
 
-function inferSeverityAndStatus(subject, bodyText) {
-  const haystack = `${subject}\n${bodyText}`.toLowerCase();
+function extractCaltrainField(bodyText, label) {
+  const normalized = htmlishToText(bodyText);
+  const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const patterns = [
+    new RegExp(`\\b${escaped}\\b\\s*[:\\n]+\\s*([^\\n]+)`, "i"),
+    new RegExp(`\\*\\s*${escaped}\\s*\\*\\s*\\n+([^\\n]+(?:\\n[^\\n]+)?)`, "i"),
+  ];
+
+  for (const pattern of patterns) {
+    const match = normalized.match(pattern);
+    if (match && match[1]) {
+      return match[1].replace(/\s+/g, " ").trim();
+    }
+  }
+  return null;
+}
+
+function parseCaltrainDateTime(raw) {
+  if (!raw) return null;
+  const cleaned = String(raw).replace(/\s+/g, " ").trim();
+  const match = cleaned.match(
+    /\b(\d{1,2})\/(\d{1,2})\/(\d{2,4})\b(?:\s+|,\s*)(\d{1,2}:\d{2})\s*(AM|PM)\b/i
+  );
+  if (!match) return null;
+
+  const [, mm, dd, yyRaw, hhmm, ampm] = match;
+  const year = yyRaw.length === 2 ? Number(`20${yyRaw}`) : Number(yyRaw);
+  const [hourRaw, minuteRaw] = hhmm.split(":").map(Number);
+  let hour = hourRaw % 12;
+  if (/pm/i.test(ampm)) hour += 12;
+
+  // Use local runtime timezone; sufficient for ordering/status decisions.
+  const date = new Date(year, Number(mm) - 1, Number(dd), hour, minuteRaw, 0, 0);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function parseCaltrainAlertDetails(subject, bodyText) {
+  const cleanBody = htmlishToText(bodyText);
+  const subjectText = String(subject || "").trim();
+  const subjectMatch = subjectText.match(/^\s*([^:]+):\s*(.+)\s*$/);
+  const alertType = subjectMatch ? subjectMatch[1].trim() : null;
+  const subjectDescription = subjectMatch ? subjectMatch[2].trim() : subjectText;
+
+  const alertCause = extractCaltrainField(cleanBody, "Alert Cause");
+  const alertEffect = extractCaltrainField(cleanBody, "Alert Effect");
+  const startDateRaw = extractCaltrainField(cleanBody, "Start Date");
+  const endDateRaw = extractCaltrainField(cleanBody, "End Date");
+  const startDate = parseCaltrainDateTime(startDateRaw);
+  const endDate = parseCaltrainDateTime(endDateRaw);
+
+  const trainMatch = subjectDescription.match(/\bTrain\s+([A-Za-z0-9]+)\b/i);
+  const stationMatch = subjectDescription.match(/\bat\s+([A-Za-z][A-Za-z .'-]+)$/i);
+
+  return {
+    cleanBody,
+    alertType,
+    subjectDescription,
+    alertCause,
+    alertEffect,
+    startDateRaw,
+    endDateRaw,
+    startDate,
+    endDate,
+    trainNumber: trainMatch ? trainMatch[1] : null,
+    station: stationMatch ? stationMatch[1].trim() : null,
+  };
+}
+
+function inferSeverityAndStatus(subject, bodyText, receivedAt) {
+  const details = parseCaltrainAlertDetails(subject, bodyText);
+  const haystack = `${subject}\n${details.cleanBody}`.toLowerCase();
   const has = (pattern) => pattern.test(haystack);
+
+  const effect = String(details.alertEffect || "").toLowerCase();
+  const type = String(details.alertType || "").toLowerCase();
+
+  const receivedDate = receivedAt ? new Date(receivedAt) : null;
+  if (
+    details.endDate &&
+    (!receivedDate || Number.isNaN(receivedDate.getTime()) || details.endDate.getTime() <= receivedDate.getTime())
+  ) {
+    return { severity: "minor", status: "resolved", updateState: "operational" };
+  }
+
+  if (type.includes("platform change")) {
+    return { severity: "minor", status: "investigating", updateState: "degraded" };
+  }
+  if (effect.includes("modified service")) {
+    return { severity: "minor", status: "investigating", updateState: "degraded" };
+  }
+  if (effect.includes("reduced service")) {
+    return { severity: "major", status: "investigating", updateState: "major" };
+  }
+  if (effect.includes("no service")) {
+    return { severity: "critical", status: "investigating", updateState: "critical" };
+  }
 
   const resolved = has(/\b(resolved|restored|normal service|back to normal|clear(ed)?)\b/);
   if (resolved) {
@@ -112,7 +223,8 @@ function inferSeverityAndStatus(subject, bodyText) {
 }
 
 function inferAffectedSegments(subject, bodyText) {
-  const haystack = `${subject}\n${bodyText}`.toLowerCase();
+  const details = parseCaltrainAlertDetails(subject, bodyText);
+  const haystack = `${subject}\n${details.cleanBody}`.toLowerCase();
   const segments = [];
   if (haystack.includes("northbound")) segments.push("Northbound");
   if (haystack.includes("southbound")) segments.push("Southbound");
@@ -120,6 +232,7 @@ function inferAffectedSegments(subject, bodyText) {
     if (!segments.includes("Northbound")) segments.push("Northbound");
     if (!segments.includes("Southbound")) segments.push("Southbound");
   }
+  if (details.station) segments.push(details.station);
   if (!segments.length) segments.push("System-wide");
   return segments;
 }
@@ -127,18 +240,38 @@ function inferAffectedSegments(subject, bodyText) {
 function buildParsedEvent(message) {
   const subject = message.subject || "(No subject)";
   const bodyText = message.bodyText || "";
+  const details = parseCaltrainAlertDetails(subject, bodyText);
   const receivedAt = message.receivedAt || new Date().toISOString();
-  const normalizedSubject = normalizeSubject(subject);
+  const normalizedSubject = normalizeSubject(
+    [details.alertType, details.subjectDescription, details.station].filter(Boolean).join(" ")
+  );
   const subjectKey = slugify(normalizedSubject || subject);
-  const headline = normalizedSubject || firstNonEmptyLine(bodyText) || "Caltrain service alert";
-  const severityInfo = inferSeverityAndStatus(subject, bodyText);
-  const summary = summarizeBody(bodyText);
+  const headline =
+    [details.alertType, details.subjectDescription].filter(Boolean).join(": ") ||
+    normalizedSubject ||
+    firstNonEmptyLine(details.cleanBody) ||
+    "Caltrain service alert";
+  const severityInfo = inferSeverityAndStatus(subject, bodyText, receivedAt);
+  const summaryParts = [
+    details.alertType,
+    details.alertEffect ? `Effect: ${details.alertEffect}` : null,
+    details.alertCause ? `Cause: ${details.alertCause}` : null,
+    details.station ? `Location: ${details.station}` : null,
+    details.startDateRaw ? `Start: ${details.startDateRaw}` : null,
+    details.endDateRaw ? `End: ${details.endDateRaw}` : null,
+  ].filter(Boolean);
+  const summary = summaryParts.length ? summaryParts.join(" | ") : summarizeBody(details.cleanBody);
+  const updateMessageParts = [
+    details.subjectDescription || subject,
+    details.alertEffect ? `Effect: ${details.alertEffect}` : null,
+    details.alertCause ? `Cause: ${details.alertCause}` : null,
+  ].filter(Boolean);
 
   return {
     messageId: message.messageId,
     receivedAt,
     subject,
-    bodyText,
+    bodyText: details.cleanBody,
     subjectKey,
     title: headline.charAt(0).toUpperCase() + headline.slice(1),
     summary,
@@ -146,7 +279,9 @@ function buildParsedEvent(message) {
     incidentStatus: severityInfo.status,
     updateState: severityInfo.updateState,
     affectedSegments: inferAffectedSegments(subject, bodyText),
-    updateMessage: firstNonEmptyLine(bodyText) || subject,
+    updateMessage: updateMessageParts.join(" | ") || firstNonEmptyLine(details.cleanBody) || subject,
+    startedAt: details.startDate ? details.startDate.toISOString() : null,
+    endedAt: details.endDate ? details.endDate.toISOString() : null,
   };
 }
 
@@ -218,6 +353,8 @@ function upsertIncidentInShard(shard, event) {
   const existingIds = new Set(shard.items.map((i) => i.id));
   let incident = findMatchingIncident(shard, event);
   const timestamp = new Date(event.receivedAt).toISOString();
+  const effectiveStart = event.startedAt || timestamp;
+  const effectiveEnd = event.endedAt || null;
 
   if (!incident) {
     const startedDate = new Date(event.receivedAt);
@@ -226,8 +363,8 @@ function upsertIncidentInShard(shard, event) {
       title: event.title,
       severity: event.severity,
       status: event.incidentStatus,
-      started_at: timestamp,
-      resolved_at: event.incidentStatus === "resolved" ? timestamp : null,
+      started_at: effectiveStart,
+      resolved_at: event.incidentStatus === "resolved" ? (effectiveEnd || timestamp) : null,
       affected_segments: event.affectedSegments,
       summary: event.summary,
       updates: [],
@@ -245,12 +382,15 @@ function upsertIncidentInShard(shard, event) {
     }
     if (event.incidentStatus === "resolved") {
       incident.status = "resolved";
-      incident.resolved_at = timestamp;
+      incident.resolved_at = effectiveEnd || timestamp;
     } else if (incident.status === "resolved") {
       incident.status = "investigating";
       incident.resolved_at = null;
     } else {
       incident.status = event.incidentStatus || incident.status;
+    }
+    if (event.startedAt && (!incident.started_at || new Date(event.startedAt) < new Date(incident.started_at))) {
+      incident.started_at = event.startedAt;
     }
   }
 
@@ -353,7 +493,38 @@ function passesFilters(parsed) {
   return true;
 }
 
+function getCliArgValue(flag) {
+  const index = process.argv.indexOf(flag);
+  if (index === -1) return null;
+  return process.argv[index + 1] || null;
+}
+
+function hasCliFlag(flag) {
+  return process.argv.includes(flag);
+}
+
+async function runLocalParseTest() {
+  const fileArg = getCliArgValue("--test-file");
+  const filePath = path.resolve(ROOT, fileArg || DEFAULT_LOCAL_TEST_FILE);
+  const source = fs.readFileSync(filePath);
+  const parsed = await simpleParser(source);
+
+  const event = buildParsedEvent({
+    messageId: parsed.messageId || `local-test-${path.basename(filePath)}`,
+    subject: parsed.subject || "",
+    bodyText: parsed.text || parsed.html || "",
+    receivedAt: parsed.date ? new Date(parsed.date).toISOString() : new Date().toISOString()
+  });
+
+  console.log(JSON.stringify(event, null, 2));
+}
+
 async function main() {
+  if (hasCliFlag("--local-test")) {
+    await runLocalParseTest();
+    return;
+  }
+
   if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
     throw new Error("Missing GMAIL_USER or GMAIL_APP_PASSWORD. Set them in env or .env.");
   }
