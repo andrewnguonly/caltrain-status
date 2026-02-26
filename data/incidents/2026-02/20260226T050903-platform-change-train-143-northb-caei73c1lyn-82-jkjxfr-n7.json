@@ -4,16 +4,16 @@
   "source_message_id": "<CAEi73c1Lyn_82+JkJXFR-n7Y1b4N5NawkP_t+GL56BqcX-R_Eg@mail.gmail.com>",
   "incident": {
     "id": "inc-2026-02-25-platform-change-train-143-northbound-will-depart-off-track-2",
-    "title": "Platform change Train 143 northbound will depart off Track 2 at San Jose Diridon San Jose Diridon",
+    "title": "Platform change: Train 143 northbound will depart off Track 2 at San Jose Diridon",
     "severity": "minor",
     "status": "resolved",
     "started_at": "2026-02-25T13:33:00-08:00",
     "resolved_at": "2026-02-25T15:24:00-08:00",
     "affected_segments": [
       "Northbound",
-      "San Jose Diridon."
+      "San Jose Diridon"
     ],
-    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon. | Start: 02/25/26 1:33 PM | End: 02/25/26 3:24 PM",
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 02/25/26 1:33 PM | End: 02/25/26 3:24 PM",
     "updates": [
       {
         "timestamp": "2026-02-25T21:09:03-08:00",

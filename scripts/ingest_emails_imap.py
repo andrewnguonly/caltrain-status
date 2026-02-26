@@ -150,6 +150,14 @@ def slugify(text: str) -> str:
     return (s[:60] if s else "email-alert")
 
 
+def normalize_station_name(value: str | None) -> str | None:
+    if value is None:
+        return None
+    station = re.sub(r"\s+", " ", str(value)).strip()
+    station = re.sub(r"[\s\.,;:!?-]+$", "", station)
+    return station or None
+
+
 def extract_caltrain_field(body_text: str, label: str) -> str | None:
     normalized = htmlish_to_text(body_text)
     escaped = re.escape(label)
@@ -214,7 +222,7 @@ def parse_caltrain_alert_details(subject: str, body_text: str) -> dict[str, Any]
         "start_date": start_dt,
         "end_date": end_dt,
         "train_number": train_match.group(1) if train_match else None,
-        "station": station_match.group(1).strip() if station_match else None,
+        "station": normalize_station_name(station_match.group(1)) if station_match else None,
     }
 
 
@@ -277,9 +285,7 @@ def infer_affected_segments(subject: str, body_text: str) -> list[str]:
 def build_parsed_event(message_id: str, subject: str, body_text: str, received_at_iso: str) -> dict[str, Any]:
     details = parse_caltrain_alert_details(subject, body_text)
     normalized_subject = normalize_subject(
-        " ".join(
-            [x for x in [details.get("alert_type"), details.get("subject_description"), details.get("station")] if x]
-        )
+        " ".join([x for x in [details.get("alert_type"), details.get("subject_description")] if x])
     )
     subject_key = slugify(normalized_subject or subject)
     headline = (
