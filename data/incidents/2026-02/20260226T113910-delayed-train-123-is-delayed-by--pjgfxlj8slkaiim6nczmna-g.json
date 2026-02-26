@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-02-26T11:39:10-08:00",
+  "source_message_id": "<pjGfxLJ8SlKAIIM6NCzmnA@geopod-ismtpd-4>",
+  "incident": {
+    "id": "inc-2026-02-26-delayed-train-123-is-delayed-by-45-minutes",
+    "title": "Delayed: Train 123 is delayed by 45 minutes.",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-02-26T10:57:00-08:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 02/26/26 10:57 AM | End: 02/26/26 12:57 PM",
+    "updates": [
+      {
+        "timestamp": "2026-02-26T11:39:10-08:00",
+        "state": "degraded",
+        "message": "Train 123 is delayed by 45 minutes. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<pjGfxLJ8SlKAIIM6NCzmnA@geopod-ismtpd-4>"
+      }
+    ],
+    "ingestion_key": "delayed-train-123-is-delayed-by-45-minutes",
+    "version_created_at": "2026-02-26T11:39:10-08:00"
+  }
+}
