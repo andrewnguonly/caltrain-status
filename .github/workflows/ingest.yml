@@ -23,26 +23,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: "20"
-          cache: "npm"
+          python-version: "3.11"
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run IMAP ingestion
+      - name: Run IMAP ingestion (Python)
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           IMAP_HOST: imap.gmail.com
-          IMAP_PORT: "993"
           IMAP_MAILBOX: INBOX
+          IMAP_ONLY_UNSEEN: "true"
           IMAP_MARK_SEEN: "true"
+          INGEST_SAVE_STATE: "false"
           INGEST_FROM_MATCH: ${{ secrets.INGEST_FROM_MATCH }}
           INGEST_SUBJECT_MATCH: ${{ secrets.INGEST_SUBJECT_MATCH }}
-        run: npm run ingest:imap
+        run: python3 scripts/ingest_emails_imap.py
 
       - name: Commit and push changes
         run: |
