@@ -3,14 +3,14 @@ name: Ingest Caltrain Alerts (IMAP)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
   group: caltrain-imap-ingest
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   ingest:
