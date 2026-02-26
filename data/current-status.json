@@ -1,9 +1,11 @@
 {
   "service_name": "Caltrain",
   "overall_status": "degraded",
-  "status_message": "Start: 02/26/26 11:33 AM | End: 02/26/26 11:43 AM",
-  "updated_at": "2026-02-26T11:51:21-08:00",
+  "status_message": "Start: 02/26/26 12:30 PM | End: 02/26/26 12:40 PM",
+  "updated_at": "2026-02-26T12:29:21-08:00",
   "active_incident_ids": [
+    "inc-2026-02-26-delayed-train-127-northbound-is-running-about-10-minutes-lat",
+    "inc-2026-02-26-delayed-train-125-is-delayed-by-30-minutes",
     "inc-2026-02-26-delayed-train-125-northbound-is-running-about-10-minutes-lat",
     "inc-2026-02-26-delayed-train-123-is-delayed-by-30-minutes",
     "inc-2026-02-26-delayed-train-123-is-delayed-by-45-minutes",
@@ -15,6 +17,8 @@
     "data/incidents/2026-02/20260226T105912-delayed-train-123-is-delayed-by--e9bemsnuq8ubrul42hw-aq-g.json",
     "data/incidents/2026-02/20260226T113212-delayed-train-125-northbound-is--n6ji35sattyphsmpcmgafa-g.json",
     "data/incidents/2026-02/20260226T113910-delayed-train-123-is-delayed-by--pjgfxlj8slkaiim6nczmna-g.json",
-    "data/incidents/2026-02/20260226T114010-delayed-train-123-is-delayed-by--uonpcax0qs6f8hmtyvpw0w-g.json"
+    "data/incidents/2026-02/20260226T114010-delayed-train-123-is-delayed-by--uonpcax0qs6f8hmtyvpw0w-g.json",
+    "data/incidents/2026-02/20260226T115510-delayed-train-125-is-delayed-by--joficvrvqkudr3rsw5b-wa-g.json",
+    "data/incidents/2026-02/20260226T122910-delayed-train-127-northbound-is--25hb8gtgsfgfpt8lwsy4pw-g.json"
   ]
 }
