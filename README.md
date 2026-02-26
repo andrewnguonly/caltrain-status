@@ -1,6 +1,13 @@
-# Caltrain Status Page (Static Prototype)
+# Caltrain Status Page
 
-Simple status-page style site for Caltrain service uptime and incidents.
+Simple status-page style site for [Caltrain](https://www.caltrain.com/) service uptime and incidents. Alerts and notifications are received from Caltrain real-time email alerts.
+
+This project is inspired by...
+- [The Missing GitHub Status Page](https://mrshu.github.io/github-statuses/)
+- My own experience taking the Caltrain
+- And the current era of "vibe coding"
+
+This codebase is completely vibe coded using GPT-5.3-Codex with small modifications from me.
 
 ## What this is
 
@@ -24,7 +31,7 @@ Simple status-page style site for Caltrain service uptime and incidents.
 
 Uptime values shown on the page are computed dynamically in `app.js` from incident files referenced by `data/current-status.json` (`incident_file_paths`), with fallback support for `data/incidents/index.json`.
 
-## How it works (simple architecture)
+## How it works
 
 1. Browser loads the static page.
 2. `app.js` fetches `data/current-status.json`.
