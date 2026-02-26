@@ -10,6 +10,7 @@ from email.header import decode_header
 from email.message import Message
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,6 +19,7 @@ DEFAULT_ENV_PATH = ROOT / ".env"
 CURRENT_STATUS_PATH = DATA_DIR / "current-status.json"
 INCIDENTS_INDEX_PATH = DATA_DIR / "incidents" / "index.json"
 INGESTION_STATE_PATH = DATA_DIR / "ingestion-state.json"
+PACIFIC_TZ = ZoneInfo("America/Los_Angeles")
 
 
 def load_dotenv(path: Path) -> None:
@@ -99,7 +101,9 @@ def parse_iso(value: str | None) -> datetime | None:
 
 
 def to_iso(dt: datetime) -> str:
-    return dt.astimezone().isoformat(timespec="seconds")
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=PACIFIC_TZ)
+    return dt.astimezone(PACIFIC_TZ).isoformat(timespec="seconds")
 
 
 def htmlish_to_text(text: str) -> str:
@@ -177,7 +181,7 @@ def parse_caltrain_datetime(raw: str | None) -> datetime | None:
     if ampm.lower() == "pm":
         hour += 12
     try:
-        return datetime(year, int(mm), int(dd), hour, int(minute))
+        return datetime(year, int(mm), int(dd), hour, int(minute), tzinfo=PACIFIC_TZ)
     except ValueError:
         return None
 
@@ -223,7 +227,8 @@ def infer_severity_and_status(subject: str, body_text: str, received_at_iso: str
 
     end_dt = details.get("end_date")
     if isinstance(end_dt, datetime):
-        if received_dt is None or end_dt <= received_dt.replace(tzinfo=None):
+        received_local = received_dt.astimezone(PACIFIC_TZ) if received_dt and received_dt.tzinfo else received_dt
+        if received_local is None or end_dt <= received_local:
             return {"severity": "minor", "status": "resolved", "update_state": "operational"}
 
     if "platform change" in alert_type:
@@ -327,7 +332,7 @@ def load_state() -> dict[str, Any]:
 def save_state(state: dict[str, Any]) -> None:
     ids = list(dict.fromkeys(state.get("processed_message_ids", [])))
     state["processed_message_ids"] = ids[-5000:]
-    state["last_run_at"] = datetime.now().astimezone().isoformat(timespec="seconds")
+    state["last_run_at"] = datetime.now(PACIFIC_TZ).isoformat(timespec="seconds")
     write_json(INGESTION_STATE_PATH, state)
 
 
@@ -347,7 +352,7 @@ def load_current_status() -> dict[str, Any]:
             "service_name": "Caltrain",
             "overall_status": "operational",
             "status_message": "No active incidents.",
-            "updated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+            "updated_at": datetime.now(PACIFIC_TZ).isoformat(timespec="seconds"),
             "active_incident_ids": [],
             "incident_file_paths": [],
         },
@@ -360,7 +365,10 @@ def save_current_status(current: dict[str, Any]) -> None:
 
 
 def snapshot_repo_path_for_event(event: dict[str, Any]) -> str:
-    event_dt = parse_iso(event["received_at"]) or datetime.now().astimezone()
+    event_dt = parse_iso(event["received_at"]) or datetime.now(PACIFIC_TZ)
+    if event_dt.tzinfo is None:
+        event_dt = event_dt.replace(tzinfo=PACIFIC_TZ)
+    event_dt = event_dt.astimezone(PACIFIC_TZ)
     stamp = event_dt.strftime("%Y%m%dT%H%M%S")
     msg_suffix = slugify(event.get("message_id", ""))[:24]
     key_suffix = slugify(event.get("subject_key", ""))[:32]
@@ -394,7 +402,7 @@ def severity_rank(severity: str | None) -> int:
 
 
 def create_incident_id(started_at_iso: str, subject_key: str, existing_ids: set[str]) -> str:
-    day = (started_at_iso or datetime.now().date().isoformat())[:10]
+    day = (started_at_iso or datetime.now(PACIFIC_TZ).date().isoformat())[:10]
     base = f"inc-{day}-{subject_key}"
     if base not in existing_ids:
         return base
@@ -631,7 +639,7 @@ def ingest_from_imap() -> None:
             message_id = decode_mime_header(msg.get("Message-ID", "")) or f"imap-{msg_id.decode(errors='ignore')}"
             date_hdr = decode_mime_header(msg.get("Date", ""))
             parsed_date = email.utils.parsedate_to_datetime(date_hdr) if date_hdr else None
-            received_at_iso = to_iso(parsed_date) if isinstance(parsed_date, datetime) else to_iso(datetime.now().astimezone())
+            received_at_iso = to_iso(parsed_date) if isinstance(parsed_date, datetime) else to_iso(datetime.now(PACIFIC_TZ))
             body = get_text_body(msg).replace("\r", "")
 
             if message_id in processed_ids:
@@ -660,7 +668,7 @@ def ingest_from_imap() -> None:
                 client.store(msg_id, "+FLAGS", "\\Seen")
 
         if changed:
-            update_current_status_file(to_iso(datetime.now().astimezone()))
+            update_current_status_file(to_iso(datetime.now(PACIFIC_TZ)))
         if save_local_state:
             save_state(state)
         print(f"Done. processed={processed_count}")
