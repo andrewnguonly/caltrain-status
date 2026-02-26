@@ -365,7 +365,7 @@ def snapshot_repo_path_for_event(event: dict[str, Any]) -> str:
     msg_suffix = slugify(event.get("message_id", ""))[:24]
     key_suffix = slugify(event.get("subject_key", ""))[:32]
     filename = f"{stamp}-{key_suffix}-{msg_suffix}.json"
-    return f"data/incidents/events/{event_dt.year:04d}/{event_dt.month:02d}/{event_dt.day:02d}/{filename}"
+    return f"data/incidents/{event_dt.year:04d}-{event_dt.month:02d}/{filename}"
 
 
 def snapshot_abs_path_for_event(event: dict[str, Any]) -> Path:
