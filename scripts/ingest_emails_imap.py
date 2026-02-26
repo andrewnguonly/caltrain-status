@@ -340,22 +340,53 @@ def save_incidents_index(index: dict[str, Any]) -> None:
     index["files"] = sorted(files, reverse=True)
     write_json(INCIDENTS_INDEX_PATH, index)
 
+def load_current_status() -> dict[str, Any]:
+    return read_json(
+        CURRENT_STATUS_PATH,
+        {
+            "service_name": "Caltrain",
+            "overall_status": "operational",
+            "status_message": "No active incidents.",
+            "updated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+            "active_incident_ids": [],
+            "incident_file_paths": [],
+        },
+    )
 
-def shard_repo_path_for_dt(dt: datetime) -> str:
-    return f"data/incidents/{dt.year:04d}-{dt.month:02d}/incidents.json"
+
+def save_current_status(current: dict[str, Any]) -> None:
+    current["incident_file_paths"] = list(dict.fromkeys(current.get("incident_file_paths", [])))
+    write_json(CURRENT_STATUS_PATH, current)
 
 
-def shard_abs_path_for_dt(dt: datetime) -> Path:
-    return ROOT / shard_repo_path_for_dt(dt)
+def snapshot_repo_path_for_event(event: dict[str, Any]) -> str:
+    event_dt = parse_iso(event["received_at"]) or datetime.now().astimezone()
+    stamp = event_dt.strftime("%Y%m%dT%H%M%S")
+    msg_suffix = slugify(event.get("message_id", ""))[:24]
+    key_suffix = slugify(event.get("subject_key", ""))[:32]
+    filename = f"{stamp}-{key_suffix}-{msg_suffix}.json"
+    return f"data/incidents/events/{event_dt.year:04d}/{event_dt.month:02d}/{event_dt.day:02d}/{filename}"
 
 
-def load_shard(path: Path, period: str) -> dict[str, Any]:
-    return read_json(path, {"period": period, "items": []})
+def snapshot_abs_path_for_event(event: dict[str, Any]) -> Path:
+    return ROOT / snapshot_repo_path_for_event(event)
 
 
-def save_shard(path: Path, shard: dict[str, Any]) -> None:
-    shard["items"] = sorted(shard.get("items", []), key=lambda i: i.get("started_at", ""), reverse=True)
-    write_json(path, shard)
+def load_incident_records_from_paths(paths: list[str]) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    for repo_path in paths:
+        payload = read_json(ROOT / repo_path, None)
+        if not payload:
+            continue
+        if isinstance(payload, dict) and isinstance(payload.get("items"), list):
+            records.extend([i for i in payload["items"] if isinstance(i, dict)])
+            continue
+        if isinstance(payload, dict) and isinstance(payload.get("incident"), dict):
+            records.append(payload["incident"])
+            continue
+        if isinstance(payload, dict) and payload.get("id"):
+            records.append(payload)
+    return records
 
 
 def severity_rank(severity: str | None) -> int:
@@ -373,10 +404,9 @@ def create_incident_id(started_at_iso: str, subject_key: str, existing_ids: set[
     return f"{base}-{counter}"
 
 
-def find_matching_incident(shard: dict[str, Any], event: dict[str, Any]) -> dict[str, Any] | None:
+def find_matching_incident(incidents: list[dict[str, Any]], event: dict[str, Any]) -> dict[str, Any] | None:
     candidates = []
-    for incident in shard.get("items", []):
-      # noqa: E111 (style not enforced here)
+    for incident in incidents:
         if incident.get("ingestion_key") == event["subject_key"] or normalize_subject(incident.get("title", "")) == normalize_subject(event["title"]):
             candidates.append(incident)
     if not candidates:
@@ -392,15 +422,14 @@ def find_matching_incident(shard: dict[str, Any], event: dict[str, Any]) -> dict
     return candidates[0]
 
 
-def upsert_incident_in_shard(shard: dict[str, Any], event: dict[str, Any]) -> dict[str, Any]:
-    shard.setdefault("items", [])
-    existing_ids = {str(i.get("id")) for i in shard["items"] if i.get("id")}
-    incident = find_matching_incident(shard, event)
+def build_incident_snapshot(existing_incidents: list[dict[str, Any]], event: dict[str, Any]) -> dict[str, Any]:
+    existing_ids = {str(i.get("id")) for i in existing_incidents if i.get("id")}
+    source_incident = find_matching_incident(existing_incidents, event)
     timestamp = event["received_at"]
     effective_start = event.get("started_at") or timestamp
     effective_end = event.get("ended_at")
 
-    if incident is None:
+    if source_incident is None:
         incident = {
             "id": create_incident_id(effective_start, event["subject_key"], existing_ids),
             "title": event["title"],
@@ -413,8 +442,8 @@ def upsert_incident_in_shard(shard: dict[str, Any], event: dict[str, Any]) -> di
             "updates": [],
             "ingestion_key": event["subject_key"],
         }
-        shard["items"].append(incident)
     else:
+        incident = json.loads(json.dumps(source_incident))
         if not incident.get("title"):
             incident["title"] = event["title"]
         merged_segments = list(incident.get("affected_segments", [])) + list(event.get("affected_segments", []))
@@ -449,30 +478,47 @@ def upsert_incident_in_shard(shard: dict[str, Any], event: dict[str, Any]) -> di
             }
         )
         incident["updates"].sort(key=lambda u: u.get("timestamp", ""))
+    incident["version_created_at"] = timestamp
     return incident
 
 
-def collect_all_incidents(index: dict[str, Any]) -> list[dict[str, Any]]:
-    items: list[dict[str, Any]] = []
-    for repo_path in index.get("files", []):
-        shard = read_json(ROOT / repo_path, {"items": []})
-        items.extend(shard.get("items", []))
-    items.sort(key=lambda i: i.get("started_at", ""), reverse=True)
+def collect_all_incidents() -> list[dict[str, Any]]:
+    current = load_current_status()
+    current_paths = [p for p in current.get("incident_file_paths", []) if isinstance(p, str)]
+    legacy_index = load_incidents_index()
+    legacy_paths = [p for p in legacy_index.get("files", []) if isinstance(p, str)]
+    all_records = load_incident_records_from_paths(list(dict.fromkeys(current_paths + legacy_paths)))
+
+    by_id: dict[str, dict[str, Any]] = {}
+    for incident in all_records:
+        incident_id = str(incident.get("id") or "")
+        if not incident_id:
+            continue
+        prev = by_id.get(incident_id)
+        prev_ts = (
+            (prev or {}).get("version_created_at")
+            or ((prev or {}).get("updates") or [{}])[-1].get("timestamp")
+            or (prev or {}).get("resolved_at")
+            or (prev or {}).get("started_at")
+            or ""
+        )
+        next_ts = (
+            incident.get("version_created_at")
+            or (incident.get("updates") or [{}])[-1].get("timestamp")
+            or incident.get("resolved_at")
+            or incident.get("started_at")
+            or ""
+        )
+        if prev is None or next_ts >= prev_ts:
+            by_id[incident_id] = incident
+
+    items = sorted(by_id.values(), key=lambda i: i.get("started_at", ""), reverse=True)
     return items
 
 
 def update_current_status_file(processed_at_iso: str) -> None:
-    current = read_json(
-        CURRENT_STATUS_PATH,
-        {
-            "service_name": "Caltrain",
-            "overall_status": "operational",
-            "status_message": "No active incidents.",
-            "updated_at": processed_at_iso,
-            "active_incident_ids": [],
-        },
-    )
-    incidents = collect_all_incidents(load_incidents_index())
+    current = load_current_status()
+    incidents = collect_all_incidents()
     active = [i for i in incidents if i.get("status") != "resolved"]
     active.sort(
         key=lambda i: (
@@ -501,24 +547,26 @@ def update_current_status_file(processed_at_iso: str) -> None:
     current["service_name"] = current.get("service_name") or "Caltrain"
     current["overall_status"] = overall
     current["updated_at"] = processed_at_iso
-    write_json(CURRENT_STATUS_PATH, current)
+    save_current_status(current)
 
 
 def apply_event_to_repo(event: dict[str, Any]) -> dict[str, Any]:
-    event_dt = parse_iso(event["received_at"]) or datetime.now().astimezone()
-    period = f"{event_dt.year:04d}-{event_dt.month:02d}"
-    shard_repo = shard_repo_path_for_dt(event_dt)
-    shard_abs = shard_abs_path_for_dt(event_dt)
+    existing_incidents = collect_all_incidents()
+    incident = build_incident_snapshot(existing_incidents, event)
 
-    index = load_incidents_index()
-    if shard_repo not in index.get("files", []):
-        index["files"] = list(index.get("files", [])) + [shard_repo]
-        save_incidents_index(index)
+    repo_path = snapshot_repo_path_for_event(event)
+    abs_path = ROOT / repo_path
+    payload = {
+        "schema": "incident-snapshot-v1",
+        "version_created_at": event["received_at"],
+        "source_message_id": event["message_id"],
+        "incident": incident,
+    }
+    write_json(abs_path, payload)
 
-    shard = load_shard(shard_abs, period)
-    shard["period"] = period
-    incident = upsert_incident_in_shard(shard, event)
-    save_shard(shard_abs, shard)
+    current = load_current_status()
+    current["incident_file_paths"] = list(current.get("incident_file_paths", [])) + [repo_path]
+    save_current_status(current)
     return incident
 
 

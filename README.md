@@ -5,7 +5,7 @@ Simple status-page style site for Caltrain service uptime and incidents.
 ## What this is
 
 - Static frontend (`index.html`, `styles.css`, `app.js`)
-- File-based "backend" (`data/*.json` and `data/alert-template.txt`)
+- File-based "backend" (`data/*.json`)
 - Designed to work on GitHub Pages (no server required)
 
 ## Current data model
@@ -14,26 +14,29 @@ Simple status-page style site for Caltrain service uptime and incidents.
   - Current overall status (`operational`, `degraded`, `major`, `critical`)
   - Current banner message
   - Active incident IDs
+  - `incident_file_paths` list (append-only incident snapshot files to load)
 - `data/incidents/index.json`
-  - Manifest of incident time-series shard files
+  - Legacy manifest of incident files (still supported as fallback)
 - `data/incidents/YYYY-MM/incidents.json`
-  - Incident history for a month (append-only shard)
-- `data/alert-template.txt`
-  - Placeholder email alert format until real notification content is known
+  - Legacy incident history shard format (still supported)
+- `data/incidents/events/YYYY/MM/DD/*.json`
+  - Append-only incident snapshot files (new production ingestion format)
 
-Uptime values shown on the page are computed dynamically in `app.js` from all incident shard files listed in `data/incidents/index.json`.
+Uptime values shown on the page are computed dynamically in `app.js` from incident files referenced by `data/current-status.json` (`incident_file_paths`), with fallback support for `data/incidents/index.json`.
 
 ## How it works (simple architecture)
 
 1. Browser loads the static page.
-2. `app.js` fetches `data/current-status.json`, `data/incidents/index.json`, and the listed incident shard files.
-3. The page renders:
+2. `app.js` fetches `data/current-status.json`.
+3. It loads incident data files from `current-status.json.incident_file_paths` (append-only snapshots).
+4. It also supports legacy files from `data/incidents/index.json` (fallback/compatibility).
+5. The page renders:
    - current status
    - uptime percentages (computed from incidents)
    - incident details
    - incident history
    - email alert template placeholder
-4. The page polls every 60 seconds to refresh.
+6. The page polls every 60 seconds to refresh.
 
 ## Hosting on GitHub Pages
 
@@ -41,21 +44,38 @@ Uptime values shown on the page are computed dynamically in `app.js` from all in
 2. Enable GitHub Pages for the repository (branch deploy).
 3. Serve from the repo root.
 
-## Future upgrade path (when email details are available)
+## Production ingestion (Python, IMAP/Gmail)
 
-- Add a small parser script (or GitHub Action) that converts incoming alerts to:
+Production ingestion is handled by:
+
+- `scripts/ingest_emails_imap.py`
+
+This script:
+
+- Connects to Gmail via IMAP
+- Reads alert emails
+- Parses Caltrain alert fields (subject type, cause/effect, start/end dates)
+- Writes a new append-only incident snapshot file per processed email
+- Updates `data/current-status.json` (the only file intentionally overwritten)
+- Marks processed emails as `\Seen` (when enabled)
+
+### Append-only pipeline design
+
+- Append-only:
+  - `data/incidents/events/YYYY/MM/DD/*.json`
+- Overwritten current state:
   - `data/current-status.json`
-  - `data/incidents/YYYY-MM/incidents.json` (append new records to the current month shard)
-  - `data/incidents/index.json` (only when creating a new shard)
-- Keep the frontend unchanged.
 
-## IMAP/Gmail ingestion (implemented)
+Each new email produces a new immutable incident snapshot file. The current status file maintains `incident_file_paths`, which acts as the list of snapshot files the frontend should load.
 
-This repo includes a polling script that reads a dedicated Gmail inbox via IMAP and updates the data files.
+This avoids rewriting historical incident files while still allowing the site to compute the latest incident state and uptime.
 
-- Script: `scripts/ingest_emails_imap.js`
-- Command: `npm run ingest:imap`
-- Dependencies: `imapflow`, `mailparser`
+## IMAP/Gmail ingestion (Python)
+
+This repo includes Python scripts for Gmail IMAP access:
+
+- Production ingester: `scripts/ingest_emails_imap.py`
+- Fetch/debug helper: `scripts/fetch_emails_imap.py`
 
 ### Setup (Gmail)
 
@@ -71,27 +91,20 @@ This repo includes a polling script that reads a dedicated Gmail inbox via IMAP 
 
 ### What the script updates
 
-- `data/incidents/YYYY-MM/incidents.json` (append/update incident shards)
-- `data/incidents/index.json` (adds new shard paths)
-- `data/current-status.json` (recomputes active incident summary)
-- `data/ingestion-state.json` (local dedupe state; gitignored)
+- `data/incidents/events/YYYY/MM/DD/*.json` (append-only incident snapshots)
+- `data/current-status.json` (recomputes active incident summary and updates `incident_file_paths`)
+- `data/ingestion-state.json` (optional local dedupe state; gitignored)
+
+### Commands
+
+- Production ingest (writes JSON files): `python3 scripts/ingest_emails_imap.py`
+- Fetch/debug only (prints emails): `python3 scripts/fetch_emails_imap.py`
 
 ### Notes
 
-- The parser is intentionally heuristic because the Caltrain email format is not finalized yet.
-- It stores one update per email and tries to match/update incidents by normalized subject.
-- Once you have the exact email format, tighten `buildParsedEvent()` parsing rules in `scripts/ingest_emails_imap.js`.
-
-### Local parser test mode (no IMAP)
-
-Parse a raw email file and print the parsed event JSON without connecting to Gmail or writing repo data:
-
-- Default example file: `data/alert-example.txt`
-- Run: `npm run ingest:imap:test`
-
-Optional custom file:
-
-- `node scripts/ingest_emails_imap.js --local-test --test-file path/to/email.eml`
+- The parser is heuristic and tuned to the sample Caltrain alert format currently in the repo.
+- The workflow uses IMAP `UNSEEN` + marking messages `\Seen` as the primary dedupe mechanism in GitHub Actions.
+- `data/incidents/index.json` and monthly shard files remain supported as a legacy fallback source.
 
 ## Local preview
 

@@ -1,7 +1,6 @@
 const DATA_FILES = {
   current: "data/current-status.json",
   incidentsIndex: "data/incidents/index.json",
-  alertTemplate: "data/alert-template.txt",
 };
 
 const REFRESH_MS = 60_000;
@@ -27,7 +26,6 @@ const ui = {
   dayStrip: document.getElementById("dayStrip"),
   activeIncident: document.getElementById("activeIncident"),
   incidentTimeline: document.getElementById("incidentTimeline"),
-  alertTemplate: document.getElementById("alertTemplate"),
 };
 
 function cacheBust(url) {
@@ -40,19 +38,36 @@ async function fetchJson(url) {
   return response.json();
 }
 
-async function fetchText(url) {
-  const response = await fetch(cacheBust(url), { cache: "no-store" });
-  if (!response.ok) throw new Error(`Failed to fetch ${url}`);
-  return response.text();
-}
-
 function mergeIncidentSeries(seriesFiles) {
   const byId = new Map();
 
   for (const file of seriesFiles) {
-    for (const incident of file.items || []) {
+    const items = Array.isArray(file?.items)
+      ? file.items
+      : file?.incident && file.incident.id
+        ? [file.incident]
+        : file?.id
+          ? [file]
+          : [];
+
+    for (const incident of items) {
       if (!incident || !incident.id) continue;
-      byId.set(incident.id, incident);
+      const existing = byId.get(incident.id);
+      const existingTs =
+        existing?.version_created_at ||
+        existing?.updated_at ||
+        existing?.updates?.at?.(-1)?.timestamp ||
+        existing?.started_at ||
+        "";
+      const nextTs =
+        incident?.version_created_at ||
+        incident?.updated_at ||
+        incident?.updates?.at?.(-1)?.timestamp ||
+        incident?.started_at ||
+        "";
+      if (!existing || new Date(nextTs) >= new Date(existingTs)) {
+        byId.set(incident.id, incident);
+      }
     }
   }
 
@@ -61,16 +76,35 @@ function mergeIncidentSeries(seriesFiles) {
   };
 }
 
-async function fetchIncidentSeries() {
-  const manifest = await fetchJson(DATA_FILES.incidentsIndex);
-  const files = (manifest.files || []).map((entry) => (typeof entry === "string" ? entry : entry.path));
+async function fetchIncidentSeries(current) {
+  const currentPaths = (current.incident_file_paths || [])
+    .map((entry) => (typeof entry === "string" ? entry : entry?.path))
+    .filter(Boolean);
 
-  if (!files.length) {
-    return { items: [] };
+  let manifestPaths = [];
+  try {
+    const manifest = await fetchJson(DATA_FILES.incidentsIndex);
+    manifestPaths = (manifest.files || [])
+      .map((entry) => (typeof entry === "string" ? entry : entry?.path))
+      .filter(Boolean);
+  } catch {
+    // Optional legacy manifest; current-status append-only file list is preferred.
   }
 
-  const shards = await Promise.all(files.map((path) => fetchJson(path)));
-  return mergeIncidentSeries(shards);
+  const files = Array.from(new Set([...currentPaths, ...manifestPaths]));
+  if (!files.length) return { items: [] };
+
+  const loaded = await Promise.all(
+    files.map(async (path) => {
+      try {
+        return await fetchJson(path);
+      } catch (error) {
+        console.warn(`Failed to load incident file: ${path}`, error);
+        return null;
+      }
+    })
+  );
+  return mergeIncidentSeries(loaded.filter(Boolean));
 }
 
 function formatLocal(iso, options = {}) {
@@ -422,10 +456,6 @@ function renderTimeline(incidents) {
   });
 }
 
-function renderAlertTemplate(text) {
-  ui.alertTemplate.textContent = text.trim();
-}
-
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -459,18 +489,14 @@ function renderError(error) {
 
 async function loadAndRender() {
   try {
-    const [current, incidents, alertTemplate] = await Promise.all([
-      fetchJson(DATA_FILES.current),
-      fetchIncidentSeries(),
-      fetchText(DATA_FILES.alertTemplate),
-    ]);
+    const current = await fetchJson(DATA_FILES.current);
+    const incidents = await fetchIncidentSeries(current);
     const uptime = computeUptimeFromIncidents(incidents, current);
 
     renderCurrentStatus(current);
     renderUptime(uptime);
     renderActiveIncident(current, incidents);
     renderTimeline(incidents);
-    renderAlertTemplate(alertTemplate);
     renderRefreshTime();
   } catch (error) {
     renderError(error);

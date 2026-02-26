@@ -1,9 +1,8 @@
 {
   "service_name": "Caltrain",
-  "overall_status": "degraded",
-  "status_message": "Northbound and southbound trains are seeing 10-20 minute delays due to a signal issue near San Bruno. Crews are working to restore normal operations.",
-  "updated_at": "2026-02-25T18:42:00-08:00",
-  "active_incident_ids": [
-    "inc-2026-02-25-signal-san-bruno"
-  ]
+  "overall_status": "operational",
+  "status_message": "No active incidents. Trains are currently running under normal operations.",
+  "updated_at": null,
+  "active_incident_ids": [],
+  "incident_file_paths": []
 }
