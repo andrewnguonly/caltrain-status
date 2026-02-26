@@ -437,18 +437,22 @@ function renderTimeline(incidents) {
   sorted.forEach((incident) => {
     const item = document.createElement("li");
     item.className = "timeline-item";
+    const incidentStatus = String(incident.status || "").trim().toLowerCase();
 
     const resolvedText = incident.resolved_at
       ? `Resolved ${formatLocal(incident.resolved_at)}`
       : `Ongoing since ${formatLocal(incident.started_at)}`;
+    const metaParts = [capitalize(incident.severity)];
+    if (incidentStatus && incidentStatus !== "resolved") {
+      metaParts.push(escapeHtml(incident.status));
+    }
+    metaParts.push(resolvedText);
 
     item.innerHTML = `
       <span class="timeline-dot severity-${incident.severity}" aria-hidden="true"></span>
       <div>
         <p class="timeline-title">${escapeHtml(incident.title)}</p>
-        <p class="timeline-meta">${capitalize(incident.severity)} · ${escapeHtml(
-          incident.status
-        )} · ${resolvedText}</p>
+        <p class="timeline-meta">${metaParts.join(" · ")}</p>
         <p class="timeline-desc">${escapeHtml(incident.summary)}</p>
       </div>
     `;
