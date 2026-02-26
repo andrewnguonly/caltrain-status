@@ -452,7 +452,10 @@ h1 {
 }
 
 .site-footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   padding: 0.15rem 0 0.6rem;
 }
 
@@ -470,6 +473,13 @@ h1 {
   width: 0.95rem;
   height: 0.95rem;
   flex: 0 0 auto;
+}
+
+.site-footer-sep {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0.4rem;
+  display: inline-flex;
+  align-items: center;
 }
 
 .site-footer a:hover,

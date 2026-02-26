@@ -24,7 +24,6 @@ const ui = {
   uptime90d: document.getElementById("uptime90d"),
   uptimeChart: document.getElementById("uptimeChart"),
   dayStrip: document.getElementById("dayStrip"),
-  activeIncident: document.getElementById("activeIncident"),
   incidentTimeline: document.getElementById("incidentTimeline"),
 };
 
@@ -387,46 +386,6 @@ function renderUptime(uptime) {
   });
 }
 
-function renderActiveIncident(current, incidents) {
-  const activeIds = new Set(current.active_incident_ids || []);
-  const active = incidents.items.find((i) => activeIds.has(i.id) && i.status !== "resolved");
-
-  if (!active) {
-    ui.activeIncident.classList.remove("loading");
-    ui.activeIncident.innerHTML = `
-      <p class="incident-summary">No active incidents. Trains are currently running under normal operations.</p>
-      <div class="incident-badges">
-        <span class="badge severity-operational">Operational</span>
-      </div>
-    `;
-    return;
-  }
-
-  const updatesHtml = active.updates
-    .slice()
-    .reverse()
-    .map(
-      (update) => `
-      <li>
-        <p><strong>${statusLabel(update.state)}</strong> · ${escapeHtml(update.message)}</p>
-        <time datetime="${update.timestamp}">${formatLocal(update.timestamp)}</time>
-      </li>`
-    )
-    .join("");
-
-  ui.activeIncident.classList.remove("loading");
-  ui.activeIncident.innerHTML = `
-    <p class="incident-summary"><strong>${escapeHtml(active.title)}</strong></p>
-    <div class="incident-badges">
-      <span class="badge severity-${active.severity}">${capitalize(active.severity)}</span>
-      <span class="badge">${escapeHtml(active.status)}</span>
-      <span class="badge">${escapeHtml((active.affected_segments || []).join(", ") || "System-wide")}</span>
-    </div>
-    <p class="incident-summary">${escapeHtml(active.summary)}</p>
-    <ul class="updates-list">${updatesHtml}</ul>
-  `;
-}
-
 function renderTimeline(incidents) {
   ui.incidentTimeline.innerHTML = "";
 
@@ -499,7 +458,6 @@ async function loadAndRender() {
 
     renderCurrentStatus(current);
     renderUptime(uptime);
-    renderActiveIncident(current, incidents);
     renderTimeline(incidents);
     renderRefreshTime();
   } catch (error) {

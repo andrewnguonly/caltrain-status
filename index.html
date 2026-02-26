@@ -8,6 +8,34 @@
       name="description"
       content="Caltrain service status page with uptime tracking and incident history."
     />
+    <meta name="theme-color" content="#DD1F29" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Caltrain Status" />
+    <meta property="og:title" content="Caltrain Service Status" />
+    <meta
+      property="og:description"
+      content="Live Caltrain service status, uptime, and incident history."
+    />
+    <meta property="og:url" content="https://andrewnguonly.github.io/caltrain-status/" />
+    <meta
+      property="og:image"
+      content="https://andrewnguonly.github.io/caltrain-status/social-card.svg"
+    />
+    <meta property="og:image:alt" content="Caltrain Status - uptime and incident history" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Caltrain Service Status" />
+    <meta
+      name="twitter:description"
+      content="Live Caltrain service status, uptime, and incident history."
+    />
+    <meta
+      name="twitter:image"
+      content="https://andrewnguonly.github.io/caltrain-status/social-card.svg"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,16 +88,6 @@
 
       <section class="panel">
         <div class="section-head">
-          <h2>Active Incident</h2>
-          <p class="muted">Most recent unresolved service issue</p>
-        </div>
-        <div id="activeIncident" class="incident-card loading">
-          Loading incident details...
-        </div>
-      </section>
-
-      <section class="panel">
-        <div class="section-head">
           <h2>Incident History</h2>
           <p class="muted">Recent delays, disruptions, and recoveries</p>
         </div>
@@ -103,6 +121,15 @@
             />
           </svg>
           View source on GitHub
+        </a>
+        <span class="site-footer-sep mono" aria-hidden="true">|</span>
+        <a
+          href="https://www.caltrain.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mono"
+        >
+          Caltrain
         </a>
       </footer>
     </main>
