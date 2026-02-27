@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-02-27T09:26:10-08:00",
+  "source_message_id": "<Qb4Q3DuCRk-L0uYPvicOyQ@geopod-ismtpd-canary-0>",
+  "incident": {
+    "id": "inc-2026-02-27-platform-change-train-121-northbound-will-arrive-and-depart-",
+    "title": "Platform change Train 121 northbound will arrive and depart off Track 6 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-02-27T09:24:00-08:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 02/27/26 9:24 AM | End: 02/27/26 10:00 AM",
+    "updates": [
+      {
+        "timestamp": "2026-02-27T09:26:10-08:00",
+        "state": "degraded",
+        "message": "Platform change: Train 121 northbound will arrive and depart off\r\n Track 6 at San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<Qb4Q3DuCRk-L0uYPvicOyQ@geopod-ismtpd-canary-0>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-121-northbound-will-arrive-and-depart-",
+    "version_created_at": "2026-02-27T09:26:10-08:00"
+  }
+}
