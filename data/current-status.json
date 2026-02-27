@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "degraded",
   "status_message": "Effect: Modified Service | Cause: Other Cause | Start: 02/27/26 10:40 AM | End: 02/27/26 11:30 AM",
-  "updated_at": "2026-02-27T10:59:46-08:00",
+  "updated_at": "2026-02-27T13:49:41-08:00",
   "active_incident_ids": [
     "inc-2026-02-27-platform-change-train-127-northbound-will-depart-off-track-4",
     "inc-2026-02-27-platform-change-train-121-northbound-will-arrive-and-depart-",
@@ -27,6 +27,7 @@
     "data/incidents/2026-02/20260226T125810-platform-change-train-143-northb-fhhdmzmcq0kzmq4fnysf-a-g.json",
     "data/incidents/2026-02/20260227T091812-platform-change-train-123-northb-zmx0p26nsxsza3p26tvesa-g.json",
     "data/incidents/2026-02/20260227T092610-platform-change-train-121-northb-qb4q3ducrk-l0uypvicoyq-g.json",
-    "data/incidents/2026-02/20260227T104112-platform-change-train-127-northb-5ymrwdl3rzsjdz1bhgca0g-g.json"
+    "data/incidents/2026-02/20260227T104112-platform-change-train-127-northb-5ymrwdl3rzsjdz1bhgca0g-g.json",
+    "data/incidents/2026-02/20260227T132410-platform-change-train-143-northb-rkntrfp8qsqbhqwdousncq-g.json"
   ]
 }
