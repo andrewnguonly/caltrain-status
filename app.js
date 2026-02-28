@@ -152,6 +152,16 @@ function parseDate(value) {
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
+function incidentSortTimestamp(incident) {
+  return (
+    incident?.version_created_at ||
+    incident?.updated_at ||
+    incident?.updates?.at?.(-1)?.timestamp ||
+    incident?.started_at ||
+    ""
+  );
+}
+
 function normalizeSeverity(value) {
   if (!value) return "operational";
   if (value === "degraded") return "degraded";
@@ -391,7 +401,7 @@ function renderTimeline(incidents) {
 
   const sorted = incidents.items
     .slice()
-    .sort((a, b) => new Date(b.started_at) - new Date(a.started_at));
+    .sort((a, b) => new Date(incidentSortTimestamp(b)) - new Date(incidentSortTimestamp(a)));
 
   sorted.forEach((incident) => {
     const item = document.createElement("li");
