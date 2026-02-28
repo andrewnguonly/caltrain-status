@@ -409,7 +409,9 @@ function timelineIncidentsForDisplay(incidents, current) {
     if (fallback) expanded.push(fallback);
   }
 
-  return expanded.length ? expanded : base;
+  return (expanded.length ? expanded : base).sort(
+    (a, b) => new Date(incidentSortTimestamp(b)) - new Date(incidentSortTimestamp(a))
+  );
 }
 
 function renderTimeline(incidents, current) {
