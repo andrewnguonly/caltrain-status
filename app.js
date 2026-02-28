@@ -252,7 +252,7 @@ function formatMonthYearShort(date) {
 }
 
 function computeUptimeFromIncidents(incidents, current) {
-  const referenceNow = parseDate(current.updated_at) || new Date();
+  const referenceNow = new Date();
   const segments = buildOutageSegments(incidents, referenceNow);
   const completedDayBoundary = startOfDay(referenceNow);
 
@@ -275,7 +275,7 @@ function computeUptimeFromIncidents(incidents, current) {
   }
 
   const recent_days = [];
-  for (let offset = -30; offset <= -1; offset += 1) {
+  for (let offset = -29; offset <= 0; offset += 1) {
     const dayStart = addDays(completedDayBoundary, offset);
     const dayEnd = addDays(dayStart, 1);
     const dayUptime = uptimeForWindow(segments, dayStart, dayEnd);
