@@ -3,7 +3,7 @@
   "version_created_at": "2026-02-26T12:29:10-08:00",
   "source_message_id": "<25hB8GTgSFGfPT8LwSY4pw@geopod-ismtpd-11>",
   "incident": {
-    "id": "inc-2026-02-26-delayed-train-127-northbound-is-running-about-10-minutes-lat",
+    "id": "inc-20260226T122910-delayed-train-127-northbound-is-running-about-10-minutes-lat-25hb8gtgsfgfpt8lwsy4pw-g",
     "title": "Delayed Train 127 northbound is running about 10 minutes late approaching South San Francisco",
     "severity": "minor",
     "status": "investigating",

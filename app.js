@@ -38,10 +38,10 @@ async function fetchJson(url) {
 }
 
 function mergeIncidentSeries(seriesFiles) {
-  const byId = new Map();
+  const items = [];
 
   for (const file of seriesFiles) {
-    const items = Array.isArray(file?.items)
+    const fileItems = Array.isArray(file?.items)
       ? file.items
       : file?.incident && file.incident.id
         ? [file.incident]
@@ -49,29 +49,11 @@ function mergeIncidentSeries(seriesFiles) {
           ? [file]
           : [];
 
-    for (const incident of items) {
-      if (!incident || !incident.id) continue;
-      const existing = byId.get(incident.id);
-      const existingTs =
-        existing?.version_created_at ||
-        existing?.updated_at ||
-        existing?.updates?.at?.(-1)?.timestamp ||
-        existing?.started_at ||
-        "";
-      const nextTs =
-        incident?.version_created_at ||
-        incident?.updated_at ||
-        incident?.updates?.at?.(-1)?.timestamp ||
-        incident?.started_at ||
-        "";
-      if (!existing || new Date(nextTs) >= new Date(existingTs)) {
-        byId.set(incident.id, incident);
-      }
-    }
+    items.push(...fileItems.filter(Boolean));
   }
 
   return {
-    items: Array.from(byId.values()).sort((a, b) => new Date(b.started_at) - new Date(a.started_at)),
+    items: items.sort((a, b) => new Date(incidentSortTimestamp(b)) - new Date(incidentSortTimestamp(a))),
   };
 }
 
@@ -396,12 +378,44 @@ function renderUptime(uptime) {
   });
 }
 
-function renderTimeline(incidents) {
-  ui.incidentTimeline.innerHTML = "";
-
-  const sorted = incidents.items
+function timelineIncidentsForDisplay(incidents, current) {
+  const base = (incidents.items || [])
     .slice()
     .sort((a, b) => new Date(incidentSortTimestamp(b)) - new Date(incidentSortTimestamp(a)));
+  const activeIds = Array.isArray(current?.active_incident_ids) ? current.active_incident_ids : [];
+  if (!activeIds.length) return base;
+
+  const byId = new Map();
+  for (const incident of base) {
+    if (!incident?.id) continue;
+    if (!byId.has(incident.id)) byId.set(incident.id, []);
+    byId.get(incident.id).push(incident);
+  }
+
+  const latestById = new Map();
+  for (const incident of base) {
+    if (!incident?.id) continue;
+    if (!latestById.has(incident.id)) latestById.set(incident.id, incident);
+  }
+
+  const expanded = [];
+  for (const id of activeIds) {
+    const queue = byId.get(id);
+    if (queue?.length) {
+      expanded.push(queue.shift());
+      continue;
+    }
+    const fallback = latestById.get(id);
+    if (fallback) expanded.push(fallback);
+  }
+
+  return expanded.length ? expanded : base;
+}
+
+function renderTimeline(incidents, current) {
+  ui.incidentTimeline.innerHTML = "";
+
+  const sorted = timelineIncidentsForDisplay(incidents, current);
 
   sorted.forEach((incident) => {
     const item = document.createElement("li");
@@ -468,7 +482,7 @@ async function loadAndRender() {
 
     renderCurrentStatus(current);
     renderUptime(uptime);
-    renderTimeline(incidents);
+    renderTimeline(incidents, current);
     renderRefreshTime();
   } catch (error) {
     renderError(error);

@@ -3,7 +3,7 @@
   "version_created_at": "2026-02-27T13:24:10-08:00",
   "source_message_id": "<RKnTrfP8QSqBHQWdousncQ@geopod-ismtpd-5>",
   "incident": {
-    "id": "inc-2026-02-25-platform-change-train-143-northbound-will-depart-off-track-2",
+    "id": "inc-20260227T132410-platform-change-train-143-northbound-will-depart-off-track-2-rkntrfp8qsqbhqwdousncq-g",
     "title": "Platform change: Train 143 northbound will depart off Track 2 at San Jose Diridon",
     "severity": "minor",
     "status": "investigating",

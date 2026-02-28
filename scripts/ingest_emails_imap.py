@@ -407,9 +407,14 @@ def severity_rank(severity: str | None) -> int:
     return {"operational": 0, "minor": 1, "degraded": 1, "major": 2, "critical": 3}.get(str(severity), 0)
 
 
-def create_incident_id(started_at_iso: str, subject_key: str, existing_ids: set[str]) -> str:
-    day = (started_at_iso or datetime.now(PACIFIC_TZ).date().isoformat())[:10]
-    base = f"inc-{day}-{subject_key}"
+def create_incident_id(timestamp_iso: str, subject_key: str, message_id: str, existing_ids: set[str]) -> str:
+    ts = parse_iso(timestamp_iso) or datetime.now(PACIFIC_TZ)
+    if ts.tzinfo is None:
+        ts = ts.replace(tzinfo=PACIFIC_TZ)
+    ts = ts.astimezone(PACIFIC_TZ)
+    stamp = ts.strftime("%Y%m%dT%H%M%S")
+    msg_suffix = slugify(message_id)[:24]
+    base = f"inc-{stamp}-{subject_key}-{msg_suffix}"
     if base not in existing_ids:
         return base
     counter = 2
@@ -418,67 +423,24 @@ def create_incident_id(started_at_iso: str, subject_key: str, existing_ids: set[
     return f"{base}-{counter}"
 
 
-def find_matching_incident(incidents: list[dict[str, Any]], event: dict[str, Any]) -> dict[str, Any] | None:
-    candidates = []
-    for incident in incidents:
-        if incident.get("ingestion_key") == event["subject_key"] or normalize_subject(incident.get("title", "")) == normalize_subject(event["title"]):
-            candidates.append(incident)
-    if not candidates:
-        return None
-    candidates.sort(key=lambda i: i.get("started_at", ""), reverse=True)
-    if event["incident_status"] == "resolved":
-        for incident in candidates:
-            if incident.get("status") != "resolved":
-                return incident
-    for incident in candidates:
-        if incident.get("status") != "resolved":
-            return incident
-    return candidates[0]
-
-
 def build_incident_snapshot(existing_incidents: list[dict[str, Any]], event: dict[str, Any]) -> dict[str, Any]:
     existing_ids = {str(i.get("id")) for i in existing_incidents if i.get("id")}
-    source_incident = find_matching_incident(existing_incidents, event)
     timestamp = event["received_at"]
     effective_start = event.get("started_at") or timestamp
     effective_end = event.get("ended_at")
 
-    if source_incident is None:
-        incident = {
-            "id": create_incident_id(effective_start, event["subject_key"], existing_ids),
-            "title": event["title"],
-            "severity": event["severity"],
-            "status": event["incident_status"],
-            "started_at": effective_start,
-            "resolved_at": (effective_end or timestamp) if event["incident_status"] == "resolved" else None,
-            "affected_segments": list(dict.fromkeys(event.get("affected_segments", []) or ["System-wide"])),
-            "summary": event["summary"],
-            "updates": [],
-            "ingestion_key": event["subject_key"],
-        }
-    else:
-        incident = json.loads(json.dumps(source_incident))
-        if not incident.get("title"):
-            incident["title"] = event["title"]
-        merged_segments = list(incident.get("affected_segments", [])) + list(event.get("affected_segments", []))
-        incident["affected_segments"] = list(dict.fromkeys([s for s in merged_segments if s]))
-        if event.get("summary"):
-            incident["summary"] = event["summary"]
-        if severity_rank(event.get("severity")) > severity_rank(incident.get("severity")):
-            incident["severity"] = event["severity"]
-        if event["incident_status"] == "resolved":
-            incident["status"] = "resolved"
-            incident["resolved_at"] = effective_end or timestamp
-        elif incident.get("status") == "resolved":
-            incident["status"] = "investigating"
-            incident["resolved_at"] = None
-        else:
-            incident["status"] = event.get("incident_status") or incident.get("status")
-        if event.get("started_at"):
-            existing_start = parse_iso(incident.get("started_at"))
-            new_start = parse_iso(event["started_at"])
-            if new_start and (existing_start is None or new_start < existing_start):
-                incident["started_at"] = event["started_at"]
+    incident = {
+        "id": create_incident_id(timestamp, event["subject_key"], event["message_id"], existing_ids),
+        "title": event["title"],
+        "severity": event["severity"],
+        "status": event["incident_status"],
+        "started_at": effective_start,
+        "resolved_at": (effective_end or timestamp) if event["incident_status"] == "resolved" else None,
+        "affected_segments": list(dict.fromkeys(event.get("affected_segments", []) or ["System-wide"])),
+        "summary": event["summary"],
+        "updates": [],
+        "ingestion_key": event["subject_key"],
+    }
 
     incident.setdefault("updates", [])
     already = any(u.get("source_message_id") == event["message_id"] for u in incident["updates"])
@@ -502,31 +464,17 @@ def collect_all_incidents() -> list[dict[str, Any]]:
     legacy_index = load_incidents_index()
     legacy_paths = [p for p in legacy_index.get("files", []) if isinstance(p, str)]
     all_records = load_incident_records_from_paths(list(dict.fromkeys(current_paths + legacy_paths)))
-
-    by_id: dict[str, dict[str, Any]] = {}
-    for incident in all_records:
-        incident_id = str(incident.get("id") or "")
-        if not incident_id:
-            continue
-        prev = by_id.get(incident_id)
-        prev_ts = (
-            (prev or {}).get("version_created_at")
-            or ((prev or {}).get("updates") or [{}])[-1].get("timestamp")
-            or (prev or {}).get("resolved_at")
-            or (prev or {}).get("started_at")
+    items = [i for i in all_records if i.get("id")]
+    items.sort(
+        key=lambda i: (
+            i.get("version_created_at")
+            or (i.get("updates") or [{}])[-1].get("timestamp")
+            or i.get("resolved_at")
+            or i.get("started_at")
             or ""
-        )
-        next_ts = (
-            incident.get("version_created_at")
-            or (incident.get("updates") or [{}])[-1].get("timestamp")
-            or incident.get("resolved_at")
-            or incident.get("started_at")
-            or ""
-        )
-        if prev is None or next_ts >= prev_ts:
-            by_id[incident_id] = incident
-
-    items = sorted(by_id.values(), key=lambda i: i.get("started_at", ""), reverse=True)
+        ),
+        reverse=True,
+    )
     return items
 
 

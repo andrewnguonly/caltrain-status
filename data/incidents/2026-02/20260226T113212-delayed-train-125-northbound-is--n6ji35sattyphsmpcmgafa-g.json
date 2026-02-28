@@ -3,7 +3,7 @@
   "version_created_at": "2026-02-26T11:32:12-08:00",
   "source_message_id": "<n6ji35SATTypHsmpCMGAFA@geopod-ismtpd-7>",
   "incident": {
-    "id": "inc-2026-02-26-delayed-train-125-northbound-is-running-about-10-minutes-lat",
+    "id": "inc-20260226T113212-delayed-train-125-northbound-is-running-about-10-minutes-lat-n6ji35sattyphsmpcmgafa-g",
     "title": "Delayed Train 125 northbound is running about 10 minutes late approaching Redwood City",
     "severity": "minor",
     "status": "investigating",

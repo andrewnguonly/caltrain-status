@@ -3,7 +3,7 @@
   "version_created_at": "2026-02-26T10:59:12-08:00",
   "source_message_id": "<e9beMSnUQ8ubrUl42hw_aQ@geopod-ismtpd-0>",
   "incident": {
-    "id": "inc-2026-02-26-delayed-train-123-is-delayed-by-30-minutes",
+    "id": "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
     "title": "Delayed: Train 123 is delayed by 30 minutes.",
     "severity": "minor",
     "status": "investigating",
