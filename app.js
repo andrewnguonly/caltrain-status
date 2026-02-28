@@ -111,7 +111,7 @@ function statusLabel(status) {
 }
 
 function pillClass(status) {
-  const normalized = ["operational", "degraded", "major", "critical"].includes(status)
+  const normalized = ["operational", "minor", "degraded", "major", "critical"].includes(status)
     ? status
     : "loading";
   return `status-pill status-pill--${normalized}`;
@@ -155,10 +155,38 @@ function normalizeSeverity(value) {
   return "degraded";
 }
 
+function parseDelayMinutes(text) {
+  if (!text) return null;
+  const match = String(text).match(/(\d+)\s*(?:min|mins|minute|minutes)\b/i);
+  return match ? Number(match[1]) : null;
+}
+
+function severityForIncident(incident) {
+  const title = String(incident?.title || "").toLowerCase();
+  const summary = String(incident?.summary || "").toLowerCase();
+  const updateMessages = (incident?.updates || [])
+    .map((update) => String(update?.message || "").toLowerCase())
+    .join(" ");
+  const haystack = `${title} ${summary} ${updateMessages}`;
+
+  if (/\bcancel(?:ed|led|lation)?\b/i.test(haystack)) return "critical";
+  if (haystack.includes("platform change")) return "operational";
+
+  const delayMinutes =
+    parseDelayMinutes(title) ?? parseDelayMinutes(summary) ?? parseDelayMinutes(updateMessages);
+  if (delayMinutes !== null) {
+    if (delayMinutes >= 30) return "major";
+    return "minor";
+  }
+
+  return normalizeSeverity(incident?.severity);
+}
+
 function buildOutageSegments(incidents, referenceNow) {
   const segments = [];
 
   for (const incident of incidents.items || []) {
+    const incidentSeverity = severityForIncident(incident);
     const startedAt = parseDate(incident.started_at);
     if (!startedAt) continue;
 
@@ -170,13 +198,14 @@ function buildOutageSegments(incidents, referenceNow) {
       .map((update) => ({
         ...update,
         timestampDate: parseDate(update.timestamp),
-        stateSeverity: normalizeSeverity(update.state),
+        stateSeverity:
+          normalizeSeverity(update.state) === "operational" ? "operational" : incidentSeverity,
       }))
       .filter((update) => update.timestampDate)
       .sort((a, b) => a.timestampDate - b.timestampDate);
 
     if (!updates.length) {
-      const severity = normalizeSeverity(incident.severity);
+      const severity = incidentSeverity;
       if (severity !== "operational") {
         segments.push({ start: startedAt, end: incidentEnd, severity });
       }
@@ -422,19 +451,20 @@ function renderTimeline(incidents, current) {
   sorted.forEach((incident) => {
     const item = document.createElement("li");
     item.className = "timeline-item";
+    const displaySeverity = severityForIncident(incident);
     const incidentStatus = String(incident.status || "").trim().toLowerCase();
 
     const resolvedText = incident.resolved_at
       ? `Resolved ${formatLocal(incident.resolved_at)}`
       : `Ongoing since ${formatLocal(incident.started_at)}`;
-    const metaParts = [capitalize(incident.severity)];
+    const metaParts = [capitalize(displaySeverity)];
     if (incidentStatus && incidentStatus !== "resolved") {
       metaParts.push(escapeHtml(incident.status));
     }
     metaParts.push(resolvedText);
 
     item.innerHTML = `
-      <span class="timeline-dot severity-${incident.severity}" aria-hidden="true"></span>
+      <span class="timeline-dot severity-${displaySeverity}" aria-hidden="true"></span>
       <div>
         <p class="timeline-title">${escapeHtml(incident.title)}</p>
         <p class="timeline-meta">${metaParts.join(" · ")}</p>

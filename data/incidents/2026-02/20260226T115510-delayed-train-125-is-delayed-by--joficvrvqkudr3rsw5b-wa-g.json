@@ -5,7 +5,7 @@
   "incident": {
     "id": "inc-20260226T115510-delayed-train-125-is-delayed-by-30-minutes-joficvrvqkudr3rsw5b-wa-g",
     "title": "Delayed: Train 125 is delayed by 30 minutes.",
-    "severity": "minor",
+    "severity": "major",
     "status": "investigating",
     "started_at": "2026-02-26T11:53:00-08:00",
     "resolved_at": null,

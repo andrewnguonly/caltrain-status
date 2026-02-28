@@ -5,7 +5,7 @@
   "incident": {
     "id": "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
     "title": "Delayed: Train 123 is delayed by 30 minutes.",
-    "severity": "minor",
+    "severity": "major",
     "status": "investigating",
     "started_at": "2026-02-26T10:57:00-08:00",
     "resolved_at": null,

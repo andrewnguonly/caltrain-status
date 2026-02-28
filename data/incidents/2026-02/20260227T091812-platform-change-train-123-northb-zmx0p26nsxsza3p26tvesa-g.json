@@ -5,7 +5,7 @@
   "incident": {
     "id": "inc-20260227T091812-platform-change-train-123-northbound-will-depart-off-track-8-zmx0p26nsxsza3p26tvesa-g",
     "title": "Platform change Train 123 northbound will depart off Track 8 at San Jose Diridon",
-    "severity": "minor",
+    "severity": "operational",
     "status": "investigating",
     "started_at": "2026-02-27T09:17:00-08:00",
     "resolved_at": null,

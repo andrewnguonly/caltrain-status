@@ -5,7 +5,7 @@
   "incident": {
     "id": "inc-20260226T092412-platform-change-train-121-northbound-will-depart-off-track-5-m-t1hq5nqfokk8cnpoap2a-g",
     "title": "Platform change Train 121 northbound will depart off Track 5 at San Jose Diridon",
-    "severity": "minor",
+    "severity": "operational",
     "status": "investigating",
     "started_at": "2026-02-26T09:22:00-08:00",
     "resolved_at": null,
