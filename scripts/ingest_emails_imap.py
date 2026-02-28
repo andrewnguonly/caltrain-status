@@ -435,7 +435,7 @@ def build_incident_snapshot(existing_incidents: list[dict[str, Any]], event: dic
         "severity": event["severity"],
         "status": event["incident_status"],
         "started_at": effective_start,
-        "resolved_at": (effective_end or timestamp) if event["incident_status"] == "resolved" else None,
+        "resolved_at": effective_end,
         "affected_segments": list(dict.fromkeys(event.get("affected_segments", []) or ["System-wide"])),
         "summary": event["summary"],
         "updates": [],

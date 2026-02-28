@@ -7,14 +7,6 @@ const REFRESH_MS = 60_000;
 const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
 
-const SEVERITY_RANK = {
-  operational: 0,
-  minor: 1,
-  degraded: 1,
-  major: 2,
-  critical: 3,
-};
-
 const ui = {
   statusHeadline: document.getElementById("statusHeadline"),
   overallPill: document.getElementById("overallPill"),
@@ -121,12 +113,11 @@ function percent(value) {
   return `${Number(value).toFixed(2)}%`;
 }
 
-function severityForUptimePercent(value) {
+function uptimeBandForPercent(value) {
   const n = Number(value);
-  if (n >= 99.95) return "operational";
-  if (n >= 99.0) return "degraded";
-  if (n >= 97.0) return "major";
-  return "critical";
+  if (n >= 98) return "operational";
+  if (n >= 95) return "degraded";
+  return "major";
 }
 
 function parseDate(value) {
@@ -187,6 +178,8 @@ function buildOutageSegments(incidents, referenceNow) {
 
   for (const incident of incidents.items || []) {
     const incidentSeverity = severityForIncident(incident);
+    if (incidentSeverity === "operational") continue;
+
     const startedAt = parseDate(incident.started_at);
     if (!startedAt) continue;
 
@@ -194,38 +187,7 @@ function buildOutageSegments(incidents, referenceNow) {
     const incidentEnd = resolvedAt || referenceNow;
     if (incidentEnd <= startedAt) continue;
 
-    const updates = (incident.updates || [])
-      .map((update) => ({
-        ...update,
-        timestampDate: parseDate(update.timestamp),
-        stateSeverity:
-          normalizeSeverity(update.state) === "operational" ? "operational" : incidentSeverity,
-      }))
-      .filter((update) => update.timestampDate)
-      .sort((a, b) => a.timestampDate - b.timestampDate);
-
-    if (!updates.length) {
-      const severity = incidentSeverity;
-      if (severity !== "operational") {
-        segments.push({ start: startedAt, end: incidentEnd, severity });
-      }
-      continue;
-    }
-
-    for (let i = 0; i < updates.length; i += 1) {
-      const currentUpdate = updates[i];
-      const nextUpdate = updates[i + 1];
-      const segStart = new Date(Math.max(startedAt.getTime(), currentUpdate.timestampDate.getTime()));
-      const segEnd = new Date(
-        Math.min(
-          incidentEnd.getTime(),
-          nextUpdate ? nextUpdate.timestampDate.getTime() : incidentEnd.getTime()
-        )
-      );
-      if (segEnd <= segStart) continue;
-      if (currentUpdate.stateSeverity === "operational") continue;
-      segments.push({ start: segStart, end: segEnd, severity: currentUpdate.stateSeverity });
-    }
+    segments.push({ start: startedAt, end: incidentEnd, severity: incidentSeverity });
   }
 
   return segments;
@@ -243,44 +205,27 @@ function clippedSegments(segments, windowStart, windowEnd) {
     .sort((a, b) => a.start - b.start);
 }
 
-function mergedDowntimeMs(segments, windowStart, windowEnd) {
+function mergedDowntimeBuckets(segments, windowStart, windowEnd) {
   const clipped = clippedSegments(segments, windowStart, windowEnd);
   if (!clipped.length) return 0;
 
-  let total = 0;
-  let currentStart = clipped[0].start;
-  let currentEnd = clipped[0].end;
-
-  for (let i = 1; i < clipped.length; i += 1) {
-    const segment = clipped[i];
-    if (segment.start <= currentEnd) {
-      currentEnd = Math.max(currentEnd, segment.end);
-      continue;
-    }
-    total += currentEnd - currentStart;
-    currentStart = segment.start;
-    currentEnd = segment.end;
-  }
-
-  total += currentEnd - currentStart;
-  return total;
-}
-
-function maxSeverityForWindow(segments, windowStart, windowEnd) {
-  let max = "operational";
-  for (const segment of segments) {
-    if (segment.end <= windowStart || segment.start >= windowEnd) continue;
-    if ((SEVERITY_RANK[segment.severity] || 0) > (SEVERITY_RANK[max] || 0)) {
-      max = segment.severity;
+  const occupiedBuckets = new Set();
+  for (const segment of clipped) {
+    const startBucket = Math.floor(segment.start / 60_000);
+    const endExclusiveBucket = Math.ceil(segment.end / 60_000);
+    for (let bucket = startBucket; bucket < endExclusiveBucket; bucket += 1) {
+      occupiedBuckets.add(bucket);
     }
   }
-  return max;
+
+  return occupiedBuckets.size;
 }
 
 function uptimeForWindow(segments, windowStart, windowEnd) {
-  const denominator = windowEnd.getTime() - windowStart.getTime();
+  const denominator =
+    Math.ceil(windowEnd.getTime() / 60_000) - Math.floor(windowStart.getTime() / 60_000);
   if (denominator <= 0) return 100;
-  const downtime = mergedDowntimeMs(segments, windowStart, windowEnd);
+  const downtime = mergedDowntimeBuckets(segments, windowStart, windowEnd);
   return Math.max(0, Math.min(100, ((denominator - downtime) / denominator) * 100));
 }
 
@@ -309,6 +254,7 @@ function formatMonthYearShort(date) {
 function computeUptimeFromIncidents(incidents, current) {
   const referenceNow = parseDate(current.updated_at) || new Date();
   const segments = buildOutageSegments(incidents, referenceNow);
+  const completedDayBoundary = startOfDay(referenceNow);
 
   const summary = {
     last24h: uptimeForWindow(segments, new Date(referenceNow.getTime() - DAY_MS), referenceNow),
@@ -320,25 +266,23 @@ function computeUptimeFromIncidents(incidents, current) {
   const currentMonthStart = startOfMonth(referenceNow);
   for (let offset = 0; offset >= -11; offset -= 1) {
     const monthStart = addMonths(currentMonthStart, offset);
-    const monthEndCandidate = addMonths(monthStart, 1);
-    const monthEnd = monthEndCandidate > referenceNow ? referenceNow : monthEndCandidate;
+    const monthEnd = addMonths(monthStart, 1);
+    const effectiveMonthEnd = monthEnd > completedDayBoundary ? completedDayBoundary : monthEnd;
     monthly.push({
       month: formatMonthYearShort(monthStart),
-      uptime_percent: uptimeForWindow(segments, monthStart, monthEnd),
+      uptime_percent: uptimeForWindow(segments, monthStart, effectiveMonthEnd),
     });
   }
 
   const recent_days = [];
-  const todayStart = startOfDay(referenceNow);
-  for (let offset = -29; offset <= 0; offset += 1) {
-    const dayStart = addDays(todayStart, offset);
-    const dayEndCandidate = addDays(dayStart, 1);
-    const dayEnd = dayEndCandidate > referenceNow ? referenceNow : dayEndCandidate;
-    const daySeverity = maxSeverityForWindow(segments, dayStart, dayEnd);
+  for (let offset = -30; offset <= -1; offset += 1) {
+    const dayStart = addDays(completedDayBoundary, offset);
+    const dayEnd = addDays(dayStart, 1);
+    const dayUptime = uptimeForWindow(segments, dayStart, dayEnd);
     recent_days.push({
       date: dayStart.toISOString().slice(0, 10),
-      uptime_percent: uptimeForWindow(segments, dayStart, dayEnd),
-      severity: daySeverity === "minor" ? "degraded" : daySeverity,
+      uptime_percent: dayUptime,
+      uptime_band: uptimeBandForPercent(dayUptime),
     });
   }
 
@@ -377,7 +321,7 @@ function renderUptime(uptime) {
     track.className = "chart-track";
 
     const fill = document.createElement("div");
-    fill.className = `chart-fill chart-fill--${severityForUptimePercent(row.uptime_percent)}`;
+    fill.className = `chart-fill chart-fill--${uptimeBandForPercent(row.uptime_percent)}`;
     fill.style.width = `${Math.max(0, Math.min(100, Number(row.uptime_percent)))}%`;
     fill.title = `${row.month}: ${percent(row.uptime_percent)}`;
     track.appendChild(fill);
@@ -394,14 +338,14 @@ function renderUptime(uptime) {
   uptime.recent_days.forEach((day) => {
     const cell = document.createElement("button");
     cell.type = "button";
-    cell.className = `day-cell day-${day.severity}`;
+    cell.className = `day-cell day-${day.uptime_band}`;
     cell.setAttribute(
       "data-label",
-      `${day.date}: ${percent(day.uptime_percent)} (${statusLabel(day.severity)})`
+      `${day.date}: ${percent(day.uptime_percent)}`
     );
     cell.setAttribute(
       "aria-label",
-      `${day.date}: ${percent(day.uptime_percent)} (${statusLabel(day.severity)})`
+      `${day.date}: ${percent(day.uptime_percent)}`
     );
     ui.dayStrip.appendChild(cell);
   });
