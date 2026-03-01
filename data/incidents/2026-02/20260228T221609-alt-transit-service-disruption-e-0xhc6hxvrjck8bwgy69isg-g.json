@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-02-28T22:16:09-08:00",
+  "source_message_id": "<0Xhc6hxVRjCk8BwgY69iSg@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260228T221609-alt-transit-service-disruption-expect-60-minute-delays-on-al-0xhc6hxvrjck8bwgy69isg-g",
+    "title": "Alt Transit Service disruption Expect 60 minute delays on all trains Recommend alternate transit Bart will honor tickets and provide mutual aid",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-02-28T22:01:00-08:00",
+    "resolved_at": "2026-03-01T00:59:00-08:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Significant Delays | Cause: Other Cause | Start: 02/28/26 10:01 PM | End: 03/01/26 12:59 AM",
+    "updates": [
+      {
+        "timestamp": "2026-02-28T22:16:09-08:00",
+        "state": "degraded",
+        "message": "Alt Transit: Service disruption: Expect 60+ minute delays on all\r\n trains. Recommend alternate transit. Bart will honor Caltrain tickets and\r\n provide mutual aid. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<0Xhc6hxVRjCk8BwgY69iSg@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "alt-transit-service-disruption-expect-60-minute-delays-on-al",
+    "version_created_at": "2026-02-28T22:16:09-08:00"
+  }
+}
