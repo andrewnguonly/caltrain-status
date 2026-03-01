@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "major",
   "status_message": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 02/26/26 11:53 AM | End: 02/26/26 1:00 PM",
-  "updated_at": "2026-02-28T23:01:34-08:00",
+  "updated_at": "2026-02-28T23:41:00-08:00",
   "active_incident_ids": [
     "inc-20260226T115510-delayed-train-125-is-delayed-by-30-minutes-joficvrvqkudr3rsw5b-wa-g",
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
@@ -10,6 +10,8 @@
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
     "inc-20260228T230012-delayed-train-661-northbound-is-running-about-10-minutes-lat-dktqvejnqx6negzfbjidng-g",
     "inc-20260228T223009-delayed-train-659-northbound-is-running-about-10-minutes-lat-7dhq8nmbsbmskql9mlzcmg-g",
+    "inc-20260228T232409-alt-transit-service-disruption-expect-60-minute-delays-on-al-giw09wjhrwunolhwquktoq-g",
+    "inc-20260228T231911-alt-transit-service-disruption-expect-60-minute-delays-on-al-r2xbf-partkvoltaawvnxg-g",
     "inc-20260228T224211-alt-transit-service-disruption-expect-60-minute-delays-on-al-80zm-g6jtieufs4d5weesg-g",
     "inc-20260228T222311-alt-transit-service-disruption-expect-60-minute-delays-on-al-2vrffspxssqyqeh4nqnypq-g",
     "inc-20260228T221609-alt-transit-service-disruption-expect-60-minute-delays-on-al-0xhc6hxvrjck8bwgy69isg-g",
@@ -50,6 +52,8 @@
     "data/incidents/2026-02/20260228T222311-alt-transit-service-disruption-e-2vrffspxssqyqeh4nqnypq-g.json",
     "data/incidents/2026-02/20260228T223009-delayed-train-659-northbound-is--7dhq8nmbsbmskql9mlzcmg-g.json",
     "data/incidents/2026-02/20260228T224211-alt-transit-service-disruption-e-80zm-g6jtieufs4d5weesg-g.json",
-    "data/incidents/2026-02/20260228T230012-delayed-train-661-northbound-is--dktqvejnqx6negzfbjidng-g.json"
+    "data/incidents/2026-02/20260228T230012-delayed-train-661-northbound-is--dktqvejnqx6negzfbjidng-g.json",
+    "data/incidents/2026-02/20260228T231911-alt-transit-service-disruption-e-r2xbf-partkvoltaawvnxg-g.json",
+    "data/incidents/2026-02/20260228T232409-alt-transit-service-disruption-e-giw09wjhrwunolhwquktoq-g.json"
   ]
 }
