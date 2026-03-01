@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-02-28T20:58:09-08:00",
+  "source_message_id": "<B6ufgWEhTOCJXnOZ6foGiw@geopod-ismtpd-12>",
+  "incident": {
+    "id": "inc-20260228T205809-service-disruption-expect-delays-of-60-90-minutes-on-all-tra-b6ufgwehtocjxnoz6fogiw-g",
+    "title": "Service Disruption: Expect delays of 60-90 minutes on all Trains.",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-02-28T20:56:00-08:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Service Disruption | Effect: Significant Delays | Cause: Other Cause | Start: 02/28/26 8:56 PM | End: Caltrain",
+    "updates": [
+      {
+        "timestamp": "2026-02-28T20:58:09-08:00",
+        "state": "degraded",
+        "message": "Expect delays of 60-90 minutes on all Trains. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<B6ufgWEhTOCJXnOZ6foGiw@geopod-ismtpd-12>"
+      }
+    ],
+    "ingestion_key": "service-disruption-expect-delays-of-60-90-minutes-on-all-tra",
+    "version_created_at": "2026-02-28T20:58:09-08:00"
+  }
+}
