@@ -125,6 +125,14 @@ function parseDate(value) {
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
+function isSameLocalDay(a, b) {
+  return (
+    a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate()
+  );
+}
+
 function incidentSortTimestamp(incident) {
   return (
     incident?.version_created_at ||
@@ -352,7 +360,12 @@ function renderUptime(uptime) {
 }
 
 function timelineIncidentsForDisplay(incidents, current) {
+  const referenceDate = parseDate(current?.as_of) || new Date();
   const base = (incidents.items || [])
+    .filter((incident) => {
+      const timestamp = parseDate(incidentSortTimestamp(incident)) || parseDate(incident?.started_at);
+      return timestamp ? isSameLocalDay(timestamp, referenceDate) : false;
+    })
     .slice()
     .sort((a, b) => new Date(incidentSortTimestamp(b)) - new Date(incidentSortTimestamp(a)));
   const activeIds = Array.isArray(current?.active_incident_ids) ? current.active_incident_ids : [];
