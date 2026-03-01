@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-02-28T23:54:11-08:00",
+  "source_message_id": "<s0hxLZvPQ8i4Q0_Flc4T5w@geopod-ismtpd-12>",
+  "incident": {
+    "id": "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
+    "title": "Cancelled Train 663 northbound is cancelled Train 665 will accommodate passengers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-02-28T23:32:00-08:00",
+    "resolved_at": "2026-03-01T13:32:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: No Service | Cause: Other Cause | Start: 02/28/26 11:32 PM | End: 03/01/26 1:32 PM",
+    "updates": [
+      {
+        "timestamp": "2026-02-28T23:54:11-08:00",
+        "state": "critical",
+        "message": "Cancelled: Train 663 northbound is cancelled. Train 665 will\r\n accommodate passengers. | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<s0hxLZvPQ8i4Q0_Flc4T5w@geopod-ismtpd-12>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-663-northbound-is-cancelled-train-665-will-a",
+    "version_created_at": "2026-02-28T23:54:11-08:00"
+  }
+}

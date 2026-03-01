@@ -1,9 +1,10 @@
 {
   "service_name": "Caltrain",
-  "overall_status": "major",
-  "status_message": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 02/26/26 11:53 AM | End: 02/26/26 1:00 PM",
-  "updated_at": "2026-02-28T23:41:00-08:00",
+  "overall_status": "critical",
+  "status_message": "Effect: No Service | Cause: Other Cause | Start: 02/28/26 11:32 PM | End: 03/01/26 1:32 PM",
+  "updated_at": "2026-02-28T23:58:30-08:00",
   "active_incident_ids": [
+    "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
     "inc-20260226T115510-delayed-train-125-is-delayed-by-30-minutes-joficvrvqkudr3rsw5b-wa-g",
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
@@ -54,6 +55,7 @@
     "data/incidents/2026-02/20260228T224211-alt-transit-service-disruption-e-80zm-g6jtieufs4d5weesg-g.json",
     "data/incidents/2026-02/20260228T230012-delayed-train-661-northbound-is--dktqvejnqx6negzfbjidng-g.json",
     "data/incidents/2026-02/20260228T231911-alt-transit-service-disruption-e-r2xbf-partkvoltaawvnxg-g.json",
-    "data/incidents/2026-02/20260228T232409-alt-transit-service-disruption-e-giw09wjhrwunolhwquktoq-g.json"
+    "data/incidents/2026-02/20260228T232409-alt-transit-service-disruption-e-giw09wjhrwunolhwquktoq-g.json",
+    "data/incidents/2026-02/20260228T235411-cancelled-train-663-northbound-i-s0hxlzvpq8i4q0-flc4t5w-g.json"
   ]
 }
