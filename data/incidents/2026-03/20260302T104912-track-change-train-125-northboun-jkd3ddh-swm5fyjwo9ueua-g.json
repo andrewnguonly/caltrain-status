@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-02T10:49:12-08:00",
+  "source_message_id": "<JKD3DDh_Swm5fyJwo9UeuA@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260302T104912-track-change-train-125-northbound-will-arrive-and-depart-off-jkd3ddh-swm5fyjwo9ueua-g",
+    "title": "Track Change Train 125 Northbound will Arrive and Depart off Track 6 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-02T10:47:00-08:00",
+    "resolved_at": "2026-03-02T11:00:00-08:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 03/02/26 10:47 AM | End: 03/02/26 11:00 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-02T10:49:12-08:00",
+        "state": "degraded",
+        "message": "Track Change: Train 125 Northbound will Arrive and Depart off Track 6\r\n at San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<JKD3DDh_Swm5fyJwo9UeuA@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "track-change-train-125-northbound-will-arrive-and-depart-off",
+    "version_created_at": "2026-03-02T10:49:12-08:00"
+  }
+}
