@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-04T14:08:09-08:00",
+  "source_message_id": "<8lKRP1HAT86ULOK34YsASw@geopod-ismtpd-16>",
+  "incident": {
+    "id": "inc-20260304T140809-delayed-train-135-northbound-is-running-about-11-minutes-lat-8lkrp1hat86ulok34ysasw-g",
+    "title": "Delayed Train 135 northbound is running about 11 minutes late approaching San Carlos",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-04T14:07:00-08:00",
+    "resolved_at": "2026-03-04T14:18:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/04/26 2:07 PM | End: 03/04/26 2:18 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-04T14:08:09-08:00",
+        "state": "degraded",
+        "message": "Delayed: Train 135 northbound is running about 11 minutes late\r\n approaching San Carlos.",
+        "source_message_id": "<8lKRP1HAT86ULOK34YsASw@geopod-ismtpd-16>"
+      }
+    ],
+    "ingestion_key": "delayed-train-135-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-03-04T14:08:09-08:00"
+  }
+}
