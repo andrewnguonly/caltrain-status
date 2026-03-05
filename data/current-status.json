@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/03/26 5:48 AM | End: 03/03/26 8:22 AM",
-  "updated_at": "2026-03-05T07:58:57-08:00",
+  "updated_at": "2026-03-05T10:07:34-08:00",
   "active_incident_ids": [
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
@@ -10,6 +10,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260305T092712-platform-change-train-123-northbound-will-depart-off-track-8-4sdp5mrosggqbcozsiuslq-g",
+    "inc-20260305T083513-platform-change-train-117-northbound-will-arrive-and-depart--lmpiivleszqu4v-4tcrsxw-g",
+    "inc-20260305T081614-platform-change-train-413-northbound-will-depart-from-platfo-hmpr8pdusaw1v5svuv5r9q-g",
     "inc-20260305T074323-train-108-will-arrive-depart-track-9-in-san-jose-diridon-g2mjedzbtl2gnaklgwk8-w-g",
     "inc-20260305T071815-platform-change-train-111-northbound-will-depart-from-platfo-6d8n7vlgse2qpwwkdrhuug-g",
     "inc-20260305T071814-platform-change-train-507-northbound-will-depart-from-platfo-v1ltuojwqvqkdnaezdt8nq-g",
@@ -80,6 +83,9 @@
     "data/incidents/2026-03/20260304T145109-delayed-train-135-northbound-is--fwvbfztkqvq-eva6tq7q7a-g.json",
     "data/incidents/2026-03/20260305T071814-platform-change-train-507-northb-v1ltuojwqvqkdnaezdt8nq-g.json",
     "data/incidents/2026-03/20260305T071815-platform-change-train-111-northb-6d8n7vlgse2qpwwkdrhuug-g.json",
-    "data/incidents/2026-03/20260305T074323-train-108-will-arrive-depart-tra-g2mjedzbtl2gnaklgwk8-w-g.json"
+    "data/incidents/2026-03/20260305T074323-train-108-will-arrive-depart-tra-g2mjedzbtl2gnaklgwk8-w-g.json",
+    "data/incidents/2026-03/20260305T081614-platform-change-train-413-northb-hmpr8pdusaw1v5svuv5r9q-g.json",
+    "data/incidents/2026-03/20260305T083513-platform-change-train-117-northb-lmpiivleszqu4v-4tcrsxw-g.json",
+    "data/incidents/2026-03/20260305T092712-platform-change-train-123-northb-4sdp5mrosggqbcozsiuslq-g.json"
   ]
 }

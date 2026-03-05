@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-05T08:16:14-08:00",
+  "source_message_id": "<hmpr8pduSaW1v5SvUv5R9Q@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260305T081614-platform-change-train-413-northbound-will-depart-from-platfo-hmpr8pdusaw1v5svuv5r9q-g",
+    "title": "Platform change Train 413 northbound will depart from platform 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-05T08:15:00-08:00",
+    "resolved_at": "2026-03-05T08:43:00-08:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: San Jose Diridon | Start: 03/05/26 8:15 AM | End: 03/05/26 8:43 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-05T08:16:14-08:00",
+        "state": "degraded",
+        "message": "Platform change: Train 413 northbound will depart from platform 5 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<hmpr8pduSaW1v5SvUv5R9Q@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-413-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-03-05T08:16:14-08:00"
+  }
+}

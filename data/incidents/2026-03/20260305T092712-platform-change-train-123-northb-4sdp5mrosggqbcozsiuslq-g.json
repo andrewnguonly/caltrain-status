@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-05T09:27:12-08:00",
+  "source_message_id": "<4SdP5mROSgGQBcOzSiuslQ@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260305T092712-platform-change-train-123-northbound-will-depart-off-track-8-4sdp5mrosggqbcozsiuslq-g",
+    "title": "Platform change Train 123 northbound will depart off Track 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-05T09:25:00-08:00",
+    "resolved_at": "2026-03-05T10:28:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 03/05/26 9:25 AM | End: 03/05/26 10:28 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-05T09:27:12-08:00",
+        "state": "degraded",
+        "message": "Platform change: Train 123 northbound will depart off Track 8 at San\r\n Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<4SdP5mROSgGQBcOzSiuslQ@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-123-northbound-will-depart-off-track-8",
+    "version_created_at": "2026-03-05T09:27:12-08:00"
+  }
+}
