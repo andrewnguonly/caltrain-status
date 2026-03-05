@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-05T07:43:23-08:00",
+  "source_message_id": "<g2mjeDZbTL2gNaklgwk8_w@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260305T074323-train-108-will-arrive-depart-track-9-in-san-jose-diridon-g2mjedzbtl2gnaklgwk8-w-g",
+    "title": "Train 108 Will Arrive Depart Track 9 in San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-05T07:41:00-08:00",
+    "resolved_at": "2026-03-05T08:20:00-08:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 03/05/26 7:41 AM | End: 03/05/26 8:20 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-05T07:43:23-08:00",
+        "state": "degraded",
+        "message": "Train 108 Will Arrive & Depart Track 9 in San Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<g2mjeDZbTL2gNaklgwk8_w@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "train-108-will-arrive-depart-track-9-in-san-jose-diridon",
+    "version_created_at": "2026-03-05T07:43:23-08:00"
+  }
+}
