@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/03/26 5:48 AM | End: 03/03/26 8:22 AM",
-  "updated_at": "2026-03-06T10:02:29-08:00",
+  "updated_at": "2026-03-06T11:00:43-08:00",
   "active_incident_ids": [
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
@@ -10,6 +10,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260306T105013-platform-change-train-127-northbound-will-depart-off-track-4-wgt6lkkhsgmx8mnqsrltzq-g",
     "inc-20260306T093410-platform-change-train-121-northbound-will-arrive-and-depart--tsbpxbjntaovdlbpbku6lg-g",
     "inc-20260305T160717-train-515-northbound-will-run-ahead-of-train-141-northbound--fr5visnmtcc-8ljmtm7sw-ge",
     "inc-20260305T155913-delayed-train-141-northbound-is-running-about-10-minutes-lat-css4x5mnqskcva1-gv07oa-g",
@@ -96,6 +97,7 @@
     "data/incidents/2026-03/20260305T134110-platform-change-train-143-northb-2neh-udqrgmaem8lnosesg-g.json",
     "data/incidents/2026-03/20260305T155913-delayed-train-141-northbound-is--css4x5mnqskcva1-gv07oa-g.json",
     "data/incidents/2026-03/20260305T160717-train-515-northbound-will-run-ah-fr5visnmtcc-8ljmtm7sw-ge.json",
-    "data/incidents/2026-03/20260306T093410-platform-change-train-121-northb-tsbpxbjntaovdlbpbku6lg-g.json"
+    "data/incidents/2026-03/20260306T093410-platform-change-train-121-northb-tsbpxbjntaovdlbpbku6lg-g.json",
+    "data/incidents/2026-03/20260306T105013-platform-change-train-127-northb-wgt6lkkhsgmx8mnqsrltzq-g.json"
   ]
 }
