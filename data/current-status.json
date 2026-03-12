@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/03/26 5:48 AM | End: 03/03/26 8:22 AM",
-  "updated_at": "2026-03-11T10:51:45-07:00",
+  "updated_at": "2026-03-12T08:03:20-07:00",
   "active_incident_ids": [
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
@@ -10,6 +10,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260312T075512-delayed-train-111-northbound-is-running-about-10-minutes-lat-3-ril64st8kkdlhfbzycig-g",
+    "inc-20260312T074415-delayed-train-507-northbound-is-running-about-10-minutes-lat-lbitbvoeqcmlzvqss3pamq-g",
     "inc-20260311T104312-platform-change-train-127-northbound-will-depart-off-track-4-cswi-hqgry-zqr0bfecqra-g",
     "inc-20260311T102213-delayed-train-119-northbound-is-running-about-10-minutes-lat-hbzbk5jvrdutmjnlirvdia-g",
     "inc-20260311T084814-full-bike-capacity-train-511-northbound-has-reached-full-bik-y4x92dzrsn2edx0nlfpwrg-g",
@@ -110,6 +112,8 @@
     "data/incidents/2026-03/20260309T093312-platform-change-train-123-will-d-v8dtlei1qhwcjgt8rprwow-g.json",
     "data/incidents/2026-03/20260311T084814-full-bike-capacity-train-511-nor-y4x92dzrsn2edx0nlfpwrg-g.json",
     "data/incidents/2026-03/20260311T102213-delayed-train-119-northbound-is--hbzbk5jvrdutmjnlirvdia-g.json",
-    "data/incidents/2026-03/20260311T104312-platform-change-train-127-northb-cswi-hqgry-zqr0bfecqra-g.json"
+    "data/incidents/2026-03/20260311T104312-platform-change-train-127-northb-cswi-hqgry-zqr0bfecqra-g.json",
+    "data/incidents/2026-03/20260312T074415-delayed-train-507-northbound-is--lbitbvoeqcmlzvqss3pamq-g.json",
+    "data/incidents/2026-03/20260312T075512-delayed-train-111-northbound-is--3-ril64st8kkdlhfbzycig-g.json"
   ]
 }

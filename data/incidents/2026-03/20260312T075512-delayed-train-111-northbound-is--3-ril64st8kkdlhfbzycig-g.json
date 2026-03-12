@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T07:55:12-07:00",
+  "source_message_id": "<3-RiL64ST8KKdlhfbzycig@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260312T075512-delayed-train-111-northbound-is-running-about-10-minutes-lat-3-ril64st8kkdlhfbzycig-g",
+    "title": "Delayed Train 111 northbound is running about 10 minutes late approaching Menlo Park",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T07:58:00-07:00",
+    "resolved_at": "2026-03-12T08:08:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/12/26 7:58 AM | End: 03/12/26 8:08 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T07:55:12-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 111 northbound is running about 10 minutes late\r\n approaching Menlo Park.",
+        "source_message_id": "<3-RiL64ST8KKdlhfbzycig@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-111-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-12T07:55:12-07:00"
+  }
+}
