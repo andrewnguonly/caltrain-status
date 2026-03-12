@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T16:00:11-07:00",
+  "source_message_id": "<3MiXJYNWTZuFBIzie5w3tg@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260312T160011-delayed-train-515-northbound-is-running-about-11-minutes-lat-3mixjynwtzufbizie5w3tg-g",
+    "title": "Delayed Train 515 northbound is running about 11 minutes late approaching San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T15:59:00-07:00",
+    "resolved_at": "2026-03-12T16:10:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/12/26 3:59 PM | End: 03/12/26 4:10 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T16:00:11-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 515 northbound is running about 11 minutes late\r\n approaching San Mateo.",
+        "source_message_id": "<3MiXJYNWTZuFBIzie5w3tg@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "delayed-train-515-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-03-12T16:00:11-07:00"
+  }
+}

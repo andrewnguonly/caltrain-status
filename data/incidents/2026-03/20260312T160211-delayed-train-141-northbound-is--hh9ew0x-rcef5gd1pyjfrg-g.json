@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T16:02:11-07:00",
+  "source_message_id": "<hH9Ew0X-Rcef5GD1pYjfRg@geopod-ismtpd-12>",
+  "incident": {
+    "id": "inc-20260312T160211-delayed-train-141-northbound-is-running-about-29-minutes-lat-hh9ew0x-rcef5gd1pyjfrg-g",
+    "title": "Delayed Train 141 northbound is running about 29 minutes late approaching Hillsdale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T15:43:00-07:00",
+    "resolved_at": "2026-03-12T16:12:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/12/26 3:43 PM | End: 03/12/26 4:12 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T16:02:11-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 141 northbound is running about 29 minutes late\r\n approaching Hillsdale.",
+        "source_message_id": "<hH9Ew0X-Rcef5GD1pYjfRg@geopod-ismtpd-12>"
+      }
+    ],
+    "ingestion_key": "delayed-train-141-northbound-is-running-about-29-minutes-lat",
+    "version_created_at": "2026-03-12T16:02:11-07:00"
+  }
+}
