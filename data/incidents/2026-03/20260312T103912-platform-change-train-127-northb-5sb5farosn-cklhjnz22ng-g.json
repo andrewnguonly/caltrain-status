@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T10:39:12-07:00",
+  "source_message_id": "<5Sb5FaROSn-CklHJnz22Ng@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260312T103912-platform-change-train-127-northbound-will-depart-off-track-4-5sb5farosn-cklhjnz22ng-g",
+    "title": "Platform change Train 127 northbound will depart off Track 4 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T10:38:00-07:00",
+    "resolved_at": "2026-03-12T11:27:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 03/12/26 10:38 AM | End: 03/12/26 11:27 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T10:39:12-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 127 northbound will depart off Track 4 at San\r\n Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<5Sb5FaROSn-CklHJnz22Ng@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-127-northbound-will-depart-off-track-4",
+    "version_created_at": "2026-03-12T10:39:12-07:00"
+  }
+}
