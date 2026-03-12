@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T15:26:11-07:00",
+  "source_message_id": "<nOtY4teFT_ilwzBt-cquQA@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260312T152611-train-515-northbound-will-run-ahead-of-train-141-northbound--noty4teft-ilwzbt-cquqa-g",
+    "title": "Train 515 Northbound Will Run Ahead of Train 141 Northbound Starting at Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T15:25:00-07:00",
+    "resolved_at": "2026-03-12T16:23:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Sunnyvale"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Sunnyvale | Start: 03/12/26 3:25 PM | End: 03/12/26 4:23 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T15:26:11-07:00",
+        "state": "degraded",
+        "message": "Train 515 Northbound Will Run Ahead of Train 141 Northbound Starting\r\n at Sunnyvale | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<nOtY4teFT_ilwzBt-cquQA@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "train-515-northbound-will-run-ahead-of-train-141-northbound-",
+    "version_created_at": "2026-03-12T15:26:11-07:00"
+  }
+}
