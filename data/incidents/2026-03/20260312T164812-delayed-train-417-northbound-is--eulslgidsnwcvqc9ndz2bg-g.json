@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T16:48:12-07:00",
+  "source_message_id": "<eUlSlGIdSNWCvQc9NDZ2bg@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260312T164812-delayed-train-417-northbound-is-running-about-15-minutes-lat-eulslgidsnwcvqc9ndz2bg-g",
+    "title": "Delayed Train 417 northbound is running about 15 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T16:47:00-07:00",
+    "resolved_at": "2026-03-12T17:02:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/12/26 4:47 PM | End: 03/12/26 5:02 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T16:48:12-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 417 northbound is running about 15 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<eUlSlGIdSNWCvQc9NDZ2bg@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "delayed-train-417-northbound-is-running-about-15-minutes-lat",
+    "version_created_at": "2026-03-12T16:48:12-07:00"
+  }
+}
