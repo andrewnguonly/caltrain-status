@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-13T04:29:12-07:00",
+  "source_message_id": "<1l5iMlSiQDGBMbn_bMqL4Q@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260313T042912-track-change-lawrence-and-sunnyvale-train-101-will-board-on--1l5imlsiqdgbmbn-bmql4q-g",
+    "title": "Track change Lawrence and Sunnyvale Train 101 will board on the southbound platform",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-13T04:25:00-07:00",
+    "resolved_at": "2026-03-13T05:00:00-07:00",
+    "affected_segments": [
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 03/13/26 4:25 AM | End: 03/13/26 5:00 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-13T04:29:12-07:00",
+        "state": "degraded",
+        "message": "Track change: Lawrence and Sunnyvale. Train 101 will board on the\r\n southbound platform | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<1l5iMlSiQDGBMbn_bMqL4Q@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "track-change-lawrence-and-sunnyvale-train-101-will-board-on-",
+    "version_created_at": "2026-03-13T04:29:12-07:00"
+  }
+}
