@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/03/26 5:48 AM | End: 03/03/26 8:22 AM",
-  "updated_at": "2026-03-13T04:40:28-07:00",
+  "updated_at": "2026-03-13T11:31:47-07:00",
   "active_incident_ids": [
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
@@ -10,6 +10,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260313T050458-google-updated-your-settings-m18anp-a8vo9egx0awj-bq-n",
     "inc-20260313T043613-track-change-lawrence-and-sunnyvale-train-101-and-train-103--yddzehytsmcy8w7eaxp1qa-g",
     "inc-20260313T042912-track-change-lawrence-and-sunnyvale-train-101-will-board-on--1l5imlsiqdgbmbn-bmql4q-g",
     "inc-20260313T042716-track-change-lawrence-and-sunnyvale-train-101-will-board-on--k-9cowwiqucrsguksbmlva-g",
@@ -154,6 +155,7 @@
     "data/incidents/2026-03/20260312T194209-train-429-northbound-running-ahe-zpappulxsww-idzz0f2q0w-g.json",
     "data/incidents/2026-03/20260313T042716-track-change-lawrence-and-sunnyv-k-9cowwiqucrsguksbmlva-g.json",
     "data/incidents/2026-03/20260313T042912-track-change-lawrence-and-sunnyv-1l5imlsiqdgbmbn-bmql4q-g.json",
-    "data/incidents/2026-03/20260313T043613-track-change-lawrence-and-sunnyv-yddzehytsmcy8w7eaxp1qa-g.json"
+    "data/incidents/2026-03/20260313T043613-track-change-lawrence-and-sunnyv-yddzehytsmcy8w7eaxp1qa-g.json",
+    "data/incidents/2026-03/20260313T050458-google-updated-your-settings-m18anp-a8vo9egx0awj-bq-n.json"
   ]
 }

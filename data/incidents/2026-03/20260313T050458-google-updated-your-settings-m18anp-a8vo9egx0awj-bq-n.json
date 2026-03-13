@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-13T05:04:58-07:00",
+  "source_message_id": "<M18aNp_A8vo9eGx0AWj_bQ@notifications.google.com>",
+  "incident": {
+    "id": "inc-20260313T050458-google-updated-your-settings-m18anp-a8vo9egx0awj-bq-n",
+    "title": "Google updated your settings",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-13T05:04:58-07:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "[image: Google] Hi Caltrain Alerts, we updated your settings caltrainalerts0001@gmail.com Google couldn\u2019t confirm you're an adult, so some account settings have changed Check it out SafeSearch is on Google may hide explicit content, like pornography, from your search results Personalized ads are off",
+    "updates": [
+      {
+        "timestamp": "2026-03-13T05:04:58-07:00",
+        "state": "degraded",
+        "message": "Google updated your settings",
+        "source_message_id": "<M18aNp_A8vo9eGx0AWj_bQ@notifications.google.com>"
+      }
+    ],
+    "ingestion_key": "google-updated-your-settings",
+    "version_created_at": "2026-03-13T05:04:58-07:00"
+  }
+}
