@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/03/26 5:48 AM | End: 03/03/26 8:22 AM",
-  "updated_at": "2026-03-12T16:56:51-07:00",
+  "updated_at": "2026-03-12T18:54:47-07:00",
   "active_incident_ids": [
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
@@ -10,6 +10,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260312T184912-train-429-northbound-will-run-ahead-of-train-155-northbound--6fxblyqrr0yqosns3z-dcq-g",
+    "inc-20260312T185009-delayed-train-155-northbound-is-running-about-20-minutes-lat-5rz9ia8tqruifdlbufxnqq-g",
     "inc-20260312T164812-delayed-train-417-northbound-is-running-about-15-minutes-lat-eulslgidsnwcvqc9ndz2bg-g",
     "inc-20260312T161210-delayed-train-143-northbound-is-running-about-10-minutes-lat-nm2p11jftsuy14izzh0low-g",
     "inc-20260312T162429-due-to-service-disruption-near-menlo-park-please-expect-up-t-vzfe-rrosm-zqlv2mybmhq-g",
@@ -140,6 +142,8 @@
     "data/incidents/2026-03/20260312T161029-due-to-service-disruption-near-m-9pj2zonaqumyrf7mdwm9hq-g.json",
     "data/incidents/2026-03/20260312T161210-delayed-train-143-northbound-is--nm2p11jftsuy14izzh0low-g.json",
     "data/incidents/2026-03/20260312T162429-due-to-service-disruption-near-m-vzfe-rrosm-zqlv2mybmhq-g.json",
-    "data/incidents/2026-03/20260312T164812-delayed-train-417-northbound-is--eulslgidsnwcvqc9ndz2bg-g.json"
+    "data/incidents/2026-03/20260312T164812-delayed-train-417-northbound-is--eulslgidsnwcvqc9ndz2bg-g.json",
+    "data/incidents/2026-03/20260312T184912-train-429-northbound-will-run-ah-6fxblyqrr0yqosns3z-dcq-g.json",
+    "data/incidents/2026-03/20260312T185009-delayed-train-155-northbound-is--5rz9ia8tqruifdlbufxnqq-g.json"
   ]
 }

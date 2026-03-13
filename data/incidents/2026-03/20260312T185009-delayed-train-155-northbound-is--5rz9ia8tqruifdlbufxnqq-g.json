@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-12T18:50:09-07:00",
+  "source_message_id": "<5rz9iA8tQruiFDlbUFxNQQ@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260312T185009-delayed-train-155-northbound-is-running-about-20-minutes-lat-5rz9ia8tqruifdlbufxnqq-g",
+    "title": "Delayed Train 155 northbound is running about 20 minutes late approaching Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-12T18:42:00-07:00",
+    "resolved_at": "2026-03-12T19:02:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/12/26 6:42 PM | End: 03/12/26 7:02 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-12T18:50:09-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 155 northbound is running about 20 minutes late\r\n approaching Sunnyvale.",
+        "source_message_id": "<5rz9iA8tQruiFDlbUFxNQQ@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-155-northbound-is-running-about-20-minutes-lat",
+    "version_created_at": "2026-03-12T18:50:09-07:00"
+  }
+}
