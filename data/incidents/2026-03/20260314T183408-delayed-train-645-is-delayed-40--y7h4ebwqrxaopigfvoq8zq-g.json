@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-14T18:34:08-07:00",
+  "source_message_id": "<y7H4EbwQRXaopiGfVOq8ZQ@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260314T183408-delayed-train-645-is-delayed-40-minutes-y7h4ebwqrxaopigfvoq8zq-g",
+    "title": "Delayed: Train 645 is delayed 40 Minutes",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-14T18:31:00-07:00",
+    "resolved_at": "2026-03-14T19:50:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 03/14/26 6:31 PM | End: 03/14/26 7:50 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-14T18:34:08-07:00",
+        "state": "degraded",
+        "message": "Train 645 is delayed 40 Minutes | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<y7H4EbwQRXaopiGfVOq8ZQ@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "delayed-train-645-is-delayed-40-minutes",
+    "version_created_at": "2026-03-14T18:34:08-07:00"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-14T18:32:08-07:00",
+  "source_message_id": "<ddBG6wlaS0-bhjY24jxIJQ@geopod-ismtpd-9>",
+  "incident": {
+    "id": "inc-20260314T183208-delayed-train-643-northbound-is-running-about-15-minutes-lat-ddbg6wlas0-bhjy24jxijq-g",
+    "title": "Delayed Train 643 northbound is running about 15 minutes late approaching San Bruno",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-14T18:27:00-07:00",
+    "resolved_at": "2026-03-14T18:42:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/14/26 6:27 PM | End: 03/14/26 6:42 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-14T18:32:08-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 643 northbound is running about 15 minutes late\r\n approaching San Bruno.",
+        "source_message_id": "<ddBG6wlaS0-bhjY24jxIJQ@geopod-ismtpd-9>"
+      }
+    ],
+    "ingestion_key": "delayed-train-643-northbound-is-running-about-15-minutes-lat",
+    "version_created_at": "2026-03-14T18:32:08-07:00"
+  }
+}
