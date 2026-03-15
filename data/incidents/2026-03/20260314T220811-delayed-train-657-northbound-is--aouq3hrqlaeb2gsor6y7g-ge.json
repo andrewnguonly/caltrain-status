@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-14T22:08:11-07:00",
+  "source_message_id": "<-AOuq3hrQlaEb2gsOR6y7g@geopod-ismtpd-canary-0>",
+  "incident": {
+    "id": "inc-20260314T220811-delayed-train-657-northbound-is-running-about-15-minutes-lat-aouq3hrqlaeb2gsor6y7g-ge",
+    "title": "Delayed Train 657 northbound is running about 15 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-14T22:05:00-07:00",
+    "resolved_at": "2026-03-14T22:20:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/14/26 10:05 PM | End: 03/14/26 10:20 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-14T22:08:11-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 657 northbound is running about 15 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<-AOuq3hrQlaEb2gsOR6y7g@geopod-ismtpd-canary-0>"
+      }
+    ],
+    "ingestion_key": "delayed-train-657-northbound-is-running-about-15-minutes-lat",
+    "version_created_at": "2026-03-14T22:08:11-07:00"
+  }
+}
