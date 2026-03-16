@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-16T09:24:13-07:00",
+  "source_message_id": "<yZx0APgkTImF5--xd2S1yA@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260316T092413-platform-change-train-119-will-depart-on-platform-8-at-san-j-yzx0apgktimf5-xd2s1ya-ge",
+    "title": "Platform change Train 119 will depart on platform 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-16T09:22:00-07:00",
+    "resolved_at": "2026-03-16T09:30:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 03/16/26 9:22 AM | End: 03/16/26 9:30 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-16T09:24:13-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 119 will depart on platform 8 at San Jose\r\n Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<yZx0APgkTImF5--xd2S1yA@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-119-will-depart-on-platform-8-at-san-j",
+    "version_created_at": "2026-03-16T09:24:13-07:00"
+  }
+}
