@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-17T06:27:13-07:00",
+  "source_message_id": "<YH3I1gD_RCqmnIw3ENPM5g@geopod-ismtpd-6>",
+  "incident": {
+    "id": "inc-20260317T062713-delayed-train-105-northbound-is-running-about-15-minutes-lat-yh3i1gd-rcqmniw3enpm5g-g",
+    "title": "Delayed Train 105 northbound is running about 15 minutes late approaching California Avenue",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-17T06:22:00-07:00",
+    "resolved_at": "2026-03-17T06:37:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/17/26 6:22 AM | End: 03/17/26 6:37 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-17T06:27:13-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 105 northbound is running about 15 minutes late\r\n approaching California Avenue.",
+        "source_message_id": "<YH3I1gD_RCqmnIw3ENPM5g@geopod-ismtpd-6>"
+      }
+    ],
+    "ingestion_key": "delayed-train-105-northbound-is-running-about-15-minutes-lat",
+    "version_created_at": "2026-03-17T06:27:13-07:00"
+  }
+}
