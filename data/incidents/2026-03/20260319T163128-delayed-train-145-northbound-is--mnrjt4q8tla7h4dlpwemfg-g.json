@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-19T16:31:28-07:00",
+  "source_message_id": "<mNRJt4q8TLa7H4dlPwEmFg@geopod-ismtpd-0>",
+  "incident": {
+    "id": "inc-20260319T163128-delayed-train-145-northbound-is-running-about-10-minutes-lat-mnrjt4q8tla7h4dlpwemfg-g",
+    "title": "Delayed Train 145 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-19T16:33:00-07:00",
+    "resolved_at": "2026-03-19T16:43:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/19/26 4:33 PM | End: 03/19/26 4:43 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-19T16:31:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 145 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<mNRJt4q8TLa7H4dlPwEmFg@geopod-ismtpd-0>"
+      }
+    ],
+    "ingestion_key": "delayed-train-145-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-19T16:31:28-07:00"
+  }
+}
