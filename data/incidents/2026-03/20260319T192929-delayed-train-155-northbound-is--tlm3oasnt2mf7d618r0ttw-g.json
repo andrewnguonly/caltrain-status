@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-19T19:29:29-07:00",
+  "source_message_id": "<tlm3oaSnT2mF7d618r0tTw@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260319T192929-delayed-train-155-northbound-is-running-about-22-minutes-lat-tlm3oasnt2mf7d618r0ttw-g",
+    "title": "Delayed Train 155 northbound is running about 22 minutes late approaching San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-19T19:17:00-07:00",
+    "resolved_at": "2026-03-19T19:39:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/19/26 7:17 PM | End: 03/19/26 7:39 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-19T19:29:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 155 northbound is running about 22 minutes late\r\n approaching San Mateo.",
+        "source_message_id": "<tlm3oaSnT2mF7d618r0tTw@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "delayed-train-155-northbound-is-running-about-22-minutes-lat",
+    "version_created_at": "2026-03-19T19:29:29-07:00"
+  }
+}

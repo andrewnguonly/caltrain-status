@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-19T19:31:26-07:00",
+  "source_message_id": "<U4WN8GzDTAu7H-sDopBy7A@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260319T193126-delayed-train-429-northbound-is-running-about-15-minutes-lat-u4wn8gzdtau7h-sdopby7a-g",
+    "title": "Delayed Train 429 northbound is running about 15 minutes late approaching San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-19T19:28:00-07:00",
+    "resolved_at": "2026-03-19T19:43:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/19/26 7:28 PM | End: 03/19/26 7:43 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-19T19:31:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 429 northbound is running about 15 minutes late\r\n approaching San Mateo.",
+        "source_message_id": "<U4WN8GzDTAu7H-sDopBy7A@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-429-northbound-is-running-about-15-minutes-lat",
+    "version_created_at": "2026-03-19T19:31:26-07:00"
+  }
+}
