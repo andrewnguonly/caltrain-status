@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/03/26 5:48 AM | End: 03/03/26 8:22 AM",
-  "updated_at": "2026-03-20T04:07:18-07:00",
+  "updated_at": "2026-03-20T06:21:59-07:00",
   "active_incident_ids": [
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
@@ -10,7 +10,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260320T051032-platform-change-train-405-northbound-will-depart-off-track-4-ni6ukpm6s3gjywbedauhwq-g",
     "inc-20260320T040237-platform-change-train-107-will-board-on-track-5-at-san-jose--zhf-u61urawjrht7iqzzca-g",
+    "inc-20260320T050930-platform-change-train-503-northbound-will-depart-off-track-8-zignvkg1rko0xg2cawebiq-g",
     "inc-20260319T193126-delayed-train-429-northbound-is-running-about-15-minutes-lat-u4wn8gzdtau7h-sdopby7a-g",
     "inc-20260319T192929-delayed-train-155-northbound-is-running-about-22-minutes-lat-tlm3oasnt2mf7d618r0ttw-g",
     "inc-20260319T193026-delayed-train-527-northbound-is-running-about-28-minutes-lat-nvlmp5m6rimbtx58eh5hhg-g",
@@ -294,6 +296,8 @@
     "data/incidents/2026-03/20260319T192929-delayed-train-155-northbound-is--tlm3oasnt2mf7d618r0ttw-g.json",
     "data/incidents/2026-03/20260319T193026-delayed-train-527-northbound-is--nvlmp5m6rimbtx58eh5hhg-g.json",
     "data/incidents/2026-03/20260319T193126-delayed-train-429-northbound-is--u4wn8gzdtau7h-sdopby7a-g.json",
-    "data/incidents/2026-03/20260320T040237-platform-change-train-107-will-b-zhf-u61urawjrht7iqzzca-g.json"
+    "data/incidents/2026-03/20260320T040237-platform-change-train-107-will-b-zhf-u61urawjrht7iqzzca-g.json",
+    "data/incidents/2026-03/20260320T050930-platform-change-train-503-northb-zignvkg1rko0xg2cawebiq-g.json",
+    "data/incidents/2026-03/20260320T051032-platform-change-train-405-northb-ni6ukpm6s3gjywbedauhwq-g.json"
   ]
 }
