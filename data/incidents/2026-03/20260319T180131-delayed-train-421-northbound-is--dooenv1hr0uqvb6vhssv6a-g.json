@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-19T18:01:31-07:00",
+  "source_message_id": "<doOENv1hR0uqvb6VHSsV6A@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260319T180131-delayed-train-421-northbound-is-running-about-48-minutes-lat-dooenv1hr0uqvb6vhssv6a-g",
+    "title": "Delayed Train 421 northbound is running about 48 minutes late approaching Hillsdale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-19T17:25:00-07:00",
+    "resolved_at": "2026-03-19T18:13:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/19/26 5:25 PM | End: 03/19/26 6:13 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-19T18:01:31-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 421 northbound is running about 48 minutes late\r\n approaching Hillsdale.",
+        "source_message_id": "<doOENv1hR0uqvb6VHSsV6A@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-421-northbound-is-running-about-48-minutes-lat",
+    "version_created_at": "2026-03-19T18:01:31-07:00"
+  }
+}

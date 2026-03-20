@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-19T17:45:28-07:00",
+  "source_message_id": "<5X_Jp6twSDqrgmd8TDsFEg@geopod-ismtpd-9>",
+  "incident": {
+    "id": "inc-20260319T174528-delayed-train-523-northbound-is-running-about-17-minutes-lat-5x-jp6twsdqrgmd8tdsfeg-g",
+    "title": "Delayed Train 523 northbound is running about 17 minutes late approaching Palo Alto",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-19T17:43:00-07:00",
+    "resolved_at": "2026-03-19T18:00:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/19/26 5:43 PM | End: 03/19/26 6:00 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-19T17:45:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 523 northbound is running about 17 minutes late\r\n approaching Palo Alto.",
+        "source_message_id": "<5X_Jp6twSDqrgmd8TDsFEg@geopod-ismtpd-9>"
+      }
+    ],
+    "ingestion_key": "delayed-train-523-northbound-is-running-about-17-minutes-lat",
+    "version_created_at": "2026-03-19T17:45:28-07:00"
+  }
+}

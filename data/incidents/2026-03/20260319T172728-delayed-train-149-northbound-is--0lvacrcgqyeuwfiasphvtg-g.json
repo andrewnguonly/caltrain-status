@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-19T17:27:28-07:00",
+  "source_message_id": "<0LvACrCGQyeuwFiAsPHvTg@geopod-ismtpd-0>",
+  "incident": {
+    "id": "inc-20260319T172728-delayed-train-149-northbound-is-running-about-16-minutes-lat-0lvacrcgqyeuwfiasphvtg-g",
+    "title": "Delayed Train 149 northbound is running about 16 minutes late approaching California Avenue",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-19T17:22:00-07:00",
+    "resolved_at": "2026-03-19T17:38:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/19/26 5:22 PM | End: 03/19/26 5:38 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-19T17:27:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 149 northbound is running about 16 minutes late\r\n approaching California Avenue.",
+        "source_message_id": "<0LvACrCGQyeuwFiAsPHvTg@geopod-ismtpd-0>"
+      }
+    ],
+    "ingestion_key": "delayed-train-149-northbound-is-running-about-16-minutes-lat",
+    "version_created_at": "2026-03-19T17:27:28-07:00"
+  }
+}
