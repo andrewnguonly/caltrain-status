@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-23T09:41:45-07:00",
+  "source_message_id": "<D-ZoSCh5T0ei_bz4f02HLA@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260323T094145-all-trains-expect-up-to-30-minute-delays-d-zosch5t0ei-bz4f02hla-g",
+    "title": "All Trains Expect Up To 30 Minute Delays",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-23T09:20:00-07:00",
+    "resolved_at": "2026-03-23T12:00:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Significant Delays | Cause: Other Cause | Start: 03/23/26 9:20 AM | End: 03/23/26 12:00 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-23T09:41:45-07:00",
+        "state": "degraded",
+        "message": "All Trains Expect Up To 30 Minute Delays | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<D-ZoSCh5T0ei_bz4f02HLA@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "all-trains-expect-up-to-30-minute-delays",
+    "version_created_at": "2026-03-23T09:41:45-07:00"
+  }
+}
