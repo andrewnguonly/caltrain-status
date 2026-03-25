@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-25T06:16:27-07:00",
+  "source_message_id": "<E6zP9ZBrQuqy9WFItjZGpw@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
+    "title": "Cancelled Train 401 northbound is cancelled Train 105 will accomodate passangers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-03-25T06:15:00-07:00",
+    "resolved_at": "2026-03-25T07:16:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: No Service | Cause: Other Cause | Start: 03/25/26 6:15 AM | End: 03/25/26 7:16 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-25T06:16:27-07:00",
+        "state": "critical",
+        "message": "Cancelled: Train 401 northbound is cancelled. Train 105 will\r\n accomodate passangers. | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<E6zP9ZBrQuqy9WFItjZGpw@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-401-northbound-is-cancelled-train-105-will-a",
+    "version_created_at": "2026-03-25T06:16:27-07:00"
+  }
+}
