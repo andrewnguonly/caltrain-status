@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-25T15:23:27-07:00",
+  "source_message_id": "<sahZt7TvTkqtFqx9g8VxrA@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260325T152327-delayed-train-141-northbound-is-running-about-10-minutes-lat-sahzt7tvtkqtfqx9g8vxra-g",
+    "title": "Delayed Train 141 northbound is running about 10 minutes late approaching Palo Alto",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-25T15:25:00-07:00",
+    "resolved_at": "2026-03-25T15:35:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/25/26 3:25 PM | End: 03/25/26 3:35 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-25T15:23:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 141 northbound is running about 10 minutes late\r\n approaching Palo Alto.",
+        "source_message_id": "<sahZt7TvTkqtFqx9g8VxrA@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "delayed-train-141-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-25T15:23:27-07:00"
+  }
+}
