@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-25T23:00:30-07:00",
+  "source_message_id": "<CsZmmVCdTUmDNUBmwNvO8g@geopod-ismtpd-16>",
+  "incident": {
+    "id": "inc-20260325T230030-delayed-train-169-northbound-is-running-about-10-minutes-lat-cszmmvcdtumdnubmwnvo8g-g",
+    "title": "Delayed Train 169 northbound is running about 10 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-25T23:00:00-07:00",
+    "resolved_at": "2026-03-25T23:10:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/25/26 11:00 PM | End: 03/25/26 11:10 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-25T23:00:30-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 169 northbound is running about 10 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<CsZmmVCdTUmDNUBmwNvO8g@geopod-ismtpd-16>"
+      }
+    ],
+    "ingestion_key": "delayed-train-169-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-25T23:00:30-07:00"
+  }
+}
