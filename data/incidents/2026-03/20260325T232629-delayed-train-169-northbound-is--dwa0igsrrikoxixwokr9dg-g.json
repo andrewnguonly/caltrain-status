@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-25T23:26:29-07:00",
+  "source_message_id": "<dWa0IgsRRIKoXiXwOKR9Dg@geopod-ismtpd-4>",
+  "incident": {
+    "id": "inc-20260325T232629-delayed-train-169-northbound-is-running-about-30-40-minutes--dwa0igsrrikoxixwokr9dg-g",
+    "title": "Delayed: Train 169 northbound is running about 30-40 minutes late.",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-25T23:22:00-07:00",
+    "resolved_at": "2026-03-25T23:49:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 03/25/26 11:22 PM | End: 03/25/26 11:49 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-25T23:26:29-07:00",
+        "state": "degraded",
+        "message": "Train 169 northbound is running about 30-40 minutes late. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<dWa0IgsRRIKoXiXwOKR9Dg@geopod-ismtpd-4>"
+      }
+    ],
+    "ingestion_key": "delayed-train-169-northbound-is-running-about-30-40-minutes-",
+    "version_created_at": "2026-03-25T23:26:29-07:00"
+  }
+}
