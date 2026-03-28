@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/25/26 6:15 AM | End: 03/25/26 7:16 AM",
-  "updated_at": "2026-03-27T20:58:20-07:00",
+  "updated_at": "2026-03-27T23:32:32-07:00",
   "active_incident_ids": [
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
@@ -11,6 +11,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260327T232229-track-change-sunnyvale-and-lawrence-all-trains-will-board-on-ih2ris9jtf6poa-bvgihba-g",
     "inc-20260327T191829-delayed-train-527-northbound-is-running-about-20-minutes-lat-eiu2jdzxsssavycgaikykg-g",
     "inc-20260327T184627-train-155-northbound-running-ahead-of-train-527-northbound-s3pp0osqtwoi-7zkum7apa-g",
     "inc-20260327T183326-delayed-train-527-northbound-is-running-about-10-minutes-lat-tcme-lqsrpghcqqgjuygxg-g",
@@ -377,6 +378,7 @@
     "data/incidents/2026-03/20260327T171030-delayed-train-145-northbound-is--pqqqbcecsjitfiqowcckdg-g.json",
     "data/incidents/2026-03/20260327T183326-delayed-train-527-northbound-is--tcme-lqsrpghcqqgjuygxg-g.json",
     "data/incidents/2026-03/20260327T184627-train-155-northbound-running-ahe-s3pp0osqtwoi-7zkum7apa-g.json",
-    "data/incidents/2026-03/20260327T191829-delayed-train-527-northbound-is--eiu2jdzxsssavycgaikykg-g.json"
+    "data/incidents/2026-03/20260327T191829-delayed-train-527-northbound-is--eiu2jdzxsssavycgaikykg-g.json",
+    "data/incidents/2026-03/20260327T232229-track-change-sunnyvale-and-lawre-ih2ris9jtf6poa-bvgihba-g.json"
   ]
 }
