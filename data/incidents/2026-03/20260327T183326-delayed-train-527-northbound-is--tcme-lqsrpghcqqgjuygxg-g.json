@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-27T18:33:26-07:00",
+  "source_message_id": "<TcmE-lQSRPGhcqqGJUYGXg@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260327T183326-delayed-train-527-northbound-is-running-about-10-minutes-lat-tcme-lqsrpghcqqgjuygxg-g",
+    "title": "Delayed Train 527 northbound is running about 10 minutes late approaching Mountain View",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-27T18:36:00-07:00",
+    "resolved_at": "2026-03-27T18:46:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/27/26 6:36 PM | End: 03/27/26 6:46 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-27T18:33:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 527 northbound is running about 10 minutes late\r\n approaching Mountain View.",
+        "source_message_id": "<TcmE-lQSRPGhcqqGJUYGXg@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-527-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-27T18:33:26-07:00"
+  }
+}
