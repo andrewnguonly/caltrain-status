@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-27T16:55:28-07:00",
+  "source_message_id": "<RUI5Cp8PS8WhvPZ2D2H8HA@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260327T165528-train-519-northbound-running-ahead-of-train-145-northbound-s-rui5cp8ps8whvpz2d2h8ha-g",
+    "title": "Train 519 Northbound Running Ahead of Train 145 Northbound Starting at Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-27T16:55:00-07:00",
+    "resolved_at": "2026-03-27T17:22:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Millbrae"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Millbrae | Start: 03/27/26 4:55 PM | End: 03/27/26 5:22 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-27T16:55:28-07:00",
+        "state": "degraded",
+        "message": "Train 519 Northbound Running Ahead of Train 145 Northbound Starting\r\n at Millbrae | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<RUI5Cp8PS8WhvPZ2D2H8HA@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "train-519-northbound-running-ahead-of-train-145-northbound-s",
+    "version_created_at": "2026-03-27T16:55:28-07:00"
+  }
+}
