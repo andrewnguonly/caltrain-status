@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-30T10:01:31-07:00",
+  "source_message_id": "<iCa5sHllSdKtiywGaoKEZA@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260330T100131-delayed-train-117-northbound-is-running-about-20-minutes-lat-ica5shllsdktiywgaokeza-g",
+    "title": "Delayed Train 117 northbound is running about 20 minutes late approaching Burlingame",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-30T09:50:00-07:00",
+    "resolved_at": "2026-03-30T10:10:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/30/26 9:50 AM | End: 03/30/26 10:10 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-30T10:01:31-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 117 northbound is running about 20 minutes late\r\n approaching Burlingame.",
+        "source_message_id": "<iCa5sHllSdKtiywGaoKEZA@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-117-northbound-is-running-about-20-minutes-lat",
+    "version_created_at": "2026-03-30T10:01:31-07:00"
+  }
+}
