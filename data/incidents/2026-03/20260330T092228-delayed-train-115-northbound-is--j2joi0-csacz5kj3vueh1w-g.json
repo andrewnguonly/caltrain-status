@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-30T09:22:28-07:00",
+  "source_message_id": "<J2jOi0_cSACZ5kj3VuEh1w@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260330T092228-delayed-train-115-northbound-is-running-about-10-minutes-lat-j2joi0-csacz5kj3vueh1w-g",
+    "title": "Delayed Train 115 northbound is running about 10 minutes late approaching Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-30T09:24:00-07:00",
+    "resolved_at": "2026-03-30T09:34:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/30/26 9:24 AM | End: 03/30/26 9:34 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-30T09:22:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 115 northbound is running about 10 minutes late\r\n approaching Millbrae.",
+        "source_message_id": "<J2jOi0_cSACZ5kj3VuEh1w@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "delayed-train-115-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-30T09:22:28-07:00"
+  }
+}
