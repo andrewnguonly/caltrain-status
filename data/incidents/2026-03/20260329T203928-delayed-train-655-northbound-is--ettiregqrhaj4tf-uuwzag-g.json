@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-29T20:39:28-07:00",
+  "source_message_id": "<EtTIRegqRHaj4tf-UuWZAg@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260329T203928-delayed-train-655-northbound-is-running-about-10-minutes-lat-ettiregqrhaj4tf-uuwzag-g",
+    "title": "Delayed Train 655 northbound is running about 10 minutes late approaching Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-29T20:41:00-07:00",
+    "resolved_at": "2026-03-29T20:51:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/29/26 8:41 PM | End: 03/29/26 8:51 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-29T20:39:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 655 northbound is running about 10 minutes late\r\n approaching Sunnyvale.",
+        "source_message_id": "<EtTIRegqRHaj4tf-UuWZAg@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "delayed-train-655-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-03-29T20:39:28-07:00"
+  }
+}
