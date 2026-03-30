@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-29T22:10:28-07:00",
+  "source_message_id": "<90X7ryZpQCq75MBgCCEInA@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260329T221028-delayed-train-655-northbound-is-running-about-60-minutes-lat-90x7ryzpqcq75mbgcceina-g",
+    "title": "Delayed Train 655 northbound is running about 60 minutes late approaching Broadway",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-29T21:21:00-07:00",
+    "resolved_at": "2026-03-29T22:21:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 03/29/26 9:21 PM | End: 03/29/26 10:21 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-29T22:10:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 655 northbound is running about 60 minutes late\r\n approaching Broadway.",
+        "source_message_id": "<90X7ryZpQCq75MBgCCEInA@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "delayed-train-655-northbound-is-running-about-60-minutes-lat",
+    "version_created_at": "2026-03-29T22:10:28-07:00"
+  }
+}

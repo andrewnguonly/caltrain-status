@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-29T21:28:26-07:00",
+  "source_message_id": "<PVtTkob7RHeiNzrK_6oALg@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20260329T212826-train-659-will-run-ahead-of-train-655-starting-at-san-jose-d-pvttkob7rheinzrk-6oalg-g",
+    "title": "Train 659 will run ahead of Train 655 starting at San Jose Diridon station",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-29T21:28:26-07:00",
+    "resolved_at": "2026-03-29T22:40:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: * End Date * | End: 03/29/26 10:40 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-29T21:28:26-07:00",
+        "state": "degraded",
+        "message": "Train 659 will run ahead of Train 655 starting at San Jose Diridon\r\n station. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<PVtTkob7RHeiNzrK_6oALg@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "train-659-will-run-ahead-of-train-655-starting-at-san-jose-d",
+    "version_created_at": "2026-03-29T21:28:26-07:00"
+  }
+}

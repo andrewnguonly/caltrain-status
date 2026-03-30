@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-29T21:14:29-07:00",
+  "source_message_id": "<L-fDD84TTOe3it4GaStl5Q@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260329T211429-delayed-train-655-departing-san-jose-diridon-northbound-at-8-l-fdd84ttoe3it4gastl5q-g",
+    "title": "Delayed Train 655 departing San Jose Diridon Northbound at 8 26 PM to San Francisco is delayed 50 minutes",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-03-29T20:26:00-07:00",
+    "resolved_at": "2026-03-29T22:26:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Significant Delays | Cause: Other Cause | Start: 03/29/26 8:26 PM | End: 03/29/26 10:26 PM",
+    "updates": [
+      {
+        "timestamp": "2026-03-29T21:14:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 655 departing San Jose Diridon Caltrain Northbound at\r\n 8:26 PM to San Francisco is delayed 50+ minutes. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<L-fDD84TTOe3it4GaStl5Q@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "delayed-train-655-departing-san-jose-diridon-northbound-at-8",
+    "version_created_at": "2026-03-29T21:14:29-07:00"
+  }
+}
