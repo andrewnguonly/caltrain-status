@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/25/26 6:15 AM | End: 03/25/26 7:16 AM",
-  "updated_at": "2026-03-30T05:42:17-07:00",
+  "updated_at": "2026-03-30T07:13:54-07:00",
   "active_incident_ids": [
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
@@ -11,6 +11,10 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260330T065932-platform-change-train-111-will-depart-off-track-5-at-san-jos-sgmos1sytqmbyt5jo7m70q-g",
+    "inc-20260330T065831-platform-change-train-409-will-depart-off-track-8-at-san-jos-07h03k7srui22f-lrw8xlw-g",
+    "inc-20260330T063832-platform-change-train-507-will-depart-off-track-7-at-san-jos-r0mopupht2gca8wcfksdpq-g",
+    "inc-20260330T060832-platform-change-train-405-will-depart-off-track-8-at-san-jos-46i1bwlhtis7ydkrnqpo5q-g",
     "inc-20260330T045431-platform-change-train-107-will-board-on-track-9-at-san-jose--pgjwpdpftjkmvjulmjqlsq-g",
     "inc-20260329T212826-train-659-will-run-ahead-of-train-655-starting-at-san-jose-d-pvttkob7rheinzrk-6oalg-g",
     "inc-20260329T221028-delayed-train-655-northbound-is-running-about-60-minutes-lat-90x7ryzpqcq75mbgcceina-g",
@@ -397,6 +401,10 @@
     "data/incidents/2026-03/20260329T212826-train-659-will-run-ahead-of-trai-pvttkob7rheinzrk-6oalg-g.json",
     "data/incidents/2026-03/20260329T214028-delayed-train-655-departing-san--ciscskostlchysi0zzg1-q-g.json",
     "data/incidents/2026-03/20260329T221028-delayed-train-655-northbound-is--90x7ryzpqcq75mbgcceina-g.json",
-    "data/incidents/2026-03/20260330T045431-platform-change-train-107-will-b-pgjwpdpftjkmvjulmjqlsq-g.json"
+    "data/incidents/2026-03/20260330T045431-platform-change-train-107-will-b-pgjwpdpftjkmvjulmjqlsq-g.json",
+    "data/incidents/2026-03/20260330T060832-platform-change-train-405-will-d-46i1bwlhtis7ydkrnqpo5q-g.json",
+    "data/incidents/2026-03/20260330T063832-platform-change-train-507-will-d-r0mopupht2gca8wcfksdpq-g.json",
+    "data/incidents/2026-03/20260330T065831-platform-change-train-409-will-d-07h03k7srui22f-lrw8xlw-g.json",
+    "data/incidents/2026-03/20260330T065932-platform-change-train-111-will-d-sgmos1sytqmbyt5jo7m70q-g.json"
   ]
 }
