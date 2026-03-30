@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-03-30T11:27:47-07:00",
+  "source_message_id": "<kR8nGly8Rl6jViKTMS0B5w@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260330T112747-delayed-all-trains-please-expect-15-30-minute-delays-kr8ngly8rl6jviktms0b5w-g",
+    "title": "Delayed: All Trains Please Expect 15-30 Minute Delays",
+    "severity": "minor",
+    "status": "resolved",
+    "started_at": "2026-03-30T07:48:00-07:00",
+    "resolved_at": "2026-03-30T11:27:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 03/30/26 7:48 AM | End: 03/30/26 11:27 AM",
+    "updates": [
+      {
+        "timestamp": "2026-03-30T11:27:47-07:00",
+        "state": "operational",
+        "message": "All Trains Please Expect 15-30 Minute Delays | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<kR8nGly8Rl6jViKTMS0B5w@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "delayed-all-trains-please-expect-15-30-minute-delays",
+    "version_created_at": "2026-03-30T11:27:47-07:00"
+  }
+}
