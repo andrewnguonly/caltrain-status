@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-01T22:37:29-07:00",
+  "source_message_id": "<7fnZZIh8RAuS1RL2pfODyQ@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260401T223729-single-tracking-all-trains-will-board-on-the-northbound-plat-7fnzzih8raus1rl2pfodyq-g",
+    "title": "Single Tracking All Trains will board on the Northbound platform at Bayshore Beginning with Train 170",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-01T22:33:00-07:00",
+    "resolved_at": "2026-04-02T00:40:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Start: 04/01/26 10:33 PM | End: 04/02/26 12:40 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-01T22:37:29-07:00",
+        "state": "degraded",
+        "message": "Single Tracking: All Trains will board on the Northbound platform at\r\n Bayshore, Beginning with Train 170 | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<7fnZZIh8RAuS1RL2pfODyQ@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "single-tracking-all-trains-will-board-on-the-northbound-plat",
+    "version_created_at": "2026-04-01T22:37:29-07:00"
+  }
+}
