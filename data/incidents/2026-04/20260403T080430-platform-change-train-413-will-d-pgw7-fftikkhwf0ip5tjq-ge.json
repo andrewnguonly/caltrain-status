@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-03T08:04:30-07:00",
+  "source_message_id": "<-Pgw7_ffTIKkHwf0IP5TjQ@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260403T080430-platform-change-train-413-will-depart-off-track-7-at-san-jos-pgw7-fftikkhwf0ip5tjq-ge",
+    "title": "Platform change Train 413 will Depart off Track 7 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-03T08:03:00-07:00",
+    "resolved_at": "2026-04-03T08:43:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/03/26 8:03 AM | End: 04/03/26 8:43 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-03T08:04:30-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 413 will Depart off Track 7 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<-Pgw7_ffTIKkHwf0IP5TjQ@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-413-will-depart-off-track-7-at-san-jos",
+    "version_created_at": "2026-04-03T08:04:30-07:00"
+  }
+}
