@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-03T17:09:29-07:00",
+  "source_message_id": "<xE1GTeCCRdeFfb9OrZhklg@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260403T170929-delayed-train-421-northbound-is-running-about-10-minutes-lat-xe1gteccrdeffb9orzhklg-g",
+    "title": "Delayed Train 421 northbound is running about 10 minutes late approaching Palo Alto",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-03T17:10:00-07:00",
+    "resolved_at": "2026-04-03T17:20:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/03/26 5:10 PM | End: 04/03/26 5:20 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-03T17:09:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 421 northbound is running about 10 minutes late\r\n approaching Palo Alto.",
+        "source_message_id": "<xE1GTeCCRdeFfb9OrZhklg@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "delayed-train-421-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-03T17:09:29-07:00"
+  }
+}

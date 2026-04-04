@@ -1,0 +1,29 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-03T18:00:29-07:00",
+  "source_message_id": "<5Zj1_AS4ScGskNOo8Zk5Fw@geopod-ismtpd-16>",
+  "incident": {
+    "id": "inc-20260403T180029-platform-change-train-523-northbound-will-board-on-the-south-5zj1-as4scgsknoo8zk5fw-g",
+    "title": "Platform Change Train 523 Northbound will Board on the Southbound Platform at Hillsdale and San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-03T18:00:00-07:00",
+    "resolved_at": "2026-04-03T18:28:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Southbound",
+      "Hillsdale and San Mateo"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Hillsdale and San Mateo | Start: 04/03/26 6:00 PM | End: 04/03/26 6:28 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-03T18:00:29-07:00",
+        "state": "degraded",
+        "message": "Platform Change: Train 523 Northbound will Board on the Southbound\r\n Platform at Hillsdale and San Mateo | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<5Zj1_AS4ScGskNOo8Zk5Fw@geopod-ismtpd-16>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-523-northbound-will-board-on-the-south",
+    "version_created_at": "2026-04-03T18:00:29-07:00"
+  }
+}

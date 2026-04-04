@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-03T18:03:30-07:00",
+  "source_message_id": "<RKTwfyjeR3eUvytNNs8d4g@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260403T180330-train-523-northbound-running-ahead-of-train-147-149-northbou-rktwfyjer3euvytnns8d4g-g",
+    "title": "Train 523 Northbound Running Ahead of Train 147 149 Northbound Starting at Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-03T18:03:00-07:00",
+    "resolved_at": "2026-04-03T18:30:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Millbrae"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Millbrae | Start: 04/03/26 6:03 PM | End: 04/03/26 6:30 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-03T18:03:30-07:00",
+        "state": "degraded",
+        "message": "Train 523 Northbound Running Ahead of Train 147 & 149 Northbound\r\n Starting at Millbrae | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<RKTwfyjeR3eUvytNNs8d4g@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "train-523-northbound-running-ahead-of-train-147-149-northbou",
+    "version_created_at": "2026-04-03T18:03:30-07:00"
+  }
+}

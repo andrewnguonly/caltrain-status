@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-03T18:18:29-07:00",
+  "source_message_id": "<wBlMueSFQrOH25swHQNEfA@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260403T181829-delayed-train-147-northbound-is-running-about-50-minutes-lat-wblmuesfqroh25swhqnefa-g",
+    "title": "Delayed: Train 147 Northbound Is Running About 50 Minutes Late",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-03T18:18:00-07:00",
+    "resolved_at": "2026-04-03T18:36:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 04/03/26 6:18 PM | End: 04/03/26 6:36 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-03T18:18:29-07:00",
+        "state": "degraded",
+        "message": "Train 147 Northbound Is Running About 50 Minutes Late | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<wBlMueSFQrOH25swHQNEfA@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-147-northbound-is-running-about-50-minutes-lat",
+    "version_created_at": "2026-04-03T18:18:29-07:00"
+  }
+}

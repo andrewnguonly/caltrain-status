@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-03T17:29:27-07:00",
+  "source_message_id": "<xjjwBaIcQsiRBVI1OhIuIA@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20260403T172927-train-421-northbound-running-ahead-of-train-147-northbound-s-xjjwbaicqsirbvi1ohiuia-g",
+    "title": "Train 421 Northbound Running Ahead of Train 147 Northbound Starting at Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-03T17:29:00-07:00",
+    "resolved_at": "2026-04-03T18:13:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Redwood City"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Redwood City | Start: 04/03/26 5:29 PM | End: 04/03/26 6:13 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-03T17:29:27-07:00",
+        "state": "degraded",
+        "message": "Train 421 Northbound Running Ahead of Train 147 Northbound Starting\r\n at Redwood City | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<xjjwBaIcQsiRBVI1OhIuIA@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "train-421-northbound-running-ahead-of-train-147-northbound-s",
+    "version_created_at": "2026-04-03T17:29:27-07:00"
+  }
+}
