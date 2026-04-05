@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/30/26 7:37 AM | End: 03/30/26 9:17 AM",
-  "updated_at": "2026-04-04T15:45:56-07:00",
+  "updated_at": "2026-04-04T18:05:12-07:00",
   "active_incident_ids": [
     "inc-20260330T073833-cancelled-train-409-northbound-is-cancelled-train-113-will-a-8f1sbf85sbwzglyieyt-ja-g",
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
@@ -12,6 +12,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260404T180228-delayed-train-645-northbound-is-running-about-10-minutes-lat-rgk-n1moty2hbjgsmym3ha-g",
+    "inc-20260404T171728-delayed-train-639-northbound-is-running-about-10-minutes-lat-iuo-awpvtgsnikss38jlzq-g",
     "inc-20260404T151628-delayed-train-631-northbound-is-running-about-10-minutes-lat-ynoggxiltay-xlbvgzljxw-g",
     "inc-20260404T145928-delayed-train-629-northbound-is-running-about-10-minutes-lat-y7arfgyxrmab-lmnmhragw-g",
     "inc-20260403T181829-delayed-train-147-northbound-is-running-about-50-minutes-lat-wblmuesfqroh25swhqnefa-g",
@@ -498,6 +500,8 @@
     "data/incidents/2026-04/20260403T181229-delayed-train-147-northbound-is--9-fwrcnkspqwjklj0fa5jq-g.json",
     "data/incidents/2026-04/20260403T181829-delayed-train-147-northbound-is--wblmuesfqroh25swhqnefa-g.json",
     "data/incidents/2026-04/20260404T145928-delayed-train-629-northbound-is--y7arfgyxrmab-lmnmhragw-g.json",
-    "data/incidents/2026-04/20260404T151628-delayed-train-631-northbound-is--ynoggxiltay-xlbvgzljxw-g.json"
+    "data/incidents/2026-04/20260404T151628-delayed-train-631-northbound-is--ynoggxiltay-xlbvgzljxw-g.json",
+    "data/incidents/2026-04/20260404T171728-delayed-train-639-northbound-is--iuo-awpvtgsnikss38jlzq-g.json",
+    "data/incidents/2026-04/20260404T180228-delayed-train-645-northbound-is--rgk-n1moty2hbjgsmym3ha-g.json"
   ]
 }

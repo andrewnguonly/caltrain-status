@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-04T18:02:28-07:00",
+  "source_message_id": "<rGK-N1MoTY2HbjGSMym3HA@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260404T180228-delayed-train-645-northbound-is-running-about-10-minutes-lat-rgk-n1moty2hbjgsmym3ha-g",
+    "title": "Delayed Train 645 northbound is running about 10 minutes late approaching Santa Clara",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-04T18:02:00-07:00",
+    "resolved_at": "2026-04-04T18:12:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/04/26 6:02 PM | End: 04/04/26 6:12 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-04T18:02:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 645 northbound is running about 10 minutes late\r\n approaching Santa Clara.",
+        "source_message_id": "<rGK-N1MoTY2HbjGSMym3HA@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-645-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-04T18:02:28-07:00"
+  }
+}
