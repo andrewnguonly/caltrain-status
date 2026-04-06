@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-06T09:33:26-07:00",
+  "source_message_id": "<Jyx9-fH5QH28nvs2tz9FLQ@geopod-ismtpd-16>",
+  "incident": {
+    "id": "inc-20260406T093326-platform-change-train-121-will-depart-off-track-3-at-san-jos-jyx9-fh5qh28nvs2tz9flq-g",
+    "title": "Platform change Train 121 will Depart off Track 3 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-06T09:32:00-07:00",
+    "resolved_at": "2026-04-06T10:28:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/06/26 9:32 AM | End: 04/06/26 10:28 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-06T09:33:26-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 121 will Depart off Track 3 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<Jyx9-fH5QH28nvs2tz9FLQ@geopod-ismtpd-16>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-121-will-depart-off-track-3-at-san-jos",
+    "version_created_at": "2026-04-06T09:33:26-07:00"
+  }
+}
