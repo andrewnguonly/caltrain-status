@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-05T19:04:28-07:00",
+  "source_message_id": "<1vTLp1AnRJqlZ5_GTwqR5g@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260405T190428-delayed-train-645-northbound-is-running-about-12-minutes-lat-1vtlp1anrjqlz5-gtwqr5g-g",
+    "title": "Delayed Train 645 northbound is running about 12 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-05T19:05:00-07:00",
+    "resolved_at": "2026-04-05T19:17:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/05/26 7:05 PM | End: 04/05/26 7:17 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-05T19:04:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 645 northbound is running about 12 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<1vTLp1AnRJqlZ5_GTwqR5g@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-645-northbound-is-running-about-12-minutes-lat",
+    "version_created_at": "2026-04-05T19:04:28-07:00"
+  }
+}
