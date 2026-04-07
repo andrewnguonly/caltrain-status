@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-07T08:42:28-07:00",
+  "source_message_id": "<ID2MbyekRN2EB8TmiPq6vQ@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260407T084228-platform-change-train-135-will-depart-off-track-5-at-san-jos-id2mbyekrn2eb8tmipq6vq-g",
+    "title": "Platform change Train 135 will Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-07T08:41:00-07:00",
+    "resolved_at": "2026-04-07T13:29:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/07/26 8:41 AM | End: 04/07/26 1:29 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-07T08:42:28-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 135 will Depart off Track 5 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<ID2MbyekRN2EB8TmiPq6vQ@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-135-will-depart-off-track-5-at-san-jos",
+    "version_created_at": "2026-04-07T08:42:28-07:00"
+  }
+}
