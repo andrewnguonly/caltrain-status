@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-07T17:18:26-07:00",
+  "source_message_id": "<9ThLc1Q7RGiZb0qyAsyVkg@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260407T171826-delayed-train-519-northbound-is-running-about-11-minutes-lat-9thlc1q7rgizb0qyasyvkg-g",
+    "title": "Delayed Train 519 northbound is running about 11 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-07T17:16:00-07:00",
+    "resolved_at": "2026-04-07T17:27:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/07/26 5:16 PM | End: 04/07/26 5:27 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-07T17:18:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 519 northbound is running about 11 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<9ThLc1Q7RGiZb0qyAsyVkg@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "delayed-train-519-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-04-07T17:18:26-07:00"
+  }
+}
