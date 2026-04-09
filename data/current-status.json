@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/30/26 7:37 AM | End: 03/30/26 9:17 AM",
-  "updated_at": "2026-04-08T13:35:58-07:00",
+  "updated_at": "2026-04-09T07:28:30-07:00",
   "active_incident_ids": [
     "inc-20260330T073833-cancelled-train-409-northbound-is-cancelled-train-113-will-a-8f1sbf85sbwzglyieyt-ja-g",
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
@@ -12,6 +12,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260409T072627-platform-change-train-113-will-arrive-and-depart-off-track-6-f13c3zsyspqsa5d-k2ombg-g",
     "inc-20260408T131126-platform-change-train-143-northbound-will-depart-from-platfo-lryct7iercw1qsvo8siyea-g",
     "inc-20260408T122426-platform-change-train-135-will-depart-off-track-7-at-san-jos-9nsjfdsarje28kqnuly33q-g",
     "inc-20260408T122326-platform-change-train-131-northbound-will-depart-off-track-8-l0rrhlnzrzeg9ovrf-4egq-g",
@@ -583,6 +584,7 @@
     "data/incidents/2026-04/20260408T093127-delayed-train-115-northbound-is--0nxlzhpqs4emyedqsiovyw-g.json",
     "data/incidents/2026-04/20260408T122326-platform-change-train-131-northb-l0rrhlnzrzeg9ovrf-4egq-g.json",
     "data/incidents/2026-04/20260408T122426-platform-change-train-135-will-d-9nsjfdsarje28kqnuly33q-g.json",
-    "data/incidents/2026-04/20260408T131126-platform-change-train-143-northb-lryct7iercw1qsvo8siyea-g.json"
+    "data/incidents/2026-04/20260408T131126-platform-change-train-143-northb-lryct7iercw1qsvo8siyea-g.json",
+    "data/incidents/2026-04/20260409T072627-platform-change-train-113-will-a-f13c3zsyspqsa5d-k2ombg-g.json"
   ]
 }
