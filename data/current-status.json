@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/30/26 7:37 AM | End: 03/30/26 9:17 AM",
-  "updated_at": "2026-04-09T20:36:13-07:00",
+  "updated_at": "2026-04-10T06:58:32-07:00",
   "active_incident_ids": [
     "inc-20260330T073833-cancelled-train-409-northbound-is-cancelled-train-113-will-a-8f1sbf85sbwzglyieyt-ja-g",
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
@@ -12,6 +12,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260410T060627-platform-change-train-405-will-depart-off-track-9-at-san-jos-1verjuicqeqtvqv-kvlmng-g",
     "inc-20260409T172830-delayed-train-147-northbound-is-running-about-10-minutes-lat-39fg0i0dtmajngcvebkguq-g",
     "inc-20260409T163032-train-421-northbound-has-been-cancelled-train-149-northbound-alpj-miat22n7oukuh7txg-g",
     "inc-20260409T094226-platform-change-train-127-northbound-will-depart-off-track-4-iogdcwdnrfmc2bdfqcqueg-g",
@@ -601,6 +602,7 @@
     "data/incidents/2026-04/20260409T094126-platform-change-train-123-will-d-967b-xxitjq7gp1a-7kzcq-g.json",
     "data/incidents/2026-04/20260409T094226-platform-change-train-127-northb-iogdcwdnrfmc2bdfqcqueg-g.json",
     "data/incidents/2026-04/20260409T163032-train-421-northbound-has-been-ca-alpj-miat22n7oukuh7txg-g.json",
-    "data/incidents/2026-04/20260409T172830-delayed-train-147-northbound-is--39fg0i0dtmajngcvebkguq-g.json"
+    "data/incidents/2026-04/20260409T172830-delayed-train-147-northbound-is--39fg0i0dtmajngcvebkguq-g.json",
+    "data/incidents/2026-04/20260410T060627-platform-change-train-405-will-d-1verjuicqeqtvqv-kvlmng-g.json"
   ]
 }
