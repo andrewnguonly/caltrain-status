@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-10T18:43:26-07:00",
+  "source_message_id": "<nWMNDO_6S0ySVpTw5JwYfA@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260410T184326-platform-change-train-523-northbound-will-board-on-the-south-nwmndo-6s0ysvptw5jwyfa-g",
+    "title": "Platform Change Train 523 Northbound will Board on the Southbound Platform at 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-10T18:43:00-07:00",
+    "resolved_at": "2026-04-10T18:49:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/10/26 6:43 PM | End: 04/10/26 6:49 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-10T18:43:26-07:00",
+        "state": "degraded",
+        "message": "Platform Change: Train 523 Northbound will Board on the Southbound\r\n Platform at 22nd Street | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<nWMNDO_6S0ySVpTw5JwYfA@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-523-northbound-will-board-on-the-south",
+    "version_created_at": "2026-04-10T18:43:26-07:00"
+  }
+}
