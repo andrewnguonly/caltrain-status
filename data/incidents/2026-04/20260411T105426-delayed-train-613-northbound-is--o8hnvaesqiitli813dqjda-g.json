@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-11T10:54:26-07:00",
+  "source_message_id": "<o8HnVAeSQiitlI813DQjdA@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260411T105426-delayed-train-613-northbound-is-running-about-10-minutes-lat-o8hnvaesqiitli813dqjda-g",
+    "title": "Delayed Train 613 northbound is running about 10 minutes late approaching Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-11T10:54:00-07:00",
+    "resolved_at": "2026-04-11T11:04:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/11/26 10:54 AM | End: 04/11/26 11:04 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-11T10:54:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 613 northbound is running about 10 minutes late\r\n approaching Millbrae.",
+        "source_message_id": "<o8HnVAeSQiitlI813DQjdA@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "delayed-train-613-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-11T10:54:26-07:00"
+  }
+}
