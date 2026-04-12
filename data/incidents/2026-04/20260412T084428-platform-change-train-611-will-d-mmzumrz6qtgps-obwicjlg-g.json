@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-12T08:44:28-07:00",
+  "source_message_id": "<MMZUmrz6QtGPs-oBWicjLg@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260412T084428-platform-change-train-611-will-depart-off-track-7-at-san-jos-mmzumrz6qtgps-obwicjlg-g",
+    "title": "Platform change Train 611 will Depart off Track 7 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-12T08:42:00-07:00",
+    "resolved_at": "2026-04-12T09:27:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/12/26 8:42 AM | End: 04/12/26 9:27 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-12T08:44:28-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 611 will Depart off Track 7 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<MMZUmrz6QtGPs-oBWicjLg@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-611-will-depart-off-track-7-at-san-jos",
+    "version_created_at": "2026-04-12T08:44:28-07:00"
+  }
+}
