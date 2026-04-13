@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 03/30/26 7:37 AM | End: 03/30/26 9:17 AM",
-  "updated_at": "2026-04-12T09:03:46-07:00",
+  "updated_at": "2026-04-13T05:47:51-07:00",
   "active_incident_ids": [
     "inc-20260330T073833-cancelled-train-409-northbound-is-cancelled-train-113-will-a-8f1sbf85sbwzglyieyt-ja-g",
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
@@ -12,6 +12,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260413T053028-platform-change-train-401-northbound-will-depart-from-platfo-rwuolwq4tkwtzpxngjs5pg-g",
     "inc-20260412T084428-platform-change-train-611-will-depart-off-track-7-at-san-jos-mmzumrz6qtgps-obwicjlg-g",
     "inc-20260411T105426-delayed-train-613-northbound-is-running-about-10-minutes-lat-o8hnvaesqiitli813dqjda-g",
     "inc-20260411T001228-platform-change-train-173-will-board-on-the-southbound-platf-g7of7qhxr5mnxmv65pmiyq-g",
@@ -633,6 +634,7 @@
     "data/incidents/2026-04/20260410T191727-please-expect-up-to-60-minute-de-dflbflf8qh-xefcpymowdq-g.json",
     "data/incidents/2026-04/20260411T001228-platform-change-train-173-will-b-g7of7qhxr5mnxmv65pmiyq-g.json",
     "data/incidents/2026-04/20260411T105426-delayed-train-613-northbound-is--o8hnvaesqiitli813dqjda-g.json",
-    "data/incidents/2026-04/20260412T084428-platform-change-train-611-will-d-mmzumrz6qtgps-obwicjlg-g.json"
+    "data/incidents/2026-04/20260412T084428-platform-change-train-611-will-d-mmzumrz6qtgps-obwicjlg-g.json",
+    "data/incidents/2026-04/20260413T053028-platform-change-train-401-northb-rwuolwq4tkwtzpxngjs5pg-g.json"
   ]
 }
