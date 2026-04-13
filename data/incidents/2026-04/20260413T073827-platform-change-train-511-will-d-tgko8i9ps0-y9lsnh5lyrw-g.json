@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-13T07:38:27-07:00",
+  "source_message_id": "<TgkO8i9pS0-y9lsNH5lyRw@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260413T073827-platform-change-train-511-will-depart-off-track-9-at-san-jos-tgko8i9ps0-y9lsnh5lyrw-g",
+    "title": "Platform change Train 511 will Depart off Track 9 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-13T07:36:00-07:00",
+    "resolved_at": "2026-04-13T08:23:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/13/26 7:36 AM | End: 04/13/26 8:23 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-13T07:38:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 511 will Depart off Track 9 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<TgkO8i9pS0-y9lsNH5lyRw@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-511-will-depart-off-track-9-at-san-jos",
+    "version_created_at": "2026-04-13T07:38:27-07:00"
+  }
+}
