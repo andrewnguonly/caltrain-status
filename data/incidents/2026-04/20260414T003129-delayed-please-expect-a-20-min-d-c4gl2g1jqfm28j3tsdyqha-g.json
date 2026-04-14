@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-14T00:31:29-07:00",
+  "source_message_id": "<c4gl2G1JQFm28j3tSdyQHA@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260414T003129-delayed-please-expect-a-20-min-delay-for-train-173-c4gl2g1jqfm28j3tsdyqha-g",
+    "title": "Delayed: Please expect a 20 min Delay for Train 173",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-14T00:30:00-07:00",
+    "resolved_at": "2026-04-14T01:20:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: 04/14/26 12:30 AM | End: 04/14/26 1:20 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-14T00:31:29-07:00",
+        "state": "degraded",
+        "message": "Please expect a 20 min Delay for Train 173 | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<c4gl2G1JQFm28j3tSdyQHA@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "delayed-please-expect-a-20-min-delay-for-train-173",
+    "version_created_at": "2026-04-14T00:31:29-07:00"
+  }
+}
