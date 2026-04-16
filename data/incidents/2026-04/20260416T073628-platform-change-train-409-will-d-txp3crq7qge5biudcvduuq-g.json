@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-16T07:36:28-07:00",
+  "source_message_id": "<tXp3CrQ7QGe5biuDCvDUuQ@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260416T073628-platform-change-train-409-will-depart-off-track-5-at-san-jos-txp3crq7qge5biudcvduuq-g",
+    "title": "Platform change Train 409 will Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-16T07:35:00-07:00",
+    "resolved_at": "2026-04-16T07:42:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/16/26 7:35 AM | End: 04/16/26 7:42 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-16T07:36:28-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 409 will Depart off Track 5 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<tXp3CrQ7QGe5biuDCvDUuQ@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-409-will-depart-off-track-5-at-san-jos",
+    "version_created_at": "2026-04-16T07:36:28-07:00"
+  }
+}
