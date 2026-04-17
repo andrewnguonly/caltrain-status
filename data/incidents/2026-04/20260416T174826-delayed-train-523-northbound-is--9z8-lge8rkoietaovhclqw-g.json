@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-16T17:48:26-07:00",
+  "source_message_id": "<9z8_LGE8RkOIETAOVHClQw@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260416T174826-delayed-train-523-northbound-is-running-about-10-minutes-lat-9z8-lge8rkoietaovhclqw-g",
+    "title": "Delayed Train 523 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-16T17:49:00-07:00",
+    "resolved_at": "2026-04-16T17:59:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/16/26 5:49 PM | End: 04/16/26 5:59 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-16T17:48:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 523 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<9z8_LGE8RkOIETAOVHClQw@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "delayed-train-523-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-16T17:48:26-07:00"
+  }
+}
