@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-17T07:48:27-07:00",
+  "source_message_id": "<-9Y2QZ-NR3iG9a4A9ScPLw@geopod-ismtpd-7>",
+  "incident": {
+    "id": "inc-20260417T074827-delayed-train-507-northbound-is-running-about-10-minutes-lat-9y2qz-nr3ig9a4a9scplw-ge",
+    "title": "Delayed Train 507 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-17T07:49:00-07:00",
+    "resolved_at": "2026-04-17T07:59:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/17/26 7:49 AM | End: 04/17/26 7:59 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-17T07:48:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 507 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<-9Y2QZ-NR3iG9a4A9ScPLw@geopod-ismtpd-7>"
+      }
+    ],
+    "ingestion_key": "delayed-train-507-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-17T07:48:27-07:00"
+  }
+}
