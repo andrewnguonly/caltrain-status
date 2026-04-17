@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-17T12:21:26-07:00",
+  "source_message_id": "<yewxzJGVS62ySX5IH0xlMg@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260417T122126-platform-change-train-139-will-depart-off-track-5-at-san-jos-yewxzjgvs62ysx5ih0xlmg-g",
+    "title": "Platform change Train 139 will Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-17T12:20:00-07:00",
+    "resolved_at": "2026-04-17T14:28:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/17/26 12:20 PM | End: 04/17/26 2:28 PM",
+    "updates": [
+      {
+        "timestamp": "2026-04-17T12:21:26-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 139 will Depart off Track 5 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<yewxzJGVS62ySX5IH0xlMg@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-139-will-depart-off-track-5-at-san-jos",
+    "version_created_at": "2026-04-17T12:21:26-07:00"
+  }
+}
