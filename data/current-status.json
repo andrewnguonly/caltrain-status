@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 04/14/26 1:53 PM | End: 04/14/26 2:30 PM",
-  "updated_at": "2026-04-20T08:53:36-07:00",
+  "updated_at": "2026-04-20T09:57:28-07:00",
   "active_incident_ids": [
     "inc-20260414T135527-cancelled-train-133-northbound-has-been-cancelled-train-135--b1qq-2vjqzumvlkbos64ig-g",
     "inc-20260330T073833-cancelled-train-409-northbound-is-cancelled-train-113-will-a-8f1sbf85sbwzglyieyt-ja-g",
@@ -13,6 +13,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260420T092029-track-change-train-123-will-depart-off-track-3-at-san-jose-d-spxgolkjsmkgzmfcvtd3fw-g",
+    "inc-20260420T091929-track-change-train-121-will-arrive-and-depart-off-track-5-at-pw-f3cxtqsu6yqfgthlf1q-g",
+    "inc-20260420T092527-delayed-train-511-northbound-is-running-about-23-minutes-lat-mkbla42yqe6blrlfvzfgxg-g",
     "inc-20260420T084030-delayed-train-511-northbound-is-running-about-10-minutes-lat-vcwnhtkytc2qdzkxp1vfbg-g",
     "inc-20260420T084427-train-115-will-run-ahead-of-train-511-starting-at-lawrence-s-o9ncba-erxiypgyyog-aya-g",
     "inc-20260420T061328-track-change-train-405-will-depart-off-track-9-at-san-jose-d-ngbtitiarzo8ozjmnuthqg-g",
@@ -742,6 +745,9 @@
     "data/incidents/2026-04/20260418T121928-delayed-train-619-northbound-is--ua3ts1-ftzojhsvzn0tscq-g.json",
     "data/incidents/2026-04/20260420T061328-track-change-train-405-will-depa-ngbtitiarzo8ozjmnuthqg-g.json",
     "data/incidents/2026-04/20260420T084030-delayed-train-511-northbound-is--vcwnhtkytc2qdzkxp1vfbg-g.json",
-    "data/incidents/2026-04/20260420T084427-train-115-will-run-ahead-of-trai-o9ncba-erxiypgyyog-aya-g.json"
+    "data/incidents/2026-04/20260420T084427-train-115-will-run-ahead-of-trai-o9ncba-erxiypgyyog-aya-g.json",
+    "data/incidents/2026-04/20260420T091929-track-change-train-121-will-arri-pw-f3cxtqsu6yqfgthlf1q-g.json",
+    "data/incidents/2026-04/20260420T092029-track-change-train-123-will-depa-spxgolkjsmkgzmfcvtd3fw-g.json",
+    "data/incidents/2026-04/20260420T092527-delayed-train-511-northbound-is--mkbla42yqe6blrlfvzfgxg-g.json"
   ]
 }
