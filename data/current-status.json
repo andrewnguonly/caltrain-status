@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 04/14/26 1:53 PM | End: 04/14/26 2:30 PM",
-  "updated_at": "2026-04-22T07:57:04-07:00",
+  "updated_at": "2026-04-22T12:39:43-07:00",
   "active_incident_ids": [
     "inc-20260414T135527-cancelled-train-133-northbound-has-been-cancelled-train-135--b1qq-2vjqzumvlkbos64ig-g",
     "inc-20260330T073833-cancelled-train-409-northbound-is-cancelled-train-113-will-a-8f1sbf85sbwzglyieyt-ja-g",
@@ -13,6 +13,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260422T115926-platform-change-train-139-will-depart-off-track-5-at-san-jos-ibcriextsheiwp4zwpcpia-g",
+    "inc-20260422T115726-track-change-train-135-will-depart-off-track-5-at-san-jose-d-x7zy8js-ruk8kmqffdzpew-g",
     "inc-20260422T061730-platform-change-train-507-will-depart-off-track-5-at-san-jos-h-6pd1vdraarnivpzstx2q-g",
     "inc-20260421T175629-delayed-train-523-northbound-is-running-about-10-minutes-lat-ksk2wmdnr6ufi06k0ucfka-g",
     "inc-20260421T163630-platform-change-train-523-northbound-will-depart-from-platfo-jptvo7fqqxwvoisxyfqkzq-g",
@@ -788,6 +790,8 @@
     "data/incidents/2026-04/20260421T153230-platform-change-train-147-northb-mjpdok4ptsmaoio0kyjmmg-g.json",
     "data/incidents/2026-04/20260421T163630-platform-change-train-523-northb-jptvo7fqqxwvoisxyfqkzq-g.json",
     "data/incidents/2026-04/20260421T175629-delayed-train-523-northbound-is--ksk2wmdnr6ufi06k0ucfka-g.json",
-    "data/incidents/2026-04/20260422T061730-platform-change-train-507-will-d-h-6pd1vdraarnivpzstx2q-g.json"
+    "data/incidents/2026-04/20260422T061730-platform-change-train-507-will-d-h-6pd1vdraarnivpzstx2q-g.json",
+    "data/incidents/2026-04/20260422T115726-track-change-train-135-will-depa-x7zy8js-ruk8kmqffdzpew-g.json",
+    "data/incidents/2026-04/20260422T115926-platform-change-train-139-will-d-ibcriextsheiwp4zwpcpia-g.json"
   ]
 }
