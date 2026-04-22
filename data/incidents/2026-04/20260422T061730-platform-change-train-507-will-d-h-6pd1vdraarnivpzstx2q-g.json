@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-22T06:17:30-07:00",
+  "source_message_id": "<h-6PD1vDRaaRNIvPzSTx2Q@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20260422T061730-platform-change-train-507-will-depart-off-track-5-at-san-jos-h-6pd1vdraarnivpzstx2q-g",
+    "title": "Platform change Train 507 will Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-22T07:00:00-07:00",
+    "resolved_at": "2026-04-22T07:21:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 04/22/26 7:00 AM | End: 04/22/26 7:21 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-22T06:17:30-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 507 will Depart off Track 5 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<h-6PD1vDRaaRNIvPzSTx2Q@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-507-will-depart-off-track-5-at-san-jos",
+    "version_created_at": "2026-04-22T06:17:30-07:00"
+  }
+}
