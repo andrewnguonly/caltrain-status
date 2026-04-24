@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-24T07:25:30-07:00",
+  "source_message_id": "<sI0ZppLUS4ChylTbu3J7ow@geopod-ismtpd-0>",
+  "incident": {
+    "id": "inc-20260424T072530-delayed-train-405-northbound-is-running-about-10-minutes-lat-si0zpplus4chyltbu3j7ow-g",
+    "title": "Delayed Train 405 northbound is running about 10 minutes late approaching Hillsdale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-24T07:25:00-07:00",
+    "resolved_at": "2026-04-24T07:35:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/24/26 7:25 AM | End: 04/24/26 7:35 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-24T07:25:30-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 405 northbound is running about 10 minutes late\r\n approaching Hillsdale.",
+        "source_message_id": "<sI0ZppLUS4ChylTbu3J7ow@geopod-ismtpd-0>"
+      }
+    ],
+    "ingestion_key": "delayed-train-405-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-24T07:25:30-07:00"
+  }
+}
