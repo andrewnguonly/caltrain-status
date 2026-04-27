@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-27T09:15:26-07:00",
+  "source_message_id": "<vmO7Qv6zS6OzlO6d8R31ZQ@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260427T091526-track-change-train-123-will-depart-off-track-3-at-san-jose-d-vmo7qv6zs6ozlo6d8r31zq-g",
+    "title": "Track Change: Train 123 will Depart off Track 3 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-27T09:14:00-07:00",
+    "resolved_at": "2026-04-27T10:29:00-07:00",
+    "affected_segments": [
+      "San Jose Diridon"
+    ],
+    "summary": "Track Change | Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 04/27/26 9:14 AM | End: 04/27/26 10:29 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-27T09:15:26-07:00",
+        "state": "degraded",
+        "message": "Train 123 will Depart off Track 3 at San Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<vmO7Qv6zS6OzlO6d8R31ZQ@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "track-change-train-123-will-depart-off-track-3-at-san-jose-d",
+    "version_created_at": "2026-04-27T09:15:26-07:00"
+  }
+}

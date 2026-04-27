@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-27T08:28:27-07:00",
+  "source_message_id": "<_Or8OIAbQlihW2s9-1vZrg@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260427T082827-delayed-train-409-northbound-is-running-about-10-minutes-lat-or8oiabqlihw2s9-1vzrg-ge",
+    "title": "Delayed Train 409 northbound is running about 10 minutes late approaching San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-27T08:28:00-07:00",
+    "resolved_at": "2026-04-27T08:38:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 04/27/26 8:28 AM | End: 04/27/26 8:38 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-27T08:28:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 409 northbound is running about 10 minutes late\r\n approaching San Mateo.",
+        "source_message_id": "<_Or8OIAbQlihW2s9-1vZrg@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-409-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-04-27T08:28:27-07:00"
+  }
+}
