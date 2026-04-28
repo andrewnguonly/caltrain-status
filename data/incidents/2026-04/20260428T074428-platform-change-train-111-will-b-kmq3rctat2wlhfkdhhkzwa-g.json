@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-04-28T07:44:28-07:00",
+  "source_message_id": "<kMQ3RctaT2WLhFKdhhkZWA@geopod-ismtpd-0>",
+  "incident": {
+    "id": "inc-20260428T074428-platform-change-train-111-will-board-on-the-southbound-platf-kmq3rctat2wlhfkdhhkzwa-g",
+    "title": "Platform Change Train 111 will Board on the Southbound Platform at Sunnyvale and Lawrence",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-04-28T07:43:00-07:00",
+    "resolved_at": "2026-04-28T07:52:00-07:00",
+    "affected_segments": [
+      "Southbound",
+      "Sunnyvale and Lawrence"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Sunnyvale and Lawrence | Start: 04/28/26 7:43 AM | End: 04/28/26 7:52 AM",
+    "updates": [
+      {
+        "timestamp": "2026-04-28T07:44:28-07:00",
+        "state": "degraded",
+        "message": "Platform Change: Train 111 will Board on the Southbound Platform at\r\n Sunnyvale and Lawrence | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<kMQ3RctaT2WLhFKdhhkZWA@geopod-ismtpd-0>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-111-will-board-on-the-southbound-platf",
+    "version_created_at": "2026-04-28T07:44:28-07:00"
+  }
+}
