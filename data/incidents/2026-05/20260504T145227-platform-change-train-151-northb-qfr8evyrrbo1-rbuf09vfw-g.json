@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-04T14:52:27-07:00",
+  "source_message_id": "<qfr8EVyRRbO1_Rbuf09VFw@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260504T145227-platform-change-train-151-northbound-will-depart-from-platfo-qfr8evyrrbo1-rbuf09vfw-g",
+    "title": "Platform change Train 151 Northbound will depart from platform 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-04T14:51:00-07:00",
+    "resolved_at": "2026-05-04T17:28:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: San Jose Diridon | Start: 05/04/26 2:51 PM | End: 05/04/26 5:28 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-04T14:52:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 151 Northbound will depart from platform 8 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<qfr8EVyRRbO1_Rbuf09VFw@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-151-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-05-04T14:52:27-07:00"
+  }
+}
