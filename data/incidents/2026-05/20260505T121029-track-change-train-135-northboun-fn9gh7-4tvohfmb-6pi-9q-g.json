@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-05T12:10:29-07:00",
+  "source_message_id": "<FN9Gh7_4TVOHfMb_6Pi-9Q@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260505T121029-track-change-train-135-northbound-will-depart-off-track-5-at-fn9gh7-4tvohfmb-6pi-9q-g",
+    "title": "Track Change Train 135 Northbound will Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-05T12:09:00-07:00",
+    "resolved_at": "2026-05-05T13:29:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 05/05/26 12:09 PM | End: 05/05/26 1:29 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-05T12:10:29-07:00",
+        "state": "degraded",
+        "message": "Track Change: Train 135 Northbound will Depart off Track 5 at San\r\n Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<FN9Gh7_4TVOHfMb_6Pi-9Q@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "track-change-train-135-northbound-will-depart-off-track-5-at",
+    "version_created_at": "2026-05-05T12:10:29-07:00"
+  }
+}
