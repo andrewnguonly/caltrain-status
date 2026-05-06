@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 9:57 AM | End: 05/06/26 11:16 AM",
-  "updated_at": "2026-05-06T11:54:16-07:00",
+  "updated_at": "2026-05-06T13:17:26-07:00",
   "active_incident_ids": [
     "inc-20260506T101026-restroom-out-of-service-train-121-restroom-is-unavailable-pl-9hppv0xtrfi1pxc9xaqh1g-g",
     "inc-20260414T135527-cancelled-train-133-northbound-has-been-cancelled-train-135--b1qq-2vjqzumvlkbos64ig-g",
@@ -14,6 +14,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260506T124427-delayed-train-131-northbound-is-running-about-10-minutes-lat-tysn0tvfqzcpokbsukuavg-g",
     "inc-20260506T105929-platform-change-train-127-northbound-will-depart-from-platfo-yetfevj-qece-ctnhua-cw-g",
     "inc-20260506T105330-train-121-standing-room-only-jxmdmng1svegyaqshijbsa-g",
     "inc-20260505T171627-platform-change-train-425-northbound-will-depart-from-platfo-vnq6fax1ta6r3whwqm1rca-g",
@@ -952,6 +953,7 @@
     "data/incidents/2026-05/20260505T171627-platform-change-train-425-northb-vnq6fax1ta6r3whwqm1rca-g.json",
     "data/incidents/2026-05/20260506T101026-restroom-out-of-service-train-12-9hppv0xtrfi1pxc9xaqh1g-g.json",
     "data/incidents/2026-05/20260506T105330-train-121-standing-room-only-jxmdmng1svegyaqshijbsa-g.json",
-    "data/incidents/2026-05/20260506T105929-platform-change-train-127-northb-yetfevj-qece-ctnhua-cw-g.json"
+    "data/incidents/2026-05/20260506T105929-platform-change-train-127-northb-yetfevj-qece-ctnhua-cw-g.json",
+    "data/incidents/2026-05/20260506T124427-delayed-train-131-northbound-is--tysn0tvfqzcpokbsukuavg-g.json"
   ]
 }

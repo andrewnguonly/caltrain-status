@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-06T12:44:27-07:00",
+  "source_message_id": "<TYsn0TVfQZCPokBsuKUAVg@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20260506T124427-delayed-train-131-northbound-is-running-about-10-minutes-lat-tysn0tvfqzcpokbsukuavg-g",
+    "title": "Delayed Train 131 northbound is running about 10 minutes late approaching Mountain View",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-06T12:46:00-07:00",
+    "resolved_at": "2026-05-06T12:56:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/06/26 12:46 PM | End: 05/06/26 12:56 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-06T12:44:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 131 northbound is running about 10 minutes late\r\n approaching Mountain View.",
+        "source_message_id": "<TYsn0TVfQZCPokBsuKUAVg@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "delayed-train-131-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-06T12:44:27-07:00"
+  }
+}
