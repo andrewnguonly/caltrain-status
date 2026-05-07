@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-06T21:00:09-07:00",
+  "updated_at": "2026-05-06T23:43:22-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260506T213029-delayed-train-163-northbound-is-running-about-11-minutes-lat-eyjpso6gtfyexrve7u-o2w-g",
     "inc-20260506T195329-restroom-out-of-service-train-161-restroom-is-unavailable-pl-p9oafw96sguydbtu73rzrg-g",
     "inc-20260506T191430-platform-change-train-163-northbound-will-depart-from-platfo-6exsm3x1rzcqmqmkilstdq-g",
     "inc-20260506T175426-restroom-out-of-service-train-169-restroom-is-unavailable-pl-vt-dh0alqpkpmpmwpf1ycw-g",
@@ -980,6 +981,7 @@
     "data/incidents/2026-05/20260506T175029-restroom-out-of-service-train-42-ypkha0v5qjqfjipbgfvzva-g.json",
     "data/incidents/2026-05/20260506T175426-restroom-out-of-service-train-16-vt-dh0alqpkpmpmwpf1ycw-g.json",
     "data/incidents/2026-05/20260506T191430-platform-change-train-163-northb-6exsm3x1rzcqmqmkilstdq-g.json",
-    "data/incidents/2026-05/20260506T195329-restroom-out-of-service-train-16-p9oafw96sguydbtu73rzrg-g.json"
+    "data/incidents/2026-05/20260506T195329-restroom-out-of-service-train-16-p9oafw96sguydbtu73rzrg-g.json",
+    "data/incidents/2026-05/20260506T213029-delayed-train-163-northbound-is--eyjpso6gtfyexrve7u-o2w-g.json"
   ]
 }
