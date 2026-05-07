@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-07T09:07:27-07:00",
+  "source_message_id": "<iI5AHe2dQkyOVxj2gp4O8w@geopod-ismtpd-canary-0>",
+  "incident": {
+    "id": "inc-20260507T090727-restroom-out-of-service-train-511-restroom-is-unavailable-pl-ii5ahe2dqkyovxj2gp4o8w-g",
+    "title": "Restroom Out of Service Train 511 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-07T09:05:00-07:00",
+    "resolved_at": "2026-05-07T09:22:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: 05/07/26 9:05 AM | End: 05/07/26 9:22 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-07T09:07:27-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 511 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<iI5AHe2dQkyOVxj2gp4O8w@geopod-ismtpd-canary-0>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-511-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-07T09:07:27-07:00"
+  }
+}
