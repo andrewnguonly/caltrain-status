@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-08T12:48:42-07:00",
+  "updated_at": "2026-05-08T14:43:10-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260508T141627-platform-change-train-515-northbound-will-depart-from-platfo-h6-t4l0etzu-wpcgny7j9w-g",
+    "inc-20260508T141527-platform-change-train-139-northbound-will-depart-from-platfo-y3igkv2gspsav3yttq6hug-g",
     "inc-20260508T124626-restroom-out-of-service-train-133-restroom-is-unavailable-pl-cntdlqgwtm6wm-xuo-t6rq-g",
     "inc-20260508T120926-track-change-train-135-northbound-will-depart-off-track-5-at-pn-i0rr5si-rio-to8ct8a-g",
     "inc-20260508T091127-restroom-out-of-service-train-413-restroom-is-unavailable-pl-fjmqa1feraqiont-zlubcg-g",
@@ -1022,6 +1024,8 @@
     "data/incidents/2026-05/20260508T083226-platform-change-train-123-northb-6ecgv5scsvibjsctezbvqg-g.json",
     "data/incidents/2026-05/20260508T091127-restroom-out-of-service-train-41-fjmqa1feraqiont-zlubcg-g.json",
     "data/incidents/2026-05/20260508T120926-track-change-train-135-northboun-pn-i0rr5si-rio-to8ct8a-g.json",
-    "data/incidents/2026-05/20260508T124626-restroom-out-of-service-train-13-cntdlqgwtm6wm-xuo-t6rq-g.json"
+    "data/incidents/2026-05/20260508T124626-restroom-out-of-service-train-13-cntdlqgwtm6wm-xuo-t6rq-g.json",
+    "data/incidents/2026-05/20260508T141527-platform-change-train-139-northb-y3igkv2gspsav3yttq6hug-g.json",
+    "data/incidents/2026-05/20260508T141627-platform-change-train-515-northb-h6-t4l0etzu-wpcgny7j9w-g.json"
   ]
 }
