@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-09T15:04:27-07:00",
+  "source_message_id": "<td-auD3ZS_KWF4UPI05JOQ@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260509T150427-closure-san-antonio-northbound-mountain-view-northbound-stat-td-aud3zs-kwf4upi05joq-g",
+    "title": "Closure San Antonio Northbound Mountain View Northbound Stations closed starting 5 9 2026 3 03 PM due to construction",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-09T15:03:00-07:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "Northbound",
+      "Southbound"
+    ],
+    "summary": "Effect: Stop Moved | Cause: Construction | Start: 05/09/26 3:03 PM | End: Caltrain",
+    "updates": [
+      {
+        "timestamp": "2026-05-09T15:04:27-07:00",
+        "state": "degraded",
+        "message": "Closure: San Antonio Caltrain Northbound, Mountain View Caltrain\r\n Northbound Stations closed starting 5/9/2026 3:03 PM due to construction | Effect: Stop Moved | Cause: Construction",
+        "source_message_id": "<td-auD3ZS_KWF4UPI05JOQ@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "closure-san-antonio-northbound-mountain-view-northbound-stat",
+    "version_created_at": "2026-05-09T15:04:27-07:00"
+  }
+}
