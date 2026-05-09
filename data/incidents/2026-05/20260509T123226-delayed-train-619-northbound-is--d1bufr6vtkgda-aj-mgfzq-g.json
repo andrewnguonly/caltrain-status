@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-09T12:32:26-07:00",
+  "source_message_id": "<d1BUfR6VTkGda-Aj-mGfZQ@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20260509T123226-delayed-train-619-northbound-is-running-about-10-minutes-lat-d1bufr6vtkgda-aj-mgfzq-g",
+    "title": "Delayed Train 619 northbound is running about 10 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-09T12:35:00-07:00",
+    "resolved_at": "2026-05-09T12:45:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/09/26 12:35 PM | End: 05/09/26 12:45 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-09T12:32:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 619 northbound is running about 10 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<d1BUfR6VTkGda-Aj-mGfZQ@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "delayed-train-619-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-09T12:32:26-07:00"
+  }
+}
