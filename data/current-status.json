@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-09T21:09:41-07:00",
+  "updated_at": "2026-05-10T07:40:01-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260510T071726-restroom-out-of-service-train-605-restroom-is-unavailable-pl-loyqndohrw2npipsbweb5g-g",
     "inc-20260509T195426-delayed-train-651-northbound-is-running-about-10-minutes-lat-6g1nu7zqrhuunluru1tesw-g",
     "inc-20260509T195128-restroom-out-of-service-train-651-restroom-is-unavailable-pl-zvzsr6d3qtauhrhsmdinpa-g",
     "inc-20260509T183128-delayed-train-643-northbound-is-running-about-12-minutes-lat-n0vj-yg5raeezushjl9ggg-g",
@@ -1063,6 +1064,7 @@
     "data/incidents/2026-05/20260509T181626-restroom-out-of-service-train-64-nqpdydjot2s58xub34r-cw-g.json",
     "data/incidents/2026-05/20260509T183128-delayed-train-643-northbound-is--n0vj-yg5raeezushjl9ggg-g.json",
     "data/incidents/2026-05/20260509T195128-restroom-out-of-service-train-65-zvzsr6d3qtauhrhsmdinpa-g.json",
-    "data/incidents/2026-05/20260509T195426-delayed-train-651-northbound-is--6g1nu7zqrhuunluru1tesw-g.json"
+    "data/incidents/2026-05/20260509T195426-delayed-train-651-northbound-is--6g1nu7zqrhuunluru1tesw-g.json",
+    "data/incidents/2026-05/20260510T071726-restroom-out-of-service-train-60-loyqndohrw2npipsbweb5g-g.json"
   ]
 }
