@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-09T17:47:29-07:00",
+  "source_message_id": "<D-q2aFleSqW_7x9QqThCBg@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260509T174729-delayed-train-643-northbound-is-running-about-10-minutes-lat-d-q2aflesqw-7x9qqthcbg-g",
+    "title": "Delayed Train 643 northbound is running about 10 minutes late approaching San Antonio",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-09T17:48:00-07:00",
+    "resolved_at": "2026-05-09T17:58:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/09/26 5:48 PM | End: 05/09/26 5:58 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-09T17:47:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 643 northbound is running about 10 minutes late\r\n approaching San Antonio.",
+        "source_message_id": "<D-q2aFleSqW_7x9QqThCBg@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "delayed-train-643-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-09T17:47:29-07:00"
+  }
+}

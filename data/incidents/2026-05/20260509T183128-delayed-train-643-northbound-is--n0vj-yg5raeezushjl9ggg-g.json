@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-09T18:31:28-07:00",
+  "source_message_id": "<n0vJ-YG5RAeEZUShjl9gGg@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20260509T183128-delayed-train-643-northbound-is-running-about-12-minutes-lat-n0vj-yg5raeezushjl9ggg-g",
+    "title": "Delayed Train 643 northbound is running about 12 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-09T18:30:00-07:00",
+    "resolved_at": "2026-05-09T18:42:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/09/26 6:30 PM | End: 05/09/26 6:42 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-09T18:31:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 643 northbound is running about 12 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<n0vJ-YG5RAeEZUShjl9gGg@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "delayed-train-643-northbound-is-running-about-12-minutes-lat",
+    "version_created_at": "2026-05-09T18:31:28-07:00"
+  }
+}
