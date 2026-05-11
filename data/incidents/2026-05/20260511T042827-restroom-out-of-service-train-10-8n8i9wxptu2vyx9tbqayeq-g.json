@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-11T04:28:27-07:00",
+  "source_message_id": "<8N8I9WxPTu2vyx9TbqayeQ@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20260511T042827-restroom-out-of-service-train-103-restroom-is-unavailable-pl-8n8i9wxptu2vyx9tbqayeq-g",
+    "title": "Restroom Out of Service Train 103 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-11T04:28:27-07:00",
+    "resolved_at": "2026-05-11T06:26:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: * End Date * | End: 05/11/26 6:26 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-11T04:28:27-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 103 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<8N8I9WxPTu2vyx9TbqayeQ@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-103-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-11T04:28:27-07:00"
+  }
+}
