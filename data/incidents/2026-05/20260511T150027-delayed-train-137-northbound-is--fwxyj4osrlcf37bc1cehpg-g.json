@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-11T15:00:27-07:00",
+  "source_message_id": "<fwxyj4OsRLCf37BC1cEHPg@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260511T150027-delayed-train-137-northbound-is-running-about-11-minutes-lat-fwxyj4osrlcf37bc1cehpg-g",
+    "title": "Delayed Train 137 northbound is running about 11 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-11T15:00:00-07:00",
+    "resolved_at": "2026-05-11T15:11:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/11/26 3:00 PM | End: 05/11/26 3:11 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-11T15:00:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 137 northbound is running about 11 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<fwxyj4OsRLCf37BC1cEHPg@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "delayed-train-137-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-05-11T15:00:27-07:00"
+  }
+}
