@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-11T09:46:29-07:00",
+  "source_message_id": "<zkiGetTaTXauU671XFRg0A@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260511T094629-restroom-out-of-service-train-121-restroom-is-unavailable-pl-zkigettatxauu671xfrg0a-g",
+    "title": "Restroom Out of Service Train 121 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-11T09:45:00-07:00",
+    "resolved_at": "2026-05-11T11:17:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: 05/11/26 9:45 AM | End: 05/11/26 11:17 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-11T09:46:29-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 121 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<zkiGetTaTXauU671XFRg0A@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-121-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-11T09:46:29-07:00"
+  }
+}
