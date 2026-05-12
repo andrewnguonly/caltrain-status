@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-12T15:46:26-07:00",
+  "source_message_id": "<JhlDE2t6R6i1yGBqZaxjNg@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260512T154626-restroom-out-of-service-train-429-restroom-is-unavailable-pl-jhlde2t6r6i1ygbqzaxjng-g",
+    "title": "Restroom Out of Service Train 429 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-12T15:45:00-07:00",
+    "resolved_at": "2026-05-12T19:53:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: 05/12/26 3:45 PM | End: 05/12/26 7:53 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-12T15:46:26-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 429 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<JhlDE2t6R6i1yGBqZaxjNg@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-429-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-12T15:46:26-07:00"
+  }
+}
