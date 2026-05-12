@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-12T05:53:30-07:00",
+  "source_message_id": "<6l_9MlnLR5KDMrro82Pegg@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260512T055330-track-change-train-107-northbound-will-depart-off-track-5-at-6l-9mlnlr5kdmrro82pegg-g",
+    "title": "Track Change Train 107 Northbound will Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-12T05:52:00-07:00",
+    "resolved_at": "2026-05-12T06:29:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 05/12/26 5:52 AM | End: 05/12/26 6:29 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-12T05:53:30-07:00",
+        "state": "degraded",
+        "message": "Track Change: Train 107 Northbound will Depart off Track 5 at San\r\n Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<6l_9MlnLR5KDMrro82Pegg@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "track-change-train-107-northbound-will-depart-off-track-5-at",
+    "version_created_at": "2026-05-12T05:53:30-07:00"
+  }
+}
