@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-13T08:17:23-07:00",
+  "updated_at": "2026-05-13T10:25:30-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260513T091126-track-change-train-127-northbound-will-depart-off-track-4-at-wotidos1th6k-pnelchisw-g",
+    "inc-20260513T091026-platform-change-train-123-northbound-will-depart-from-platfo-qnqbkyf7rvojmfoiu0czhq-g",
+    "inc-20260513T090630-restroom-out-of-service-train-117-restroom-is-unavailable-pl-ogg1jf3oq5ekkgurbvnntw-g",
     "inc-20260513T061327-track-change-train-405-northbound-will-depart-off-track-7-at-nohqpioqszysq7cszpe4mw-g",
     "inc-20260513T061229-track-change-train-107-northbound-will-depart-off-track-5-at-fvvhxa9arpiejzzln84bsw-g",
     "inc-20260512T235928-track-change-bayshore-train-173-will-board-on-the-southbound-tsdhlblpqwk-zuxmff7l9w-g",
@@ -1163,6 +1166,9 @@
     "data/incidents/2026-05/20260512T201330-platform-change-train-163-northb-f0ajnwprtfwffe3vnpytpq-g.json",
     "data/incidents/2026-05/20260512T235928-track-change-bayshore-train-173--tsdhlblpqwk-zuxmff7l9w-g.json",
     "data/incidents/2026-05/20260513T061229-track-change-train-107-northboun-fvvhxa9arpiejzzln84bsw-g.json",
-    "data/incidents/2026-05/20260513T061327-track-change-train-405-northboun-nohqpioqszysq7cszpe4mw-g.json"
+    "data/incidents/2026-05/20260513T061327-track-change-train-405-northboun-nohqpioqszysq7cszpe4mw-g.json",
+    "data/incidents/2026-05/20260513T090630-restroom-out-of-service-train-11-ogg1jf3oq5ekkgurbvnntw-g.json",
+    "data/incidents/2026-05/20260513T091026-platform-change-train-123-northb-qnqbkyf7rvojmfoiu0czhq-g.json",
+    "data/incidents/2026-05/20260513T091126-track-change-train-127-northboun-wotidos1th6k-pnelchisw-g.json"
   ]
 }
