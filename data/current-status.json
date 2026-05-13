@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-12T16:14:02-07:00",
+  "updated_at": "2026-05-12T17:14:03-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260512T165026-restroom-out-of-service-train-421restroom-is-unavailable-ple-aaxvssunqz-xz4uvw9e6hw-g",
+    "inc-20260512T164127-platform-change-train-523-northbound-will-depart-from-platfo-i8v2zjxvsbses8zti-ohlq-g",
+    "inc-20260512T162426-restroom-out-of-service-train-151-restroom-is-unavailable-pl-bhgdj2mtqoe6iy-2lkt6rg-g",
     "inc-20260512T154726-restroom-out-of-service-train-155-restroom-is-unavailable-pl-pa6hux-0tlwwajjbmj6mfq-g",
     "inc-20260512T154626-restroom-out-of-service-train-429-restroom-is-unavailable-pl-jhlde2t6r6i1ygbqzaxjng-g",
     "inc-20260512T153227-restroom-out-of-service-train-515-restroom-is-unavailable-pl-7ioud5wvtcqgbteqyttxpa-g",
@@ -1143,6 +1146,9 @@
     "data/incidents/2026-05/20260512T150826-restroom-out-of-service-train-14-7psywrkrts-pnssdozxxrg-g.json",
     "data/incidents/2026-05/20260512T153227-restroom-out-of-service-train-51-7ioud5wvtcqgbteqyttxpa-g.json",
     "data/incidents/2026-05/20260512T154626-restroom-out-of-service-train-42-jhlde2t6r6i1ygbqzaxjng-g.json",
-    "data/incidents/2026-05/20260512T154726-restroom-out-of-service-train-15-pa6hux-0tlwwajjbmj6mfq-g.json"
+    "data/incidents/2026-05/20260512T154726-restroom-out-of-service-train-15-pa6hux-0tlwwajjbmj6mfq-g.json",
+    "data/incidents/2026-05/20260512T162426-restroom-out-of-service-train-15-bhgdj2mtqoe6iy-2lkt6rg-g.json",
+    "data/incidents/2026-05/20260512T164127-platform-change-train-523-northb-i8v2zjxvsbses8zti-ohlq-g.json",
+    "data/incidents/2026-05/20260512T165026-restroom-out-of-service-train-42-aaxvssunqz-xz4uvw9e6hw-g.json"
   ]
 }
