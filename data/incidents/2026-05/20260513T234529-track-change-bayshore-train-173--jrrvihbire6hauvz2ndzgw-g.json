@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-13T23:45:29-07:00",
+  "source_message_id": "<JrrVihBiRe6hAUvZ2NdZgw@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260513T234529-track-change-bayshore-train-173-will-board-on-the-southbound-jrrvihbire6hauvz2ndzgw-g",
+    "title": "Track change Bayshore Train 173 will board on the Southbound platform",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-13T23:44:00-07:00",
+    "resolved_at": "2026-05-14T00:40:00-07:00",
+    "affected_segments": [
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 05/13/26 11:44 PM | End: 05/14/26 12:40 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-13T23:45:29-07:00",
+        "state": "degraded",
+        "message": "Track change: Bayshore. Train 173 will board on the Southbound\r\n platform | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<JrrVihBiRe6hAUvZ2NdZgw@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "track-change-bayshore-train-173-will-board-on-the-southbound",
+    "version_created_at": "2026-05-13T23:45:29-07:00"
+  }
+}
