@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-14T06:15:28-07:00",
+  "source_message_id": "<NAudoYSrTtaik2KOX_YFIg@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260514T061528-restroom-out-of-service-train-105-restroom-is-unavailable-pl-naudoysrttaik2kox-yfig-g",
+    "title": "Restroom Out of Service Train 105 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-14T06:14:00-07:00",
+    "resolved_at": "2026-05-14T07:17:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: 05/14/26 6:14 AM | End: 05/14/26 7:17 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-14T06:15:28-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 105 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<NAudoYSrTtaik2KOX_YFIg@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-105-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-14T06:15:28-07:00"
+  }
+}

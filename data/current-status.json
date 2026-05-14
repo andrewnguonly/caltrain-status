@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-14T00:23:13-07:00",
+  "updated_at": "2026-05-14T06:16:31-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,10 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260514T061528-restroom-out-of-service-train-105-restroom-is-unavailable-pl-naudoysrttaik2kox-yfig-g",
+    "inc-20260514T061026-restroom-out-of-service-train-401-restroom-is-unavailable-pl-gpwzpaikqjaqqxzj8im0wa-g",
+    "inc-20260514T055527-platform-change-train-107-northbound-will-depart-from-platfo-8iarjn3qrnctrd7fyxuxga-g",
+    "inc-20260514T055430-platform-change-train-503-northbound-will-depart-from-platfo-yijkh5e2t3iveqgvv8p0mq-g",
     "inc-20260513T234529-track-change-bayshore-train-173-will-board-on-the-southbound-jrrvihbire6hauvz2ndzgw-g",
     "inc-20260513T175027-platform-change-train-429-northbound-will-depart-from-platfo-0qjveqs8qwwljcbauiuboa-g",
     "inc-20260513T174826-delayed-train-523-northbound-is-running-about-10-minutes-lat-sfixougir6kbqky0xoeuaa-g",
@@ -1191,6 +1195,10 @@
     "data/incidents/2026-05/20260513T174227-platform-change-train-527-northb-f7nlvghyqygwwbwcnyz7bw-g.json",
     "data/incidents/2026-05/20260513T174826-delayed-train-523-northbound-is--sfixougir6kbqky0xoeuaa-g.json",
     "data/incidents/2026-05/20260513T175027-platform-change-train-429-northb-0qjveqs8qwwljcbauiuboa-g.json",
-    "data/incidents/2026-05/20260513T234529-track-change-bayshore-train-173--jrrvihbire6hauvz2ndzgw-g.json"
+    "data/incidents/2026-05/20260513T234529-track-change-bayshore-train-173--jrrvihbire6hauvz2ndzgw-g.json",
+    "data/incidents/2026-05/20260514T055430-platform-change-train-503-northb-yijkh5e2t3iveqgvv8p0mq-g.json",
+    "data/incidents/2026-05/20260514T055527-platform-change-train-107-northb-8iarjn3qrnctrd7fyxuxga-g.json",
+    "data/incidents/2026-05/20260514T061026-restroom-out-of-service-train-40-gpwzpaikqjaqqxzj8im0wa-g.json",
+    "data/incidents/2026-05/20260514T061528-restroom-out-of-service-train-10-naudoysrttaik2kox-yfig-g.json"
   ]
 }
