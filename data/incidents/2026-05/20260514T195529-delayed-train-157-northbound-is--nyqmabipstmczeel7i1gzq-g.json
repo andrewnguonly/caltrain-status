@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-14T19:55:29-07:00",
+  "source_message_id": "<nyqmAbIPStmcZeEl7I1GZQ@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260514T195529-delayed-train-157-northbound-is-running-about-10-minutes-lat-nyqmabipstmczeel7i1gzq-g",
+    "title": "Delayed Train 157 northbound is running about 10 minutes late approaching San Bruno",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-14T19:57:00-07:00",
+    "resolved_at": "2026-05-14T20:07:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/14/26 7:57 PM | End: 05/14/26 8:07 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-14T19:55:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 157 northbound is running about 10 minutes late\r\n approaching San Bruno.",
+        "source_message_id": "<nyqmAbIPStmcZeEl7I1GZQ@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "delayed-train-157-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-14T19:55:29-07:00"
+  }
+}
