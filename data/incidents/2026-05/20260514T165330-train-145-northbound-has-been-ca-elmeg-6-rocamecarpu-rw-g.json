@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-14T16:53:30-07:00",
+  "source_message_id": "<ElMeg_6-RoCaMecarpU_Rw@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260514T165330-train-145-northbound-has-been-cancelled-train-519-northbound-elmeg-6-rocamecarpu-rw-g",
+    "title": "Train 145 Northbound has been Cancelled Train 519 Northbound will Accommodate Passengers",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-14T16:53:30-07:00",
+    "resolved_at": "2026-05-14T17:16:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: * End Date * | End: 05/14/26 5:16 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-14T16:53:30-07:00",
+        "state": "degraded",
+        "message": "Train 145 Northbound has been Cancelled, Train 519 Northbound will\r\n Accommodate Passengers | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<ElMeg_6-RoCaMecarpU_Rw@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "train-145-northbound-has-been-cancelled-train-519-northbound",
+    "version_created_at": "2026-05-14T16:53:30-07:00"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-14T17:08:26-07:00",
+  "source_message_id": "<UWgNbXnpQ02WulkIXE_gbQ@geopod-ismtpd-4>",
+  "incident": {
+    "id": "inc-20260514T170826-delayed-train-145-northbound-is-running-about-23-minutes-lat-uwgnbxnpq02wulkixe-gbq-g",
+    "title": "Delayed Train 145 northbound is running about 23 minutes late approaching San Bruno",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-14T16:57:00-07:00",
+    "resolved_at": "2026-05-14T17:20:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/14/26 4:57 PM | End: 05/14/26 5:20 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-14T17:08:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 145 northbound is running about 23 minutes late\r\n approaching San Bruno.",
+        "source_message_id": "<UWgNbXnpQ02WulkIXE_gbQ@geopod-ismtpd-4>"
+      }
+    ],
+    "ingestion_key": "delayed-train-145-northbound-is-running-about-23-minutes-lat",
+    "version_created_at": "2026-05-14T17:08:26-07:00"
+  }
+}
