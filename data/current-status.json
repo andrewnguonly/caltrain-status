@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-15T16:13:14-07:00",
+  "updated_at": "2026-05-15T17:07:49-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -17,6 +17,7 @@
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
     "inc-20260515T160326-delayed-train-145-northbound-is-running-about-10-minutes-lat-na8pkkf4tk6azxqruxn04q-g",
+    "inc-20260515T162330-train-519-northbound-running-ahead-of-train-145-northbound-s-02dlajb7tg-t8e0i-wm-jw-g",
     "inc-20260515T152929-delayed-train-139-northbound-is-running-about-10-minutes-lat-rdhknmoms7oma0exsd0bpq-g",
     "inc-20260515T103129-track-change-train-127-northbound-will-depart-off-track-4-at-tnqksslvtckfsnva5lizbg-g",
     "inc-20260515T084929-delayed-train-511-northbound-is-running-about-10-minutes-lat-iq-xlequtqo2gbp9-9lpzg-g",
@@ -1237,6 +1238,7 @@
     "data/incidents/2026-05/20260515T084929-delayed-train-511-northbound-is--iq-xlequtqo2gbp9-9lpzg-g.json",
     "data/incidents/2026-05/20260515T103129-track-change-train-127-northboun-tnqksslvtckfsnva5lizbg-g.json",
     "data/incidents/2026-05/20260515T152929-delayed-train-139-northbound-is--rdhknmoms7oma0exsd0bpq-g.json",
-    "data/incidents/2026-05/20260515T160326-delayed-train-145-northbound-is--na8pkkf4tk6azxqruxn04q-g.json"
+    "data/incidents/2026-05/20260515T160326-delayed-train-145-northbound-is--na8pkkf4tk6azxqruxn04q-g.json",
+    "data/incidents/2026-05/20260515T162330-train-519-northbound-running-ahe-02dlajb7tg-t8e0i-wm-jw-g.json"
   ]
 }
