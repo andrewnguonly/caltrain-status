@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-17T13:56:26-07:00",
+  "source_message_id": "<vE7vc85WSy6EKKsuCBKQ4Q@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260517T135626-restroom-out-of-service-train-647-restroom-is-unavailable-pl-ve7vc85wsy6ekksucbkq4q-g",
+    "title": "Restroom Out of Service Train 647 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-17T19:46:00-07:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: 05/17/26 7:46 PM | End: More Details",
+    "updates": [
+      {
+        "timestamp": "2026-05-17T13:56:26-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 647 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<vE7vc85WSy6EKKsuCBKQ4Q@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-647-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-17T13:56:26-07:00"
+  }
+}
