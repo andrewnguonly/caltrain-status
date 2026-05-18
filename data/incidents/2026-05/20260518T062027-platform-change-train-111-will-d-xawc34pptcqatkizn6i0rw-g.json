@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-18T06:20:27-07:00",
+  "source_message_id": "<xAwc34PPTCqaTkizn6i0Rw@geopod-ismtpd-7>",
+  "incident": {
+    "id": "inc-20260518T062027-platform-change-train-111-will-depart-on-platform-8-at-san-j-xawc34pptcqatkizn6i0rw-g",
+    "title": "Platform change Train 111 will depart on platform 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-18T06:19:00-07:00",
+    "resolved_at": "2026-05-18T07:28:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 05/18/26 6:19 AM | End: 05/18/26 7:28 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-18T06:20:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 111 will depart on platform 8 at San Jose\r\n Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<xAwc34PPTCqaTkizn6i0Rw@geopod-ismtpd-7>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-111-will-depart-on-platform-8-at-san-j",
+    "version_created_at": "2026-05-18T06:20:27-07:00"
+  }
+}
