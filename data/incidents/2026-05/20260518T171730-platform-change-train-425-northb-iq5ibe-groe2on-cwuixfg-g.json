@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-18T17:17:30-07:00",
+  "source_message_id": "<Iq5ibe_GROe2On-Cwuixfg@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260518T171730-platform-change-train-425-northbound-will-depart-from-platfo-iq5ibe-groe2on-cwuixfg-g",
+    "title": "Platform change Train 425 Northbound will depart from platform 2 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-18T17:15:00-07:00",
+    "resolved_at": "2026-05-18T17:43:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: San Jose Diridon | Start: 05/18/26 5:15 PM | End: 05/18/26 5:43 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-18T17:17:30-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 425 Northbound will depart from platform 2 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<Iq5ibe_GROe2On-Cwuixfg@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-425-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-05-18T17:17:30-07:00"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-18T18:08:26-07:00",
+  "source_message_id": "<9eRTK1KVQSitTukpfqouGw@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260518T180826-delayed-train-425-northbound-is-running-about-10-minutes-lat-9ertk1kvqsittukpfqougw-g",
+    "title": "Delayed Train 425 northbound is running about 10 minutes late approaching California Avenue",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-18T18:07:00-07:00",
+    "resolved_at": "2026-05-18T18:17:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/18/26 6:07 PM | End: 05/18/26 6:17 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-18T18:08:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 425 northbound is running about 10 minutes late\r\n approaching California Avenue.",
+        "source_message_id": "<9eRTK1KVQSitTukpfqouGw@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-425-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-18T18:08:26-07:00"
+  }
+}

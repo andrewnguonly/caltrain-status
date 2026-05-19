@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-18T18:48:26-07:00",
+  "source_message_id": "<fxM7GmgZS_aNnnaGn4eRcA@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260518T184826-delayed-train-527-northbound-is-running-about-10-minutes-lat-fxm7gmgzs-annnagn4erca-g",
+    "title": "Delayed Train 527 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-18T18:49:00-07:00",
+    "resolved_at": "2026-05-18T18:59:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/18/26 6:49 PM | End: 05/18/26 6:59 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-18T18:48:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 527 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<fxM7GmgZS_aNnnaGn4eRcA@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "delayed-train-527-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-18T18:48:26-07:00"
+  }
+}
