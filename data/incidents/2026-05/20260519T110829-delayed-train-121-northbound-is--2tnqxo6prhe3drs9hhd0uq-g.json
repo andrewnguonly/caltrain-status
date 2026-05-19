@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-19T11:08:29-07:00",
+  "source_message_id": "<2tnQXO6PRHe3drS9hhD0UQ@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260519T110829-delayed-train-121-northbound-is-running-about-11-minutes-lat-2tnqxo6prhe3drs9hhd0uq-g",
+    "title": "Delayed Train 121 northbound is running about 11 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-19T11:10:00-07:00",
+    "resolved_at": "2026-05-19T11:21:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/19/26 11:10 AM | End: 05/19/26 11:21 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-19T11:08:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 121 northbound is running about 11 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<2tnQXO6PRHe3drS9hhD0UQ@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "delayed-train-121-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-05-19T11:08:29-07:00"
+  }
+}
