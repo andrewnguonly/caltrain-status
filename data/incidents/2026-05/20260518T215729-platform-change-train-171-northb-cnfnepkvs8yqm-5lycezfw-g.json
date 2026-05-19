@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-18T21:57:29-07:00",
+  "source_message_id": "<CNfNePKvS8yqM_5lycEzFw@geopod-ismtpd-12>",
+  "incident": {
+    "id": "inc-20260518T215729-platform-change-train-171-northbound-will-depart-from-platfo-cnfnepkvs8yqm-5lycezfw-g",
+    "title": "Platform change Train 171 Northbound will depart from platform 6 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-18T21:55:00-07:00",
+    "resolved_at": "2026-05-18T22:30:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: San Jose Diridon | Start: 05/18/26 9:55 PM | End: 05/18/26 10:30 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-18T21:57:29-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 171 Northbound will depart from platform 6 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<CNfNePKvS8yqM_5lycEzFw@geopod-ismtpd-12>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-171-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-05-18T21:57:29-07:00"
+  }
+}
