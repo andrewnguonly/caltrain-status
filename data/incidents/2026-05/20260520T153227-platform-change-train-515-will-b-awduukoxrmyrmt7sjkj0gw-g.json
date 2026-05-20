@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-20T15:32:27-07:00",
+  "source_message_id": "<AwDUUkoXRMyrmT7sJKJ0Gw@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260520T153227-platform-change-train-515-will-board-on-the-southbound-platf-awduukoxrmyrmt7sjkj0gw-g",
+    "title": "Platform Change Train 515 will board on the Southbound platform at Sunnyvale and Mountain View Stations",
+    "severity": "minor",
+    "status": "resolved",
+    "started_at": "2026-05-20T15:20:00-07:00",
+    "resolved_at": "2026-05-20T15:32:00-07:00",
+    "affected_segments": [
+      "Southbound",
+      "Sunnyvale and Mountain View Stations"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Sunnyvale and Mountain View Stations | Start: 05/20/26 3:20 PM | End: 05/20/26 3:32 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-20T15:32:27-07:00",
+        "state": "operational",
+        "message": "Platform Change: Train 515 will board on the Southbound platform at\r\n Sunnyvale and Mountain View Stations. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<AwDUUkoXRMyrmT7sJKJ0Gw@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-515-will-board-on-the-southbound-platf",
+    "version_created_at": "2026-05-20T15:32:27-07:00"
+  }
+}
