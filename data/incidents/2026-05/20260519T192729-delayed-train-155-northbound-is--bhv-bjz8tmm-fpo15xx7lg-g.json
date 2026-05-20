@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-19T19:27:29-07:00",
+  "source_message_id": "<BhV-BjZ8Tmm-FPO15XX7Lg@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260519T192729-delayed-train-155-northbound-is-running-about-10-minutes-lat-bhv-bjz8tmm-fpo15xx7lg-g",
+    "title": "Delayed Train 155 northbound is running about 10 minutes late approaching San Bruno",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-19T19:27:00-07:00",
+    "resolved_at": "2026-05-19T19:37:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/19/26 7:27 PM | End: 05/19/26 7:37 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-19T19:27:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 155 northbound is running about 10 minutes late\r\n approaching San Bruno.",
+        "source_message_id": "<BhV-BjZ8Tmm-FPO15XX7Lg@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-155-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-19T19:27:29-07:00"
+  }
+}
