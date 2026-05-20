@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-20T06:48:26-07:00",
+  "source_message_id": "<G4snsUj0R_S7dBwCmmBHmQ@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260520T064826-delayed-train-503-northbound-is-running-about-10-minutes-lat-g4snsuj0r-s7dbwcmmbhmq-g",
+    "title": "Delayed Train 503 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-20T06:49:00-07:00",
+    "resolved_at": "2026-05-20T06:59:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/20/26 6:49 AM | End: 05/20/26 6:59 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-20T06:48:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 503 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<G4snsUj0R_S7dBwCmmBHmQ@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "delayed-train-503-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-20T06:48:26-07:00"
+  }
+}
