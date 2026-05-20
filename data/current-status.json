@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/06/26 3:28 PM | End: 05/06/26 5:22 PM",
-  "updated_at": "2026-05-19T16:43:29-07:00",
+  "updated_at": "2026-05-19T18:49:40-07:00",
   "active_incident_ids": [
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
     "inc-20260506T140926-restroom-out-of-service-train-137-restroom-is-unavailable-pl-kvwlb3xrsyurulcv70svnq-g",
@@ -16,6 +16,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260519T184726-delayed-train-527-northbound-is-running-about-10-minutes-lat-ckkdrcsbsi6hmah7zp6cbq-g",
+    "inc-20260519T164826-delayed-train-519-northbound-is-running-about-10-minutes-lat-lddd4sdkszkcfmvy5lbgzg-g",
     "inc-20260519T160228-platform-change-train-523-northbound-will-depart-from-platfo-uuxwzqsvtgk6kr2itxhrnw-g",
     "inc-20260519T110829-delayed-train-121-northbound-is-running-about-11-minutes-lat-2tnqxo6prhe3drs9hhd0uq-g",
     "inc-20260519T102926-track-change-train-127-northbound-will-depart-off-track-4-at-ohnh02r-soem9ykj-odp1q-g",
@@ -1349,6 +1351,8 @@
     "data/incidents/2026-05/20260519T102429-delayed-train-121-northbound-is--44260wuyqgmo8awqsck2-g-g.json",
     "data/incidents/2026-05/20260519T102926-track-change-train-127-northboun-ohnh02r-soem9ykj-odp1q-g.json",
     "data/incidents/2026-05/20260519T110829-delayed-train-121-northbound-is--2tnqxo6prhe3drs9hhd0uq-g.json",
-    "data/incidents/2026-05/20260519T160228-platform-change-train-523-northb-uuxwzqsvtgk6kr2itxhrnw-g.json"
+    "data/incidents/2026-05/20260519T160228-platform-change-train-523-northb-uuxwzqsvtgk6kr2itxhrnw-g.json",
+    "data/incidents/2026-05/20260519T164826-delayed-train-519-northbound-is--lddd4sdkszkcfmvy5lbgzg-g.json",
+    "data/incidents/2026-05/20260519T184726-delayed-train-527-northbound-is--ckkdrcsbsi6hmah7zp6cbq-g.json"
   ]
 }

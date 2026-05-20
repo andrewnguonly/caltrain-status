@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-19T16:48:26-07:00",
+  "source_message_id": "<LDDD4SdKSZKCfMvY5lbgzg@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260519T164826-delayed-train-519-northbound-is-running-about-10-minutes-lat-lddd4sdkszkcfmvy5lbgzg-g",
+    "title": "Delayed Train 519 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-19T16:49:00-07:00",
+    "resolved_at": "2026-05-19T16:59:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/19/26 4:49 PM | End: 05/19/26 4:59 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-19T16:48:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 519 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<LDDD4SdKSZKCfMvY5lbgzg@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "delayed-train-519-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-19T16:48:26-07:00"
+  }
+}
