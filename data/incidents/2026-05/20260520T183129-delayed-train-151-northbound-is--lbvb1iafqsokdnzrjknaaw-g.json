@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-20T18:31:29-07:00",
+  "source_message_id": "<lBvb1iaFQSOKDNZRJKnaaw@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260520T183129-delayed-train-151-northbound-is-running-about-10-minutes-lat-lbvb1iafqsokdnzrjknaaw-g",
+    "title": "Delayed Train 151 northbound is running about 10 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-20T18:35:00-07:00",
+    "resolved_at": "2026-05-20T18:45:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/20/26 6:35 PM | End: 05/20/26 6:45 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-20T18:31:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 151 northbound is running about 10 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<lBvb1iaFQSOKDNZRJKnaaw@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "delayed-train-151-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-20T18:31:29-07:00"
+  }
+}
