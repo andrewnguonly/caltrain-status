@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-22T06:51:30-07:00",
+  "source_message_id": "<Dt9R2RNSTsGVvtaPeO5A5A@geopod-ismtpd-9>",
+  "incident": {
+    "id": "inc-20260522T065130-train-405-will-run-ahead-of-train-107-starting-at-san-jose-d-dt9r2rnstsgvvtapeo5a5a-g",
+    "title": "Train 405 will run ahead of Train 107 starting at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-22T06:49:00-07:00",
+    "resolved_at": "2026-05-22T07:53:00-07:00",
+    "affected_segments": [
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 05/22/26 6:49 AM | End: 05/22/26 7:53 AM",
+    "updates": [
+      {
+        "timestamp": "2026-05-22T06:51:30-07:00",
+        "state": "degraded",
+        "message": "Train 405 will run ahead of Train 107 starting at San Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<Dt9R2RNSTsGVvtaPeO5A5A@geopod-ismtpd-9>"
+      }
+    ],
+    "ingestion_key": "train-405-will-run-ahead-of-train-107-starting-at-san-jose-d",
+    "version_created_at": "2026-05-22T06:51:30-07:00"
+  }
+}
