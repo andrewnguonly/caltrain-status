@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-22T18:39:29-07:00",
+  "source_message_id": "<2uFGB2n4Q3y7uw5Ma0_TXA@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20260522T183929-delayed-train-151-northbound-is-running-about-11-minutes-lat-2ufgb2n4q3y7uw5ma0-txa-g",
+    "title": "Delayed Train 151 northbound is running about 11 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-22T18:40:00-07:00",
+    "resolved_at": "2026-05-22T18:51:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/22/26 6:40 PM | End: 05/22/26 6:51 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-22T18:39:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 151 northbound is running about 11 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<2uFGB2n4Q3y7uw5Ma0_TXA@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "delayed-train-151-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-05-22T18:39:29-07:00"
+  }
+}

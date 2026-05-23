@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-22T22:01:29-07:00",
+  "source_message_id": "<T8ZYIQJTRHiDM1h3aVZYDA@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260522T220129-delayed-train-167-northbound-is-running-about-10-minutes-lat-t8zyiqjtrhidm1h3avzyda-g",
+    "title": "Delayed Train 167 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-22T22:03:00-07:00",
+    "resolved_at": "2026-05-22T22:13:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 05/22/26 10:03 PM | End: 05/22/26 10:13 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-22T22:01:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 167 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<T8ZYIQJTRHiDM1h3aVZYDA@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "delayed-train-167-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-05-22T22:01:29-07:00"
+  }
+}
