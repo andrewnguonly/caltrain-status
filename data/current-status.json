@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/20/26 6:52 PM | End: 05/20/26 8:16 PM",
-  "updated_at": "2026-05-23T12:52:30-07:00",
+  "updated_at": "2026-05-24T08:34:47-07:00",
   "active_incident_ids": [
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
@@ -17,6 +17,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260524T080228-restroom-out-of-service-train-601-restroom-is-unavailable-pl-r66xxvojtgwv52t3tbs-xq-g",
     "inc-20260523T120125-delayed-train-617-northbound-is-running-about-10-minutes-lat-jvyu8p58sjaqpqlelhgqcw-g",
     "inc-20260523T114028-delayed-train-615-northbound-is-running-about-10-minutes-lat-4wpohg6wqn6boraweobm2q-g",
     "inc-20260523T070829-restroom-out-of-service-train-601-restroom-is-unavailable-pl-knknlko6tg-eo-gdiwkssg-g",
@@ -1452,6 +1453,7 @@
     "data/incidents/2026-05/20260522T220129-delayed-train-167-northbound-is--t8zyiqjtrhidm1h3avzyda-g.json",
     "data/incidents/2026-05/20260523T070829-restroom-out-of-service-train-60-knknlko6tg-eo-gdiwkssg-g.json",
     "data/incidents/2026-05/20260523T114028-delayed-train-615-northbound-is--4wpohg6wqn6boraweobm2q-g.json",
-    "data/incidents/2026-05/20260523T120125-delayed-train-617-northbound-is--jvyu8p58sjaqpqlelhgqcw-g.json"
+    "data/incidents/2026-05/20260523T120125-delayed-train-617-northbound-is--jvyu8p58sjaqpqlelhgqcw-g.json",
+    "data/incidents/2026-05/20260524T080228-restroom-out-of-service-train-60-r66xxvojtgwv52t3tbs-xq-g.json"
   ]
 }
