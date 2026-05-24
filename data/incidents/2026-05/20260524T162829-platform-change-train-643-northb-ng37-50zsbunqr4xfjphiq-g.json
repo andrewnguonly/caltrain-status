@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-24T16:28:29-07:00",
+  "source_message_id": "<NG37_50ZSBunQR4XfjpHiQ@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20260524T162829-platform-change-train-643-northbound-will-depart-from-platfo-ng37-50zsbunqr4xfjphiq-g",
+    "title": "Platform change Train 643 Northbound will depart from platform 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-24T16:27:00-07:00",
+    "resolved_at": "2026-05-24T17:26:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 05/24/26 4:27 PM | End: 05/24/26 5:26 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-24T16:28:29-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 643 Northbound will depart from platform 5 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<NG37_50ZSBunQR4XfjpHiQ@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-643-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-05-24T16:28:29-07:00"
+  }
+}
