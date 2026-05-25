@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/20/26 6:52 PM | End: 05/20/26 8:16 PM",
-  "updated_at": "2026-05-25T11:01:38-07:00",
+  "updated_at": "2026-05-25T12:55:32-07:00",
   "active_incident_ids": [
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
@@ -17,6 +17,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260525T122926-restroom-out-of-service-train-629-restroom-is-unavailable-pl-jsli6qkfqm-txs3zri0abq-g",
     "inc-20260525T101528-restroom-out-of-service-train-615-restroom-is-unavailable-pl-9zrbgra4qqqhahj8jwz9ta-g",
     "inc-20260525T100929-restroom-out-of-service-train-615-restroom-is-unavailable-pl-05a3pg1zrwyl9dpfyktola-g",
     "inc-20260525T064926-track-change-train-611-will-depart-off-track-8-at-san-jose-d-qxydbipxt4sjeihzid-tkg-g",
@@ -1474,6 +1475,7 @@
     "data/incidents/2026-05/20260525T064628-platform-change-train-607-northb-zebp2spotfs3kfh38owwaw-g.json",
     "data/incidents/2026-05/20260525T064926-track-change-train-611-will-depa-qxydbipxt4sjeihzid-tkg-g.json",
     "data/incidents/2026-05/20260525T100929-restroom-out-of-service-train-61-05a3pg1zrwyl9dpfyktola-g.json",
-    "data/incidents/2026-05/20260525T101528-restroom-out-of-service-train-61-9zrbgra4qqqhahj8jwz9ta-g.json"
+    "data/incidents/2026-05/20260525T101528-restroom-out-of-service-train-61-9zrbgra4qqqhahj8jwz9ta-g.json",
+    "data/incidents/2026-05/20260525T122926-restroom-out-of-service-train-62-jsli6qkfqm-txs3zri0abq-g.json"
   ]
 }
