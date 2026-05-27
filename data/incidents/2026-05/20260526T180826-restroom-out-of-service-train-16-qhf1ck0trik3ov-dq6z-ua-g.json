@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-05-26T18:08:26-07:00",
+  "source_message_id": "<Qhf1cK0TRiK3oV-dq6z-UA@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260526T180826-restroom-out-of-service-train-169-restroom-is-unavailable-pl-qhf1ck0trik3ov-dq6z-ua-g",
+    "title": "Restroom Out of Service Train 169 restroom is unavailable Please use nearby facilities and plan ahead",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-05-26T18:08:26-07:00",
+    "resolved_at": "2026-05-26T23:16:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Start: * End Date * | End: 05/26/26 11:16 PM",
+    "updates": [
+      {
+        "timestamp": "2026-05-26T18:08:26-07:00",
+        "state": "degraded",
+        "message": "Restroom Out of Service: Train 169 restroom is unavailable. Please\r\n use nearby facilities and plan ahead. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<Qhf1cK0TRiK3oV-dq6z-UA@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "restroom-out-of-service-train-169-restroom-is-unavailable-pl",
+    "version_created_at": "2026-05-26T18:08:26-07:00"
+  }
+}
