@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 05/20/26 6:52 PM | End: 05/20/26 8:16 PM",
-  "updated_at": "2026-06-02T13:20:12-07:00",
+  "updated_at": "2026-06-02T15:30:37-07:00",
   "active_incident_ids": [
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
     "inc-20260506T152926-restroom-out-of-service-train-519-restroom-is-unavailable-pl-azotanboqyk8fgxwi-hvvq-g",
@@ -17,6 +17,12 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260602T150226-delayed-train-137-northbound-is-running-about-21-minutes-lat-dz50bkqfqigznmf6rkpvdg-g",
+    "inc-20260602T141126-delayed-train-135-northbound-is-running-about-10-minutes-lat-gkakytaytxwcy4pz7nolya-g",
+    "inc-20260602T142526-delayed-train-133-northbound-is-running-about-33-minutes-lat-x6izmphvtuozs9oyf-u7ag-g",
+    "inc-20260602T134330-delayed-train-131-northbound-is-running-about-20-minutes-lat-3nhcv7yhrik3-7ck00at5g-g",
+    "inc-20260602T134328-delayed-train-133-northbound-is-running-about-19-minutes-lat-0kdarwnxqm-sgl6kysm5ua-g",
+    "inc-20260602T143126-delayed-train-133-northbound-is-running-about-30-minutes-lat-1-9l38boqrymffdt2etmqa-g",
     "inc-20260602T101029-track-change-train-127-northbound-will-depart-off-track-4-at-gpkagwhks-e2hdcf3e7poq-g",
     "inc-20260601T212729-single-tracking-all-trains-will-board-on-the-northbound-plat-sxe8qk5stv6-im1evjokuw-g",
     "inc-20260601T074929-platform-change-train-113-northbound-will-depart-from-platfo-py7jk-gosmmgm8h1cr8z5g-g",
@@ -1518,6 +1524,12 @@
     "data/incidents/2026-05/20260530T091026-delayed-train-607-northbound-is--ihl0b-wdqtideleaggszew-g.json",
     "data/incidents/2026-06/20260601T074929-platform-change-train-113-northb-py7jk-gosmmgm8h1cr8z5g-g.json",
     "data/incidents/2026-06/20260601T212729-single-tracking-all-trains-will--sxe8qk5stv6-im1evjokuw-g.json",
-    "data/incidents/2026-06/20260602T101029-track-change-train-127-northboun-gpkagwhks-e2hdcf3e7poq-g.json"
+    "data/incidents/2026-06/20260602T101029-track-change-train-127-northboun-gpkagwhks-e2hdcf3e7poq-g.json",
+    "data/incidents/2026-06/20260602T134328-delayed-train-133-northbound-is--0kdarwnxqm-sgl6kysm5ua-g.json",
+    "data/incidents/2026-06/20260602T134330-delayed-train-131-northbound-is--3nhcv7yhrik3-7ck00at5g-g.json",
+    "data/incidents/2026-06/20260602T141126-delayed-train-135-northbound-is--gkakytaytxwcy4pz7nolya-g.json",
+    "data/incidents/2026-06/20260602T142526-delayed-train-133-northbound-is--x6izmphvtuozs9oyf-u7ag-g.json",
+    "data/incidents/2026-06/20260602T143126-delayed-train-133-northbound-is--1-9l38boqrymffdt2etmqa-g.json",
+    "data/incidents/2026-06/20260602T150226-delayed-train-137-northbound-is--dz50bkqfqigznmf6rkpvdg-g.json"
   ]
 }

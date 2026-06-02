@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-02T14:11:26-07:00",
+  "source_message_id": "<GkAKytaYTXWCY4PZ7NOLyA@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260602T141126-delayed-train-135-northbound-is-running-about-10-minutes-lat-gkakytaytxwcy4pz7nolya-g",
+    "title": "Delayed Train 135 northbound is running about 10 minutes late approaching Hillsdale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-02T14:12:00-07:00",
+    "resolved_at": "2026-06-02T14:22:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 06/02/26 2:12 PM | End: 06/02/26 2:22 PM",
+    "updates": [
+      {
+        "timestamp": "2026-06-02T14:11:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 135 northbound is running about 10 minutes late\r\n approaching Hillsdale.",
+        "source_message_id": "<GkAKytaYTXWCY4PZ7NOLyA@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "delayed-train-135-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-06-02T14:11:26-07:00"
+  }
+}
