@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-08T06:52:29-07:00",
+  "source_message_id": "<Qj0YrownTuGFqeDQHm357Q@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260608T065229-cancelled-train-507-northbound-is-cancelled-train-111-will-a-qj0yrowntugfqedqhm357q-g",
+    "title": "Cancelled Train 507 northbound is cancelled Train 111 will accommodate passengers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-06-08T06:51:00-07:00",
+    "resolved_at": "2026-06-08T08:51:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: No Service | Cause: Technical Problem | Start: 06/08/26 6:51 AM | End: 06/08/26 8:51 AM",
+    "updates": [
+      {
+        "timestamp": "2026-06-08T06:52:29-07:00",
+        "state": "critical",
+        "message": "Cancelled: Train 507 northbound is cancelled. Train 111 will\r\n accommodate passengers. | Effect: No Service | Cause: Technical Problem",
+        "source_message_id": "<Qj0YrownTuGFqeDQHm357Q@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-507-northbound-is-cancelled-train-111-will-a",
+    "version_created_at": "2026-06-08T06:52:29-07:00"
+  }
+}

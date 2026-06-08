@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-08T08:33:27-07:00",
+  "source_message_id": "<mbCI3QcVQ3CfePmeTR69xw@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20260608T083327-train-111-is-at-max-capacity-for-bikes-mbci3qcvq3cfepmetr69xw-g",
+    "title": "Train 111 is at Max Capacity for Bikes",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-08T08:32:00-07:00",
+    "resolved_at": "2026-06-08T08:48:00-07:00",
+    "affected_segments": [
+      "Max Capacity for Bikes"
+    ],
+    "summary": "Effect: Accessibility Issue | Cause: Other Cause | Location: Max Capacity for Bikes | Start: 06/08/26 8:32 AM | End: 06/08/26 8:48 AM",
+    "updates": [
+      {
+        "timestamp": "2026-06-08T08:33:27-07:00",
+        "state": "degraded",
+        "message": "Train 111 is at Max Capacity for Bikes | Effect: Accessibility Issue | Cause: Other Cause",
+        "source_message_id": "<mbCI3QcVQ3CfePmeTR69xw@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "train-111-is-at-max-capacity-for-bikes",
+    "version_created_at": "2026-06-08T08:33:27-07:00"
+  }
+}
