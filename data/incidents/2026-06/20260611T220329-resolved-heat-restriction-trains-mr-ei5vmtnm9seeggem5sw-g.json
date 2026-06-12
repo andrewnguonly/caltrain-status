@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-11T22:03:29-07:00",
+  "source_message_id": "<mR_ei5vmTNm9seeGgem5Sw@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260611T220329-resolved-heat-restriction-trains-will-be-operating-at-reduce-mr-ei5vmtnm9seeggem5sw-g",
+    "title": "Resolved Heat restriction Trains will be operating at reduced speeds for safety until further notice Expect delays in both directions",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-11T14:00:00-07:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "Northbound",
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Weather | Start: 06/11/26 2:00 PM | End: More Details",
+    "updates": [
+      {
+        "timestamp": "2026-06-11T22:03:29-07:00",
+        "state": "degraded",
+        "message": "Resolved: Heat restriction: Trains will be operating at reduced\r\n speeds for safety until further notice. Expect delays in both directions. | Effect: Modified Service | Cause: Weather",
+        "source_message_id": "<mR_ei5vmTNm9seeGgem5Sw@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "resolved-heat-restriction-trains-will-be-operating-at-reduce",
+    "version_created_at": "2026-06-11T22:03:29-07:00"
+  }
+}
