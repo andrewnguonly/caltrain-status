@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-12T22:29:28-07:00",
+  "source_message_id": "<fWB1McbRQeyeugxlZ8M65w@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260612T222928-delayed-train-167-northbound-is-running-about-10-minutes-lat-fwb1mcbrqeyeugxlz8m65w-g",
+    "title": "Delayed Train 167 northbound is running about 10 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-12T22:30:00-07:00",
+    "resolved_at": "2026-06-12T22:40:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 06/12/26 10:30 PM | End: 06/12/26 10:40 PM",
+    "updates": [
+      {
+        "timestamp": "2026-06-12T22:29:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 167 northbound is running about 10 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<fWB1McbRQeyeugxlZ8M65w@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-167-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-06-12T22:29:28-07:00"
+  }
+}
