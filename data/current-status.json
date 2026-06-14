@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Technical Problem | Start: 06/08/26 6:51 AM | End: 06/08/26 8:51 AM",
-  "updated_at": "2026-06-13T22:02:08-07:00",
+  "updated_at": "2026-06-14T15:19:19-07:00",
   "active_incident_ids": [
     "inc-20260608T065229-cancelled-train-507-northbound-is-cancelled-train-111-will-a-qj0yrowntugfqedqhm357q-g",
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
@@ -18,6 +18,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260614T145328-delayed-train-629-northbound-is-running-about-10-minutes-lat-kqc1a-bhr-ahrus7hgae0a-g",
     "inc-20260613T171425-delayed-train-637-northbound-is-running-about-15-minutes-lat-bxrlt5neqgm5ni3c12s0la-g",
     "inc-20260613T162828-delayed-train-637-northbound-is-running-about-10-minutes-lat-vonlhqxariyakjdluolq1q-g",
     "inc-20260613T153425-delayed-train-631-northbound-is-running-about-10-minutes-lat-syxkbcmpteuzeyvqkok8qg-g",
@@ -1590,6 +1591,7 @@
     "data/incidents/2026-06/20260613T153026-delayed-train-633-northbound-is--bkkvf2xstuq0yot6zzw2nw-g.json",
     "data/incidents/2026-06/20260613T153425-delayed-train-631-northbound-is--syxkbcmpteuzeyvqkok8qg-g.json",
     "data/incidents/2026-06/20260613T162828-delayed-train-637-northbound-is--vonlhqxariyakjdluolq1q-g.json",
-    "data/incidents/2026-06/20260613T171425-delayed-train-637-northbound-is--bxrlt5neqgm5ni3c12s0la-g.json"
+    "data/incidents/2026-06/20260613T171425-delayed-train-637-northbound-is--bxrlt5neqgm5ni3c12s0la-g.json",
+    "data/incidents/2026-06/20260614T145328-delayed-train-629-northbound-is--kqc1a-bhr-ahrus7hgae0a-g.json"
   ]
 }
