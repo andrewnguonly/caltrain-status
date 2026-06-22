@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-22T10:09:29-07:00",
+  "source_message_id": "<fcUuzAtdQV2n24tU7CNGfQ@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260622T100929-delayed-train-121-northbound-is-running-about-10-minutes-lat-fcuuzatdqv2n24tu7cngfq-g",
+    "title": "Delayed Train 121 northbound is running about 10 minutes late approaching Lawrence",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-22T10:09:00-07:00",
+    "resolved_at": "2026-06-22T10:19:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 06/22/26 10:09 AM | End: 06/22/26 10:19 AM",
+    "updates": [
+      {
+        "timestamp": "2026-06-22T10:09:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 121 northbound is running about 10 minutes late\r\n approaching Lawrence.",
+        "source_message_id": "<fcUuzAtdQV2n24tU7CNGfQ@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "delayed-train-121-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-06-22T10:09:29-07:00"
+  }
+}

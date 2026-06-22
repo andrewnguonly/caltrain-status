@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-22T09:14:30-07:00",
+  "source_message_id": "<vEeebq0SQ--kWgMzwdW15A@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260622T091430-train-413-has-been-canceled-train-117-will-accommodate-passe-veeebq0sq-kwgmzwdw15a-ge",
+    "title": "Train 413 Has Been Canceled Train 117 Will Accommodate Passengers",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-22T09:12:00-07:00",
+    "resolved_at": "2026-06-22T11:13:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 06/22/26 9:12 AM | End: 06/22/26 11:13 AM",
+    "updates": [
+      {
+        "timestamp": "2026-06-22T09:14:30-07:00",
+        "state": "degraded",
+        "message": "Train 413 Has Been Canceled, Train 117 Will Accommodate Passengers | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<vEeebq0SQ--kWgMzwdW15A@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "train-413-has-been-canceled-train-117-will-accommodate-passe",
+    "version_created_at": "2026-06-22T09:14:30-07:00"
+  }
+}
