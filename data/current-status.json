@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Technical Problem | Start: 06/08/26 6:51 AM | End: 06/08/26 8:51 AM",
-  "updated_at": "2026-06-19T23:13:47-07:00",
+  "updated_at": "2026-06-22T08:03:38-07:00",
   "active_incident_ids": [
     "inc-20260608T065229-cancelled-train-507-northbound-is-cancelled-train-111-will-a-qj0yrowntugfqedqhm357q-g",
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
@@ -14,10 +14,15 @@
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
+    "inc-20260622T075127-please-expect-major-delay-due-to-police-activity-for-train-5-kl-q7-eutkqcj36yvuqc8w-g",
     "inc-20260226T115510-delayed-train-125-is-delayed-by-30-minutes-joficvrvqkudr3rsw5b-wa-g",
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260622T075827-delayed-train-113-northbound-is-running-about-10-minutes-lat-bskppubxrl6scrlf6mktka-g",
+    "inc-20260622T075527-delayed-train-409-northbound-is-running-about-10-minutes-lat-asn2a-chtrg8fmjylv2vlw-g",
+    "inc-20260622T074730-delayed-train-111-northbound-is-running-about-10-minutes-lat-3kpupbasrwudohlkiouh4q-g",
+    "inc-20260622T062229-restroom-out-of-service-train-503-restroom-is-unavailable-pl-iw11hu9ctasobjuiqbc7rw-g",
     "inc-20260619T185926-delayed-train-153-northbound-is-running-about-10-minutes-lat-s1gv-ha-tkyjuhr5lpv-iq-g",
     "inc-20260619T171026-train-159-has-been-canceled-train-161-will-accommodate-passe-pjuj-mr-szghejv0kdej0w-g",
     "inc-20260619T155726-train-429-has-been-canceled-train-157-will-accommodate-passe-yvykane3q4ub5hhoksg3za-g",
@@ -1614,6 +1619,11 @@
     "data/incidents/2026-06/20260619T155530-train-519-has-been-canceled-trai-mnfdnjwfqxg1bg-kz0eonw-g.json",
     "data/incidents/2026-06/20260619T155726-train-429-has-been-canceled-trai-yvykane3q4ub5hhoksg3za-g.json",
     "data/incidents/2026-06/20260619T171026-train-159-has-been-canceled-trai-pjuj-mr-szghejv0kdej0w-g.json",
-    "data/incidents/2026-06/20260619T185926-delayed-train-153-northbound-is--s1gv-ha-tkyjuhr5lpv-iq-g.json"
+    "data/incidents/2026-06/20260619T185926-delayed-train-153-northbound-is--s1gv-ha-tkyjuhr5lpv-iq-g.json",
+    "data/incidents/2026-06/20260622T062229-restroom-out-of-service-train-50-iw11hu9ctasobjuiqbc7rw-g.json",
+    "data/incidents/2026-06/20260622T074730-delayed-train-111-northbound-is--3kpupbasrwudohlkiouh4q-g.json",
+    "data/incidents/2026-06/20260622T075127-please-expect-major-delay-due-to-kl-q7-eutkqcj36yvuqc8w-g.json",
+    "data/incidents/2026-06/20260622T075527-delayed-train-409-northbound-is--asn2a-chtrg8fmjylv2vlw-g.json",
+    "data/incidents/2026-06/20260622T075827-delayed-train-113-northbound-is--bskppubxrl6scrlf6mktka-g.json"
   ]
 }
