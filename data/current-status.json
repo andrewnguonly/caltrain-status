@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Technical Problem | Start: 06/08/26 6:51 AM | End: 06/08/26 8:51 AM",
-  "updated_at": "2026-06-22T21:31:46-07:00",
+  "updated_at": "2026-06-23T01:05:35-07:00",
   "active_incident_ids": [
     "inc-20260608T065229-cancelled-train-507-northbound-is-cancelled-train-111-will-a-qj0yrowntugfqedqhm357q-g",
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
@@ -20,6 +20,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260622T230229-delayed-train-171-northbound-is-running-about-10-minutes-lat-xosnlcdsq-ogvi8oscl-9g-g",
     "inc-20260622T190126-delayed-train-527-northbound-is-running-about-10-minutes-lat-lmjuvqf0qw2x-med6z8vww-g",
     "inc-20260622T183805-new-privacy-settings-for-search-services-and-google-play-3212d90cf41c2cd69c4e7371",
     "inc-20260622T100929-delayed-train-121-northbound-is-running-about-10-minutes-lat-fcuuzatdqv2n24tu7cngfq-g",
@@ -1650,6 +1651,7 @@
     "data/incidents/2026-06/20260622T095727-please-expect-major-delay-due-to-bdlgtbmtsositbuz8urnrq-g.json",
     "data/incidents/2026-06/20260622T100929-delayed-train-121-northbound-is--fcuuzatdqv2n24tu7cngfq-g.json",
     "data/incidents/2026-06/20260622T183805-new-privacy-settings-for-search--3212d90cf41c2cd69c4e7371.json",
-    "data/incidents/2026-06/20260622T190126-delayed-train-527-northbound-is--lmjuvqf0qw2x-med6z8vww-g.json"
+    "data/incidents/2026-06/20260622T190126-delayed-train-527-northbound-is--lmjuvqf0qw2x-med6z8vww-g.json",
+    "data/incidents/2026-06/20260622T230229-delayed-train-171-northbound-is--xosnlcdsq-ogvi8oscl-9g-g.json"
   ]
 }
