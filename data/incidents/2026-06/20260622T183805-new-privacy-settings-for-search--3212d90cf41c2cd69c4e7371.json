@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-22T18:38:05-07:00",
+  "source_message_id": "<3212d90cf41c2cd69c4e7371d1fe1a8c6740648d-20397628-1852771076@google.com>",
+  "incident": {
+    "id": "inc-20260622T183805-new-privacy-settings-for-search-services-and-google-play-3212d90cf41c2cd69c4e7371",
+    "title": "New privacy settings for Search services and Google Play",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-22T18:38:05-07:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Google Logo caltrainalerts0001@gmail.com Hello Caltrain Alerts, We\u2019re updating our settings to give you even more control over saved history and personalized recommendations across Google Search services and Google Play. Search services include Search, Maps, Shopping, Hotels, Flights, Translate, and",
+    "updates": [
+      {
+        "timestamp": "2026-06-22T18:38:05-07:00",
+        "state": "degraded",
+        "message": "New privacy settings for Search services and Google Play",
+        "source_message_id": "<3212d90cf41c2cd69c4e7371d1fe1a8c6740648d-20397628-1852771076@google.com>"
+      }
+    ],
+    "ingestion_key": "new-privacy-settings-for-search-services-and-google-play",
+    "version_created_at": "2026-06-22T18:38:05-07:00"
+  }
+}
