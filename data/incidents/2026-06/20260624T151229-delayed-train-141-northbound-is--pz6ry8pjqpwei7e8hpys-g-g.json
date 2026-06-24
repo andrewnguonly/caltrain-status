@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-24T15:12:29-07:00",
+  "source_message_id": "<pz6Ry8pJQpWeI7e8hpyS_g@geopod-ismtpd-9>",
+  "incident": {
+    "id": "inc-20260624T151229-delayed-train-141-northbound-is-running-about-10-minutes-lat-pz6ry8pjqpwei7e8hpys-g-g",
+    "title": "Delayed Train 141 northbound is running about 10 minutes late approaching Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-24T15:12:00-07:00",
+    "resolved_at": "2026-06-24T15:22:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 06/24/26 3:12 PM | End: 06/24/26 3:22 PM",
+    "updates": [
+      {
+        "timestamp": "2026-06-24T15:12:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 141 northbound is running about 10 minutes late\r\n approaching Sunnyvale.",
+        "source_message_id": "<pz6Ry8pJQpWeI7e8hpyS_g@geopod-ismtpd-9>"
+      }
+    ],
+    "ingestion_key": "delayed-train-141-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-06-24T15:12:29-07:00"
+  }
+}
