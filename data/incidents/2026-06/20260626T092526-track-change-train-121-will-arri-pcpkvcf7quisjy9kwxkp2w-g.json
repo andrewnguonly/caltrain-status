@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-26T09:25:26-07:00",
+  "source_message_id": "<pCpKVCf7Quisjy9kwxKp2w@geopod-ismtpd-12>",
+  "incident": {
+    "id": "inc-20260626T092526-track-change-train-121-will-arrive-and-depart-off-track-5-at-pcpkvcf7quisjy9kwxkp2w-g",
+    "title": "Track Change Train 121 will Arrive and Depart off Track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-26T09:24:00-07:00",
+    "resolved_at": "2026-06-26T09:52:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 06/26/26 9:24 AM | End: 06/26/26 9:52 AM",
+    "updates": [
+      {
+        "timestamp": "2026-06-26T09:25:26-07:00",
+        "state": "degraded",
+        "message": "Track Change: Train 121 will Arrive and Depart off Track 5 at San\r\n Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<pCpKVCf7Quisjy9kwxKp2w@geopod-ismtpd-12>"
+      }
+    ],
+    "ingestion_key": "track-change-train-121-will-arrive-and-depart-off-track-5-at",
+    "version_created_at": "2026-06-26T09:25:26-07:00"
+  }
+}
