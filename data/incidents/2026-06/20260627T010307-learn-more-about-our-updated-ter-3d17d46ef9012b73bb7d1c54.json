@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-06-27T01:03:07-07:00",
+  "source_message_id": "<3d17d46ef9012b73bb7d1c54a2c64b4996f00ef6-20400046-613148321@google.com>",
+  "incident": {
+    "id": "inc-20260627T010307-learn-more-about-our-updated-terms-of-service-3d17d46ef9012b73bb7d1c54",
+    "title": "Learn more about our updated Terms of Service",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-06-27T01:03:07-07:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "caltrainalerts0001@gmail.com Every couple of years, we update our Terms of Service. We wanted to let you know ahead of time that the next update will be on July 30, 2026. These changes won\u2019t affect the way you use our services, but they should help make it easier for you to understand what to expect",
+    "updates": [
+      {
+        "timestamp": "2026-06-27T01:03:07-07:00",
+        "state": "degraded",
+        "message": "Learn more about our updated Terms of Service",
+        "source_message_id": "<3d17d46ef9012b73bb7d1c54a2c64b4996f00ef6-20400046-613148321@google.com>"
+      }
+    ],
+    "ingestion_key": "learn-more-about-our-updated-terms-of-service",
+    "version_created_at": "2026-06-27T01:03:07-07:00"
+  }
+}
