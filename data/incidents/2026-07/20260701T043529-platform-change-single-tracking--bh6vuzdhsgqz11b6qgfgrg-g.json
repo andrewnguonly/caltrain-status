@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-01T04:35:29-07:00",
+  "source_message_id": "<Bh6VUZdHSGqz11B6QgFgrg@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260701T043529-platform-change-single-tracking-effective-until-0800am-start-bh6vuzdhsgqz11b6qgfgrg-g",
+    "title": "Platform Change Single Tracking Effective until 0800am Starting with Train 101 All trains will board on the Southbound Platform at San Mateo and Burlingame",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-01T04:30:00-07:00",
+    "resolved_at": "2026-07-01T08:00:00-07:00",
+    "affected_segments": [
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 07/01/26 4:30 AM | End: 07/01/26 8:00 AM",
+    "updates": [
+      {
+        "timestamp": "2026-07-01T04:35:29-07:00",
+        "state": "degraded",
+        "message": "Platform Change: Single Tracking Effective until 0800am Starting with\r\n Train 101, All trains will board on the Southbound Platform at San Mateo and\r\n Burlingame | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<Bh6VUZdHSGqz11B6QgFgrg@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "platform-change-single-tracking-effective-until-0800am-start",
+    "version_created_at": "2026-07-01T04:35:29-07:00"
+  }
+}
