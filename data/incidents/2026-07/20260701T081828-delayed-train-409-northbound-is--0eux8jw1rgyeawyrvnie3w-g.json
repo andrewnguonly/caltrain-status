@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-01T08:18:28-07:00",
+  "source_message_id": "<0eUx8jW1RGyEaWYRvNiE3w@geopod-ismtpd-7>",
+  "incident": {
+    "id": "inc-20260701T081828-delayed-train-409-northbound-is-running-about-10-minutes-lat-0eux8jw1rgyeawyrvnie3w-g",
+    "title": "Delayed Train 409 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-01T08:18:00-07:00",
+    "resolved_at": "2026-07-01T08:28:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 07/01/26 8:18 AM | End: 07/01/26 8:28 AM",
+    "updates": [
+      {
+        "timestamp": "2026-07-01T08:18:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 409 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<0eUx8jW1RGyEaWYRvNiE3w@geopod-ismtpd-7>"
+      }
+    ],
+    "ingestion_key": "delayed-train-409-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-07-01T08:18:28-07:00"
+  }
+}
