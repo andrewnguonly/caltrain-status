@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Technical Problem | Start: 06/08/26 6:51 AM | End: 06/08/26 8:51 AM",
-  "updated_at": "2026-07-04T12:49:14-07:00",
+  "updated_at": "2026-07-04T13:38:26-07:00",
   "active_incident_ids": [
     "inc-20260608T065229-cancelled-train-507-northbound-is-cancelled-train-111-will-a-qj0yrowntugfqedqhm357q-g",
     "inc-20260520T190926-cancelled-train-157-departing-tamien-northbound-at-6-52-pm-t-jw6by8r-sqwdsfp4ube-yw-g",
@@ -20,6 +20,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260704T132327-delayed-train-625-northbound-is-running-about-10-minutes-lat-z-4eu1x8t06di4qnjfhq6g-g",
     "inc-20260704T124026-single-tracking-all-trains-will-board-on-the-northbound-plat-fp-oxkhksa6nr4702at4kg-g",
     "inc-20260703T235828-platform-change-train-173-will-board-on-the-southbound-platf-z47iretortojj3dwrh84gw-g",
     "inc-20260703T223026-delayed-train-167-northbound-is-running-about-11-minutes-lat-7vxpzn1srugloqamcgflnw-g",
@@ -1716,6 +1717,7 @@
     "data/incidents/2026-07/20260703T221828-single-tracking-all-trains-will--n2djt68lsfk3ur-bgqpk0g-g.json",
     "data/incidents/2026-07/20260703T223026-delayed-train-167-northbound-is--7vxpzn1srugloqamcgflnw-g.json",
     "data/incidents/2026-07/20260703T235828-platform-change-train-173-will-b-z47iretortojj3dwrh84gw-g.json",
-    "data/incidents/2026-07/20260704T124026-single-tracking-all-trains-will--fp-oxkhksa6nr4702at4kg-g.json"
+    "data/incidents/2026-07/20260704T124026-single-tracking-all-trains-will--fp-oxkhksa6nr4702at4kg-g.json",
+    "data/incidents/2026-07/20260704T132327-delayed-train-625-northbound-is--z-4eu1x8t06di4qnjfhq6g-g.json"
   ]
 }
