@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-03T22:11:28-07:00",
+  "source_message_id": "<9F9R-XghQLy3uXtlsPi1HA@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260703T221128-please-expect-30-60-minute-delays-due-to-incident-involving--9f9r-xghqly3uxtlspi1ha-g",
+    "title": "Please Expect 30-60 minute delays due to incident involving Train 166",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-03T22:04:00-07:00",
+    "resolved_at": "2026-07-04T00:00:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Significant Delays | Cause: Strike | Start: 07/03/26 10:04 PM | End: 07/04/26 12:00 AM",
+    "updates": [
+      {
+        "timestamp": "2026-07-03T22:11:28-07:00",
+        "state": "degraded",
+        "message": "Please Expect 30-60 minute delays due to incident involving Train 166 | Effect: Significant Delays | Cause: Strike",
+        "source_message_id": "<9F9R-XghQLy3uXtlsPi1HA@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "please-expect-30-60-minute-delays-due-to-incident-involving-",
+    "version_created_at": "2026-07-03T22:11:28-07:00"
+  }
+}

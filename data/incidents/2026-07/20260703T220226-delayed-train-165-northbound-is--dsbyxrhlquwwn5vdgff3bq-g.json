@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-03T22:02:26-07:00",
+  "source_message_id": "<dSByxrHLQuWWn5VDgff3BQ@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260703T220226-delayed-train-165-northbound-is-running-about-10-minutes-lat-dsbyxrhlquwwn5vdgff3bq-g",
+    "title": "Delayed Train 165 northbound is running about 10 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-03T22:05:00-07:00",
+    "resolved_at": "2026-07-03T22:15:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 07/03/26 10:05 PM | End: 07/03/26 10:15 PM",
+    "updates": [
+      {
+        "timestamp": "2026-07-03T22:02:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 165 northbound is running about 10 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<dSByxrHLQuWWn5VDgff3BQ@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-165-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-07-03T22:02:26-07:00"
+  }
+}
