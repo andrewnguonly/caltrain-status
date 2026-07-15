@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-15T14:36:28-07:00",
+  "source_message_id": "<uL12zCduRnuIaDTU6nFSrA@geopod-ismtpd-7>",
+  "incident": {
+    "id": "inc-20260715T143628-platform-change-single-tracking-effective-until-3-30-startin-ul12zcdurnuiadtu6nfsra-g",
+    "title": "Platform Change Single Tracking Effective until 3 30 Starting with Train 134 All trains will board on the Northbound Platform at San Mateo and Burlingame",
+    "severity": "minor",
+    "status": "resolved",
+    "started_at": "2026-07-15T13:40:00-07:00",
+    "resolved_at": "2026-07-15T14:36:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 07/15/26 1:40 PM | End: 07/15/26 2:36 PM",
+    "updates": [
+      {
+        "timestamp": "2026-07-15T14:36:28-07:00",
+        "state": "operational",
+        "message": "Platform Change: Single Tracking Effective until 3:30, Starting with\r\n Train 134, All trains will board on the Northbound Platform at San Mateo and\r\n Burlingame | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<uL12zCduRnuIaDTU6nFSrA@geopod-ismtpd-7>"
+      }
+    ],
+    "ingestion_key": "platform-change-single-tracking-effective-until-3-30-startin",
+    "version_created_at": "2026-07-15T14:36:28-07:00"
+  }
+}
