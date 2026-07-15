@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-15T10:05:27-07:00",
+  "source_message_id": "<RE_ywddxRKuT8B6AIcIC-Q@geopod-ismtpd-6>",
+  "incident": {
+    "id": "inc-20260715T100527-delayed-train-117-northbound-is-running-about-16-minutes-lat-re-ywddxrkut8b6aicic-q-g",
+    "title": "Delayed Train 117 northbound is running about 16 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-15T10:00:00-07:00",
+    "resolved_at": "2026-07-15T10:16:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 07/15/26 10:00 AM | End: 07/15/26 10:16 AM",
+    "updates": [
+      {
+        "timestamp": "2026-07-15T10:05:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 117 northbound is running about 16 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<RE_ywddxRKuT8B6AIcIC-Q@geopod-ismtpd-6>"
+      }
+    ],
+    "ingestion_key": "delayed-train-117-northbound-is-running-about-16-minutes-lat",
+    "version_created_at": "2026-07-15T10:05:27-07:00"
+  }
+}
