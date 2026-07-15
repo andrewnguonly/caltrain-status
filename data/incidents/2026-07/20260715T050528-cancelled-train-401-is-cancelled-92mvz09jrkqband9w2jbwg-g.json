@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-15T05:05:28-07:00",
+  "source_message_id": "<92Mvz09jRKqBANd9w2JBWg@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
+    "title": "Cancelled Train 401 is cancelled Train 105 will accommodate passengers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-07-15T05:02:00-07:00",
+    "resolved_at": "2026-07-15T07:20:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:02 AM | End: 07/15/26 7:20 AM",
+    "updates": [
+      {
+        "timestamp": "2026-07-15T05:05:28-07:00",
+        "state": "critical",
+        "message": "Cancelled: Train 401 is cancelled. Train 105 will accommodate\r\n passengers. | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<92Mvz09jRKqBANd9w2JBWg@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-401-is-cancelled-train-105-will-accommodate-",
+    "version_created_at": "2026-07-15T05:05:28-07:00"
+  }
+}
