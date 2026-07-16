@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-07-15T15:15:08-07:00",
+  "updated_at": "2026-07-15T20:39:35-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260715T191426-delayed-train-157-northbound-is-running-about-10-minutes-lat-rw8h2rlernmpkixrcoww1q-g",
+    "inc-20260715T185427-delayed-train-153-northbound-is-running-about-11-minutes-lat-ke-kfvqitbkxnejvrvvpza-g",
+    "inc-20260715T183526-delayed-train-523-northbound-is-running-about-58-minutes-lat-5vmhcebqqxilvap-nq8qlg-g",
     "inc-20260715T143926-delayed-train-139-northbound-is-running-about-10-minutes-lat-vesreeiisgsk0ac7vn5udg-g",
     "inc-20260715T134127-platform-change-single-tracking-effective-until-3-30-startin-i3vfz23utsikilcau9f3rq-g",
     "inc-20260715T100527-delayed-train-117-northbound-is-running-about-16-minutes-lat-re-ywddxrkut8b6aicic-q-g",
@@ -1787,6 +1790,9 @@
     "data/incidents/2026-07/20260715T100527-delayed-train-117-northbound-is--re-ywddxrkut8b6aicic-q-g.json",
     "data/incidents/2026-07/20260715T134127-platform-change-single-tracking--i3vfz23utsikilcau9f3rq-g.json",
     "data/incidents/2026-07/20260715T143628-platform-change-single-tracking--ul12zcdurnuiadtu6nfsra-g.json",
-    "data/incidents/2026-07/20260715T143926-delayed-train-139-northbound-is--vesreeiisgsk0ac7vn5udg-g.json"
+    "data/incidents/2026-07/20260715T143926-delayed-train-139-northbound-is--vesreeiisgsk0ac7vn5udg-g.json",
+    "data/incidents/2026-07/20260715T183526-delayed-train-523-northbound-is--5vmhcebqqxilvap-nq8qlg-g.json",
+    "data/incidents/2026-07/20260715T185427-delayed-train-153-northbound-is--ke-kfvqitbkxnejvrvvpza-g.json",
+    "data/incidents/2026-07/20260715T191426-delayed-train-157-northbound-is--rw8h2rlernmpkixrcoww1q-g.json"
   ]
 }
