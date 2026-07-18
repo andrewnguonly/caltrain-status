@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-07-17T20:23:39-07:00",
+  "updated_at": "2026-07-18T14:02:19-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260718T133026-delayed-train-623-northbound-is-running-about-10-minutes-lat-rh1m8brusi2jrhe4vd74xg-g",
     "inc-20260717T182426-delayed-train-151-northbound-is-running-about-10-minutes-lat-qd4acspnszqruafv0l6joq-g",
     "inc-20260717T173926-delayed-train-151-northbound-is-running-about-10-minutes-lat-duyb-uhisiys6sexbgr7eg-g",
     "inc-20260717T172927-delayed-train-147-northbound-is-running-about-10-minutes-lat-wgovq4cxsdow8-yf0nclna-g",
@@ -1809,6 +1810,7 @@
     "data/incidents/2026-07/20260717T164427-delayed-train-147-northbound-is--b3fvokvnsao1hmxvox4hkw-g.json",
     "data/incidents/2026-07/20260717T172927-delayed-train-147-northbound-is--wgovq4cxsdow8-yf0nclna-g.json",
     "data/incidents/2026-07/20260717T173926-delayed-train-151-northbound-is--duyb-uhisiys6sexbgr7eg-g.json",
-    "data/incidents/2026-07/20260717T182426-delayed-train-151-northbound-is--qd4acspnszqruafv0l6joq-g.json"
+    "data/incidents/2026-07/20260717T182426-delayed-train-151-northbound-is--qd4acspnszqruafv0l6joq-g.json",
+    "data/incidents/2026-07/20260718T133026-delayed-train-623-northbound-is--rh1m8brusi2jrhe4vd74xg-g.json"
   ]
 }
