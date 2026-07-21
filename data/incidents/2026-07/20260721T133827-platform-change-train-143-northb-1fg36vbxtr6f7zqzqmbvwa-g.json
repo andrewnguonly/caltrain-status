@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-21T13:38:27-07:00",
+  "source_message_id": "<1fg36vbxTR6F7zqzQmBvwA@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20260721T133827-platform-change-train-143-northbound-will-depart-from-platfo-1fg36vbxtr6f7zqzqmbvwa-g",
+    "title": "Platform change Train 143 northbound will depart from platform 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-21T13:38:27-07:00",
+    "resolved_at": "2026-07-21T15:23:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: * End Date * | End: 07/21/26 3:23 PM",
+    "updates": [
+      {
+        "timestamp": "2026-07-21T13:38:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 143 northbound will depart from platform 5 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<1fg36vbxTR6F7zqzQmBvwA@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-143-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-07-21T13:38:27-07:00"
+  }
+}
