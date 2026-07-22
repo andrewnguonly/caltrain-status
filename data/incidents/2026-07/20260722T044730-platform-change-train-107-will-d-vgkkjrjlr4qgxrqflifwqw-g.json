@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-22T04:47:30-07:00",
+  "source_message_id": "<vgkkjrjLR4qGXrqFlIfwQw@geopod-ismtpd-16>",
+  "incident": {
+    "id": "inc-20260722T044730-platform-change-train-107-will-depart-from-platform-8-at-san-vgkkjrjlr4qgxrqflifwqw-g",
+    "title": "Platform change Train 107 will depart from platform 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-22T05:46:00-07:00",
+    "resolved_at": "2026-07-22T06:30:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 07/22/26 5:46 AM | End: 07/22/26 6:30 AM",
+    "updates": [
+      {
+        "timestamp": "2026-07-22T04:47:30-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 107 will depart from platform 8 at San Jose\r\n Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<vgkkjrjLR4qGXrqFlIfwQw@geopod-ismtpd-16>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-107-will-depart-from-platform-8-at-san",
+    "version_created_at": "2026-07-22T04:47:30-07:00"
+  }
+}

@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-07-21T14:34:23-07:00",
+  "updated_at": "2026-07-22T05:53:52-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260722T044730-platform-change-train-107-will-depart-from-platform-8-at-san-vgkkjrjlr4qgxrqflifwqw-g",
+    "inc-20260722T052529-platform-change-train-401-will-depart-from-platform-8-at-san-irtm3pusr7mxfrhxzr-5la-g",
     "inc-20260721T133827-platform-change-train-143-northbound-will-depart-from-platfo-1fg36vbxtr6f7zqzqmbvwa-g",
     "inc-20260721T122026-platform-change-train-139-northbound-will-depart-from-platfo-b-rsq-jvsyowpdzyzn2dag-g",
     "inc-20260720T074927-platform-change-train-115-northbound-will-depart-from-platfo-zys12mgzr4s10k4ptkcrgq-g",
@@ -1821,6 +1823,8 @@
     "data/incidents/2026-07/20260719T043925-platform-change-train-611-northb-jgl5ahf8qnowkvayps19ra-g.json",
     "data/incidents/2026-07/20260720T074927-platform-change-train-115-northb-zys12mgzr4s10k4ptkcrgq-g.json",
     "data/incidents/2026-07/20260721T122026-platform-change-train-139-northb-b-rsq-jvsyowpdzyzn2dag-g.json",
-    "data/incidents/2026-07/20260721T133827-platform-change-train-143-northb-1fg36vbxtr6f7zqzqmbvwa-g.json"
+    "data/incidents/2026-07/20260721T133827-platform-change-train-143-northb-1fg36vbxtr6f7zqzqmbvwa-g.json",
+    "data/incidents/2026-07/20260722T044730-platform-change-train-107-will-d-vgkkjrjlr4qgxrqflifwqw-g.json",
+    "data/incidents/2026-07/20260722T052529-platform-change-train-401-will-d-irtm3pusr7mxfrhxzr-5la-g.json"
   ]
 }
