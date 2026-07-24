@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-07-23T21:59:26-07:00",
+  "source_message_id": "<tzK0cOXJSU6JegQ0QIGSfQ@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260723T215926-delayed-train-165-northbound-is-running-about-10-minutes-lat-tzk0coxjsu6jegq0qigsfq-g",
+    "title": "Delayed Train 165 northbound is running about 10 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-07-23T22:00:00-07:00",
+    "resolved_at": "2026-07-23T22:10:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 07/23/26 10:00 PM | End: 07/23/26 10:10 PM",
+    "updates": [
+      {
+        "timestamp": "2026-07-23T21:59:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 165 northbound is running about 10 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<tzK0cOXJSU6JegQ0QIGSfQ@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "delayed-train-165-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-07-23T21:59:26-07:00"
+  }
+}
