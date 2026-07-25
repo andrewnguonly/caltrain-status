@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-07-25T03:12:39-07:00",
+  "updated_at": "2026-07-25T04:36:16-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,10 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260725T041826-train-621-will-arrive-on-track-3-at-san-jose-diridon-lqlqjixlqim8b9tneq5yyw-g",
+    "inc-20260725T041726-train-617-will-arrive-on-track-3-at-san-jose-diridon-rcoelqchrdoenl0wqafhdw-g",
+    "inc-20260725T041626-train-609-will-arrive-on-track-3-at-san-jose-diridon-psog7htirxsntyrzkt-huq-g",
+    "inc-20260725T041528-train-605-will-arrive-on-track-3-at-san-jose-diridon-pyfqigf0suif-ztr8bjfgw-g",
     "inc-20260725T002326-platform-change-train-173-will-board-on-the-southbound-platf-uj2a6zafqnsrqjcqk691vq-g",
     "inc-20260724T043829-platform-change-train-103-northbound-will-depart-from-platfo-i-x16pbysxuxrj4uykms5g-g",
     "inc-20260723T215926-delayed-train-165-northbound-is-running-about-10-minutes-lat-tzk0coxjsu6jegq0qigsfq-g",
@@ -1845,6 +1849,10 @@
     "data/incidents/2026-07/20260723T134126-platform-change-train-523-northb-ixirgqwprd60v6aaygb3yq-g.json",
     "data/incidents/2026-07/20260723T215926-delayed-train-165-northbound-is--tzk0coxjsu6jegq0qigsfq-g.json",
     "data/incidents/2026-07/20260724T043829-platform-change-train-103-northb-i-x16pbysxuxrj4uykms5g-g.json",
-    "data/incidents/2026-07/20260725T002326-platform-change-train-173-will-b-uj2a6zafqnsrqjcqk691vq-g.json"
+    "data/incidents/2026-07/20260725T002326-platform-change-train-173-will-b-uj2a6zafqnsrqjcqk691vq-g.json",
+    "data/incidents/2026-07/20260725T041528-train-605-will-arrive-on-track-3-pyfqigf0suif-ztr8bjfgw-g.json",
+    "data/incidents/2026-07/20260725T041626-train-609-will-arrive-on-track-3-psog7htirxsntyrzkt-huq-g.json",
+    "data/incidents/2026-07/20260725T041726-train-617-will-arrive-on-track-3-rcoelqchrdoenl0wqafhdw-g.json",
+    "data/incidents/2026-07/20260725T041826-train-621-will-arrive-on-track-3-lqlqjixlqim8b9tneq5yyw-g.json"
   ]
 }
