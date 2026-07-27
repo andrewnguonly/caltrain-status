@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-07-27T15:44:05-07:00",
+  "updated_at": "2026-07-27T16:46:37-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260727T163726-delayed-train-147-northbound-is-running-about-10-minutes-lat-xlkiuxenrroxcd1c2-w-pw-g",
     "inc-20260727T153226-delayed-train-139-northbound-is-running-about-10-minutes-lat-lb5taicnqlm4cqtnbmsdaa-g",
     "inc-20260726T050426-train-611-will-depart-on-track-8-at-san-jose-diridon-udauzws8sewzxzv0ujnacq-g",
     "inc-20260726T071426-platform-change-train-603-northbound-will-depart-from-track--ka8dmv7uqvcuzn-844-atg-g",
@@ -1863,6 +1864,7 @@
     "data/incidents/2026-07/20260725T053328-train-611-will-depart-on-track-7-ls5byg-9q2qyaiotgx4wrq-g.json",
     "data/incidents/2026-07/20260726T050426-train-611-will-depart-on-track-8-udauzws8sewzxzv0ujnacq-g.json",
     "data/incidents/2026-07/20260726T071426-platform-change-train-603-northb-ka8dmv7uqvcuzn-844-atg-g.json",
-    "data/incidents/2026-07/20260727T153226-delayed-train-139-northbound-is--lb5taicnqlm4cqtnbmsdaa-g.json"
+    "data/incidents/2026-07/20260727T153226-delayed-train-139-northbound-is--lb5taicnqlm4cqtnbmsdaa-g.json",
+    "data/incidents/2026-07/20260727T163726-delayed-train-147-northbound-is--xlkiuxenrroxcd1c2-w-pw-g.json"
   ]
 }
