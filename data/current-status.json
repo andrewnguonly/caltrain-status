@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-08-02T04:58:07-07:00",
+  "updated_at": "2026-08-03T18:03:05-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260803T164626-delayed-train-149-northbound-is-running-about-23-minutes-lat-k-vxlestkmikbnimeh5dq-ge",
     "inc-20260802T041328-platform-change-train-611-will-depart-from-platform-7-at-san-fpqaxte6q-w64kv8lzflvg-g",
     "inc-20260730T115726-track-change-train-133-northbound-will-depart-off-track-5-at-xyw-vmsptqiip-h3e5xr6a-g",
     "inc-20260729T234526-delayed-train-171-northbound-is-running-about-32-minutes-lat-zqw6ep6is3amifvzkfk8-a-g",
@@ -1899,6 +1900,7 @@
     "data/incidents/2026-07/20260729T230128-delayed-train-171-northbound-is--bq5wtdukrfczgheimvtxva-g.json",
     "data/incidents/2026-07/20260729T234526-delayed-train-171-northbound-is--zqw6ep6is3amifvzkfk8-a-g.json",
     "data/incidents/2026-07/20260730T115726-track-change-train-133-northboun-xyw-vmsptqiip-h3e5xr6a-g.json",
-    "data/incidents/2026-08/20260802T041328-platform-change-train-611-will-d-fpqaxte6q-w64kv8lzflvg-g.json"
+    "data/incidents/2026-08/20260802T041328-platform-change-train-611-will-d-fpqaxte6q-w64kv8lzflvg-g.json",
+    "data/incidents/2026-08/20260803T164626-delayed-train-149-northbound-is--k-vxlestkmikbnimeh5dq-ge.json"
   ]
 }
