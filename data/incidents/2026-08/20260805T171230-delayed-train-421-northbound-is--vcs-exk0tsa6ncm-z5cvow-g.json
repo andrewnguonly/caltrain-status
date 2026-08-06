@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-05T17:12:30-07:00",
+  "source_message_id": "<vcS_eXK0TSa6nCM_Z5CvOw@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260805T171230-delayed-train-421-northbound-is-running-about-16-minutes-lat-vcs-exk0tsa6ncm-z5cvow-g",
+    "title": "Delayed Train 421 northbound is running about 16 minutes late approaching California Avenue",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-05T17:07:00-07:00",
+    "resolved_at": "2026-08-05T17:23:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/05/26 5:07 PM | End: 08/05/26 5:23 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-05T17:12:30-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 421 northbound is running about 16 minutes late\r\n approaching California Avenue.",
+        "source_message_id": "<vcS_eXK0TSa6nCM_Z5CvOw@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "delayed-train-421-northbound-is-running-about-16-minutes-lat",
+    "version_created_at": "2026-08-05T17:12:30-07:00"
+  }
+}
