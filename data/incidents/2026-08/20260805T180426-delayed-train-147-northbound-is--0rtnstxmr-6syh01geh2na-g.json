@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-05T18:04:26-07:00",
+  "source_message_id": "<0RTnstXMR_6syH01GeH2nA@geopod-ismtpd-6>",
+  "incident": {
+    "id": "inc-20260805T180426-delayed-train-147-northbound-is-running-about-35-minutes-lat-0rtnstxmr-6syh01geh2na-g",
+    "title": "Delayed Train 147 northbound is running about 35 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-05T17:40:00-07:00",
+    "resolved_at": "2026-08-05T18:15:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/05/26 5:40 PM | End: 08/05/26 6:15 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-05T18:04:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 147 northbound is running about 35 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<0RTnstXMR_6syH01GeH2nA@geopod-ismtpd-6>"
+      }
+    ],
+    "ingestion_key": "delayed-train-147-northbound-is-running-about-35-minutes-lat",
+    "version_created_at": "2026-08-05T18:04:26-07:00"
+  }
+}
