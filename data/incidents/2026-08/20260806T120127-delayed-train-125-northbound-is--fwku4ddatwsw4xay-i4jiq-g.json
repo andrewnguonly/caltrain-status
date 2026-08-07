@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-06T12:01:27-07:00",
+  "source_message_id": "<FwKu4DDATWSw4xay_i4JIQ@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260806T120127-delayed-train-125-northbound-is-running-about-10-minutes-lat-fwku4ddatwsw4xay-i4jiq-g",
+    "title": "Delayed Train 125 northbound is running about 10 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-06T12:05:00-07:00",
+    "resolved_at": "2026-08-06T12:15:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/06/26 12:05 PM | End: 08/06/26 12:15 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-06T12:01:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 125 northbound is running about 10 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<FwKu4DDATWSw4xay_i4JIQ@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "delayed-train-125-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-08-06T12:01:27-07:00"
+  }
+}
