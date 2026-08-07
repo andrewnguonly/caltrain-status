@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-07T02:16:29-07:00",
+  "source_message_id": "<dTZ5x0rXQ_y0s1TUmhk5Xg@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260807T021629-single-tracking-all-trains-will-board-on-the-southbound-plat-dtz5x0rxq-y0s1tumhk5xg-g",
+    "title": "Single Tracking All trains will board on the southbound platform at Hayward Park and Hillsdale stations",
+    "severity": "minor",
+    "status": "resolved",
+    "started_at": "2026-08-06T22:23:00-07:00",
+    "resolved_at": "2026-08-07T02:16:00-07:00",
+    "affected_segments": [
+      "Southbound",
+      "Hayward Park and Hillsdale stations"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: Hayward Park and Hillsdale stations | Start: 08/06/26 10:23 PM | End: 08/07/26 2:16 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-07T02:16:29-07:00",
+        "state": "operational",
+        "message": "Single Tracking: All trains will board on the southbound platform at\r\n Hayward Park and Hillsdale stations | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<dTZ5x0rXQ_y0s1TUmhk5Xg@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "single-tracking-all-trains-will-board-on-the-southbound-plat",
+    "version_created_at": "2026-08-07T02:16:29-07:00"
+  }
+}
