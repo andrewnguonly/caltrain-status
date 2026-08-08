@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-08T09:36:26-07:00",
+  "source_message_id": "<hxfzs-1_TyafuJhZXgZ4Yg@geopod-ismtpd-22>",
+  "incident": {
+    "id": "inc-20260808T093626-delayed-train-607-northbound-is-running-about-16-minutes-lat-hxfzs-1-tyafujhzxgz4yg-g",
+    "title": "Delayed Train 607 northbound is running about 16 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-08T09:30:00-07:00",
+    "resolved_at": "2026-08-08T09:46:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/08/26 9:30 AM | End: 08/08/26 9:46 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-08T09:36:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 607 northbound is running about 16 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<hxfzs-1_TyafuJhZXgZ4Yg@geopod-ismtpd-22>"
+      }
+    ],
+    "ingestion_key": "delayed-train-607-northbound-is-running-about-16-minutes-lat",
+    "version_created_at": "2026-08-08T09:36:26-07:00"
+  }
+}
