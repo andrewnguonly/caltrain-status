@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-08-08T08:22:42-07:00",
+  "updated_at": "2026-08-08T08:54:36-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -25,7 +25,11 @@
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
     "inc-20260808T051225-platform-change-train-621-will-depart-from-platform-7-at-san-xjiyqcuntwsn6atwegrmgg-g",
     "inc-20260808T051126-platform-change-train-617-will-depart-from-platform-4-at-san-ypbdqacvr-cm4uo-rpvqqq-g",
+    "inc-20260808T084726-platform-change-train-611-will-depart-from-platform-4-at-san-pqw0tzshs2inr8ljzsm-mq-g",
     "inc-20260808T050928-platform-change-train-611-will-depart-from-platform-7-at-san-rplyg2ggq3wao1bjkgcm5w-g",
+    "inc-20260808T084326-train-609-will-arrive-on-track-5-at-san-jose-diridon-2b0yobnervmajzvd2-erha-g",
+    "inc-20260808T084126-train-609-will-arrive-on-track-3-at-san-jose-diridon-msccyde2spwuglbjbp0-fq-g",
+    "inc-20260808T082826-delayed-train-603-northbound-is-running-about-17-minutes-lat-rxypegyvrbolubt24x-e2q-g",
     "inc-20260808T080226-platform-change-train-607-northbound-will-depart-from-platfo-ltqlnfk5qmitnsrsr7nosa-g",
     "inc-20260808T074329-delayed-train-603-northbound-is-running-about-10-minutes-lat-zcarnu0tt2ed0qkpqha-kw-g",
     "inc-20260808T071826-train-605-will-depart-on-track-5-at-san-jose-diridon-8cpdkadqyq-cgsjk7o-ea-ge",
@@ -1962,6 +1966,10 @@
     "data/incidents/2026-08/20260808T064426-platform-change-train-603-northb-uwsz7ft6qhiynhekxcav9w-g.json",
     "data/incidents/2026-08/20260808T071826-train-605-will-depart-on-track-5-8cpdkadqyq-cgsjk7o-ea-ge.json",
     "data/incidents/2026-08/20260808T074329-delayed-train-603-northbound-is--zcarnu0tt2ed0qkpqha-kw-g.json",
-    "data/incidents/2026-08/20260808T080226-platform-change-train-607-northb-ltqlnfk5qmitnsrsr7nosa-g.json"
+    "data/incidents/2026-08/20260808T080226-platform-change-train-607-northb-ltqlnfk5qmitnsrsr7nosa-g.json",
+    "data/incidents/2026-08/20260808T082826-delayed-train-603-northbound-is--rxypegyvrbolubt24x-e2q-g.json",
+    "data/incidents/2026-08/20260808T084126-train-609-will-arrive-on-track-3-msccyde2spwuglbjbp0-fq-g.json",
+    "data/incidents/2026-08/20260808T084326-train-609-will-arrive-on-track-5-2b0yobnervmajzvd2-erha-g.json",
+    "data/incidents/2026-08/20260808T084726-platform-change-train-611-will-d-pqw0tzshs2inr8ljzsm-mq-g.json"
   ]
 }

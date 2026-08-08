@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-08T08:43:26-07:00",
+  "source_message_id": "<2b0YobnERvmAjZvd2-ErHA@geopod-ismtpd-12>",
+  "incident": {
+    "id": "inc-20260808T084326-train-609-will-arrive-on-track-5-at-san-jose-diridon-2b0yobnervmajzvd2-erha-g",
+    "title": "Train 609 will arrive on track 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-08T08:42:00-07:00",
+    "resolved_at": "2026-08-08T08:51:00-07:00",
+    "affected_segments": [
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 08/08/26 8:42 AM | End: 08/08/26 8:51 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-08T08:43:26-07:00",
+        "state": "degraded",
+        "message": "Train 609 will arrive on track 5 at San Jose Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<2b0YobnERvmAjZvd2-ErHA@geopod-ismtpd-12>"
+      }
+    ],
+    "ingestion_key": "train-609-will-arrive-on-track-5-at-san-jose-diridon",
+    "version_created_at": "2026-08-08T08:43:26-07:00"
+  }
+}
