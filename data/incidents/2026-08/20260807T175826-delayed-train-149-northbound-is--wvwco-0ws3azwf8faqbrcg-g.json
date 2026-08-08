@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-07T17:58:26-07:00",
+  "source_message_id": "<WVWCo_0WS3azwf8faQbrcg@geopod-ismtpd-2>",
+  "incident": {
+    "id": "inc-20260807T175826-delayed-train-149-northbound-is-running-about-21-minutes-lat-wvwco-0ws3azwf8faqbrcg-g",
+    "title": "Delayed Train 149 northbound is running about 21 minutes late approaching San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-07T17:47:00-07:00",
+    "resolved_at": "2026-08-07T18:08:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/07/26 5:47 PM | End: 08/07/26 6:08 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-07T17:58:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 149 northbound is running about 21 minutes late\r\n approaching San Mateo.",
+        "source_message_id": "<WVWCo_0WS3azwf8faQbrcg@geopod-ismtpd-2>"
+      }
+    ],
+    "ingestion_key": "delayed-train-149-northbound-is-running-about-21-minutes-lat",
+    "version_created_at": "2026-08-07T17:58:26-07:00"
+  }
+}
