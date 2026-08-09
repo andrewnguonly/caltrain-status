@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-09T11:57:26-07:00",
+  "source_message_id": "<H5jwTzALTnCuqVMIR6hlNQ@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20260809T115726-platform-change-train-623-northbound-will-depart-from-platfo-h5jwtzaltncuqvmir6hlnq-g",
+    "title": "Platform change Train 623 northbound will depart from platform 6 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-09T11:56:00-07:00",
+    "resolved_at": "2026-08-09T12:26:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 08/09/26 11:56 AM | End: 08/09/26 12:26 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-09T11:57:26-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 623 northbound will depart from platform 6 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<H5jwTzALTnCuqVMIR6hlNQ@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-623-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-08-09T11:57:26-07:00"
+  }
+}

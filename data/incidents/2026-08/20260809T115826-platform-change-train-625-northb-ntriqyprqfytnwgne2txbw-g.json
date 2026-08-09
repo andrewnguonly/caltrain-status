@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-09T11:58:26-07:00",
+  "source_message_id": "<NtrIQYPrQFyTnwgNe2Txbw@geopod-ismtpd-7>",
+  "incident": {
+    "id": "inc-20260809T115826-platform-change-train-625-northbound-will-depart-from-platfo-ntriqyprqfytnwgne2txbw-g",
+    "title": "Platform change Train 625 northbound will depart from platform 7 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-09T11:57:00-07:00",
+    "resolved_at": "2026-08-09T12:51:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 08/09/26 11:57 AM | End: 08/09/26 12:51 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-09T11:58:26-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 625 northbound will depart from platform 7 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<NtrIQYPrQFyTnwgNe2Txbw@geopod-ismtpd-7>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-625-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-08-09T11:58:26-07:00"
+  }
+}
