@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-14T12:28:26-07:00",
+  "source_message_id": "<SP_saokOSUa-c8evXidaMQ@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260814T122826-delayed-train-129-northbound-is-running-about-10-minutes-lat-sp-saokosua-c8evxidamq-g",
+    "title": "Delayed Train 129 northbound is running about 10 minutes late approaching Menlo Park",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-14T12:28:00-07:00",
+    "resolved_at": "2026-08-14T12:38:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/14/26 12:28 PM | End: 08/14/26 12:38 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-14T12:28:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 129 northbound is running about 10 minutes late\r\n approaching Menlo Park.",
+        "source_message_id": "<SP_saokOSUa-c8evXidaMQ@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "delayed-train-129-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-08-14T12:28:26-07:00"
+  }
+}
