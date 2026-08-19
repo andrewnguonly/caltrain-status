@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-19T10:24:27-07:00",
+  "source_message_id": "<u9nW5EpKRLa2MCKVakXAog@geopod-ismtpd-0>",
+  "incident": {
+    "id": "inc-20260819T102427-delayed-train-119-northbound-is-running-about-10-minutes-lat-u9nw5epkrla2mckvakxaog-g",
+    "title": "Delayed Train 119 northbound is running about 10 minutes late approaching Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-19T10:24:00-07:00",
+    "resolved_at": "2026-08-19T10:34:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/19/26 10:24 AM | End: 08/19/26 10:34 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-19T10:24:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 119 northbound is running about 10 minutes late\r\n approaching Millbrae.",
+        "source_message_id": "<u9nW5EpKRLa2MCKVakXAog@geopod-ismtpd-0>"
+      }
+    ],
+    "ingestion_key": "delayed-train-119-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-08-19T10:24:27-07:00"
+  }
+}
