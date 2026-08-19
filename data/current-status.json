@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-08-19T10:35:34-07:00",
+  "updated_at": "2026-08-19T15:01:27-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260819T145626-delayed-train-139-northbound-is-running-about-11-minutes-lat-aq5nl40rsj6jkhx57qaryw-g",
     "inc-20260819T102427-delayed-train-119-northbound-is-running-about-10-minutes-lat-u9nw5epkrla2mckvakxaog-g",
     "inc-20260818T135430-platform-change-train-143-northbound-will-depart-from-platfo-cr6pttays36-rehm1arn-q-g",
     "inc-20260818T114026-delayed-train-123-northbound-is-running-about-10-minutes-lat-14evt5xos6gfi1gxd4z3bw-g",
@@ -2008,6 +2009,7 @@
     "data/incidents/2026-08/20260817T062830-delayed-train-401-northbound-is--q5mgftktrqoooy7ezfvkaa-g.json",
     "data/incidents/2026-08/20260818T114026-delayed-train-123-northbound-is--14evt5xos6gfi1gxd4z3bw-g.json",
     "data/incidents/2026-08/20260818T135430-platform-change-train-143-northb-cr6pttays36-rehm1arn-q-g.json",
-    "data/incidents/2026-08/20260819T102427-delayed-train-119-northbound-is--u9nw5epkrla2mckvakxaog-g.json"
+    "data/incidents/2026-08/20260819T102427-delayed-train-119-northbound-is--u9nw5epkrla2mckvakxaog-g.json",
+    "data/incidents/2026-08/20260819T145626-delayed-train-139-northbound-is--aq5nl40rsj6jkhx57qaryw-g.json"
   ]
 }
