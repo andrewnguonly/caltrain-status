@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-20T12:35:27-07:00",
+  "source_message_id": "<60dfl3czSxyBJ7U5szmEkg@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20260820T123527-platform-change-train-127-will-board-on-the-southbound-platf-60dfl3czsxybj7u5szmekg-g",
+    "title": "Platform change Train 127 will board on the Southbound platform at 22nd street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-20T12:31:00-07:00",
+    "resolved_at": "2026-08-20T12:50:00-07:00",
+    "affected_segments": [
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 08/20/26 12:31 PM | End: 08/20/26 12:50 PM",
+    "updates": [
+      {
+        "timestamp": "2026-08-20T12:35:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 127 will board on the Southbound platform at\r\n 22nd street | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<60dfl3czSxyBJ7U5szmEkg@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-127-will-board-on-the-southbound-platf",
+    "version_created_at": "2026-08-20T12:35:27-07:00"
+  }
+}
