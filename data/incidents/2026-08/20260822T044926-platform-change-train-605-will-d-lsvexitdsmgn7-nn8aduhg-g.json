@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-22T04:49:26-07:00",
+  "source_message_id": "<lSVexiTDSmGn7_Nn8adUHg@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260822T044926-platform-change-train-605-will-depart-from-platform-5-at-san-lsvexitdsmgn7-nn8aduhg-g",
+    "title": "Platform Change Train 605 will Depart from Platform 5 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-22T07:26:00-07:00",
+    "resolved_at": "2026-08-22T07:56:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 08/22/26 7:26 AM | End: 08/22/26 7:56 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-22T04:49:26-07:00",
+        "state": "degraded",
+        "message": "Platform Change: Train 605 will Depart from Platform 5 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<lSVexiTDSmGn7_Nn8adUHg@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-605-will-depart-from-platform-5-at-san",
+    "version_created_at": "2026-08-22T04:49:26-07:00"
+  }
+}

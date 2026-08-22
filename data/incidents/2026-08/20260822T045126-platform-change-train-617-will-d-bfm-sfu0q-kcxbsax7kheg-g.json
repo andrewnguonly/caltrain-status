@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-22T04:51:26-07:00",
+  "source_message_id": "<bFM-SFu0Q-KCXBSaX7kHEg@geopod-ismtpd-canary-0>",
+  "incident": {
+    "id": "inc-20260822T045126-platform-change-train-617-will-depart-from-platform-7-at-san-bfm-sfu0q-kcxbsax7kheg-g",
+    "title": "Platform Change Train 617 will Depart from Platform 7 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-22T10:26:00-07:00",
+    "resolved_at": "2026-08-22T10:56:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 08/22/26 10:26 AM | End: 08/22/26 10:56 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-22T04:51:26-07:00",
+        "state": "degraded",
+        "message": "Platform Change: Train 617 will Depart from Platform 7 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<bFM-SFu0Q-KCXBSaX7kHEg@geopod-ismtpd-canary-0>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-617-will-depart-from-platform-7-at-san",
+    "version_created_at": "2026-08-22T04:51:26-07:00"
+  }
+}
