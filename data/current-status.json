@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 07/15/26 5:04 AM | End: 07/15/26 7:46 AM",
-  "updated_at": "2026-08-23T12:59:03-07:00",
+  "updated_at": "2026-08-25T23:18:56-07:00",
   "active_incident_ids": [
     "inc-20260715T050627-cancelled-train-503-is-cancelled-train-107-will-accommodate--nl3zzkouto2dzupcfqdyhg-g",
     "inc-20260715T050528-cancelled-train-401-is-cancelled-train-105-will-accommodate--92mvz09jrkqband9w2jbwg-g",
@@ -23,6 +23,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260825T230729-delayed-train-169-northbound-is-running-about-10-minutes-lat-mkcydmujqys669psjwljbq-g",
     "inc-20260823T125826-delayed-train-621-northbound-is-running-about-10-minutes-lat-9lkgiiwkshw1gequpnxqxq-g",
     "inc-20260822T045225-platform-change-train-621-will-depart-from-platform-7-at-san-fa7huizsqbwiqwjqk4kzrg-g",
     "inc-20260822T045126-platform-change-train-617-will-depart-from-platform-7-at-san-bfm-sfu0q-kcxbsax7kheg-g",
@@ -2030,6 +2031,7 @@
     "data/incidents/2026-08/20260822T045028-platform-change-train-607-will-d-hgqy6nygs0uyetu53nwwlq-g.json",
     "data/incidents/2026-08/20260822T045126-platform-change-train-617-will-d-bfm-sfu0q-kcxbsax7kheg-g.json",
     "data/incidents/2026-08/20260822T045225-platform-change-train-621-will-d-fa7huizsqbwiqwjqk4kzrg-g.json",
-    "data/incidents/2026-08/20260823T125826-delayed-train-621-northbound-is--9lkgiiwkshw1gequpnxqxq-g.json"
+    "data/incidents/2026-08/20260823T125826-delayed-train-621-northbound-is--9lkgiiwkshw1gequpnxqxq-g.json",
+    "data/incidents/2026-08/20260825T230729-delayed-train-169-northbound-is--mkcydmujqys669psjwljbq-g.json"
   ]
 }
