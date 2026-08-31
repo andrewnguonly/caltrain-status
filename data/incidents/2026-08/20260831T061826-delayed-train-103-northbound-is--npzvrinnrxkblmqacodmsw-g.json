@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-31T06:18:26-07:00",
+  "source_message_id": "<npZVrINNRXKBLmqAcODmSw@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260831T061826-delayed-train-103-northbound-is-running-about-59-minutes-lat-npzvrinnrxkblmqacodmsw-g",
+    "title": "Delayed Train 103 northbound is running about 59 minutes late approaching California Avenue",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-31T05:32:00-07:00",
+    "resolved_at": "2026-08-31T06:31:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/31/26 5:32 AM | End: 08/31/26 6:31 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-31T06:18:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 103 northbound is running about 59 minutes late\r\n approaching California Avenue.",
+        "source_message_id": "<npZVrINNRXKBLmqAcODmSw@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "delayed-train-103-northbound-is-running-about-59-minutes-lat",
+    "version_created_at": "2026-08-31T06:18:26-07:00"
+  }
+}

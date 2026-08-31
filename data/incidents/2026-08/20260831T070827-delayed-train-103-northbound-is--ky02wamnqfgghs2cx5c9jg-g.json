@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-31T07:08:27-07:00",
+  "source_message_id": "<ky02WamnQFGGhS2Cx5C9Jg@geopod-ismtpd-6>",
+  "incident": {
+    "id": "inc-20260831T070827-delayed-train-103-northbound-is-running-about-60-minutes-lat-ky02wamnqfgghs2cx5c9jg-g",
+    "title": "Delayed Train 103 northbound is running about 60 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-31T06:20:00-07:00",
+    "resolved_at": "2026-08-31T07:20:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/31/26 6:20 AM | End: 08/31/26 7:20 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-31T07:08:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 103 northbound is running about 60 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<ky02WamnQFGGhS2Cx5C9Jg@geopod-ismtpd-6>"
+      }
+    ],
+    "ingestion_key": "delayed-train-103-northbound-is-running-about-60-minutes-lat",
+    "version_created_at": "2026-08-31T07:08:27-07:00"
+  }
+}

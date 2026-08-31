@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-08-31T06:14:26-07:00",
+  "source_message_id": "<TjkJmX5PSa-7aw_nDTy9WQ@geopod-ismtpd-16>",
+  "incident": {
+    "id": "inc-20260831T061426-delayed-train-101-northbound-is-running-about-47-minutes-lat-tjkjmx5psa-7aw-ndty9wq-g",
+    "title": "Delayed Train 101 northbound is running about 47 minutes late approaching Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-08-31T05:39:00-07:00",
+    "resolved_at": "2026-08-31T06:26:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 08/31/26 5:39 AM | End: 08/31/26 6:26 AM",
+    "updates": [
+      {
+        "timestamp": "2026-08-31T06:14:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 101 northbound is running about 47 minutes late\r\n approaching Millbrae.",
+        "source_message_id": "<TjkJmX5PSa-7aw_nDTy9WQ@geopod-ismtpd-16>"
+      }
+    ],
+    "ingestion_key": "delayed-train-101-northbound-is-running-about-47-minutes-lat",
+    "version_created_at": "2026-08-31T06:14:26-07:00"
+  }
+}
