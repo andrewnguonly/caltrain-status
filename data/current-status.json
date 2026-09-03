@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Cancelled | Effect: No Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/02/26 6:57 PM | End: 09/02/26 7:47 PM",
-  "updated_at": "2026-09-02T23:17:41-07:00",
+  "updated_at": "2026-09-03T08:04:29-07:00",
   "active_incident_ids": [
     "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
     "inc-20260831T141826-cancelled-train-417-northbound-is-cancelled-train-145-will-a-axssz46tsfawcv-y5pa6gq-g",
@@ -27,6 +27,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260903T051927-platform-change-train-503-will-depart-from-platform-9-at-san-rm8z7xzuts-hz5z5etfd2g-g",
     "inc-20260902T193929-delayed-train-527-northbound-is-running-about-33-minutes-lat-ssqdft6qskkqxz8pgd0lpa-g",
     "inc-20260902T190326-delayed-train-155-northbound-is-running-about-10-minutes-lat-djmue6jksuay38jcyuis4a-g",
     "inc-20260902T185626-delayed-train-527-northbound-is-running-about-10-minutes-lat-r1sqpnslshkitisaussgeg-g",
@@ -2164,6 +2165,7 @@
     "data/incidents/2026-09/20260902T191026-delayed-train-425-northbound-is--mjyrokbxslkdvo56ul23ua-g.json",
     "data/incidents/2026-09/20260902T192430-delayed-train-153-northbound-is--r0isuwb9tmsfix-8b-ntdg-g.json",
     "data/incidents/2026-09/20260902T193929-delayed-train-527-northbound-is--ssqdft6qskkqxz8pgd0lpa-g.json",
-    "data/incidents/2026-09/20260902T204128-service-disruption-expect-delays-ocg-4d26tg6q1mfoacr32w-g.json"
+    "data/incidents/2026-09/20260902T204128-service-disruption-expect-delays-ocg-4d26tg6q1mfoacr32w-g.json",
+    "data/incidents/2026-09/20260903T051927-platform-change-train-503-will-d-rm8z7xzuts-hz5z5etfd2g-g.json"
   ]
 }

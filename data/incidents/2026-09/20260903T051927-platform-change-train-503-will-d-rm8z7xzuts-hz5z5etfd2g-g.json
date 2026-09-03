@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-03T05:19:27-07:00",
+  "source_message_id": "<rM8z7XZuTS-hz5Z5eTFd2g@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260903T051927-platform-change-train-503-will-depart-from-platform-9-at-san-rm8z7xzuts-hz5z5etfd2g-g",
+    "title": "Platform change Train 503 will depart from platform 9 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-03T05:19:27-07:00",
+    "resolved_at": "2026-09-03T06:24:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: * End Date * | End: 09/03/26 6:24 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-03T05:19:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 503 will depart from platform 9 at San Jose\r\n Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<rM8z7XZuTS-hz5Z5eTFd2g@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-503-will-depart-from-platform-9-at-san",
+    "version_created_at": "2026-09-03T05:19:27-07:00"
+  }
+}
