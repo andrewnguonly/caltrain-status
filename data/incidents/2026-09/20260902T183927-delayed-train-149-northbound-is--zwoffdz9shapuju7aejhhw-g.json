@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-02T18:39:27-07:00",
+  "source_message_id": "<ZWOfFdz9ShapuJU7AEJhhw@geopod-ismtpd-7>",
+  "incident": {
+    "id": "inc-20260902T183927-delayed-train-149-northbound-is-running-about-54-minutes-lat-zwoffdz9shapuju7aejhhw-g",
+    "title": "Delayed Train 149 northbound is running about 54 minutes late approaching San Bruno",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-02T17:57:00-07:00",
+    "resolved_at": "2026-09-02T18:51:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/02/26 5:57 PM | End: 09/02/26 6:51 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-02T18:39:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 149 northbound is running about 54 minutes late\r\n approaching San Bruno.",
+        "source_message_id": "<ZWOfFdz9ShapuJU7AEJhhw@geopod-ismtpd-7>"
+      }
+    ],
+    "ingestion_key": "delayed-train-149-northbound-is-running-about-54-minutes-lat",
+    "version_created_at": "2026-09-02T18:39:27-07:00"
+  }
+}

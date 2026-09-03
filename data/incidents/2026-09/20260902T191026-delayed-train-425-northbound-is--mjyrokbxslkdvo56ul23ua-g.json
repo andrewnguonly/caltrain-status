@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-02T19:10:26-07:00",
+  "source_message_id": "<MjYrOKBxSLKDVo56uL23uA@geopod-ismtpd-1>",
+  "incident": {
+    "id": "inc-20260902T191026-delayed-train-425-northbound-is-running-about-43-minutes-lat-mjyrokbxslkdvo56ul23ua-g",
+    "title": "Delayed Train 425 northbound is running about 43 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-02T18:39:00-07:00",
+    "resolved_at": "2026-09-02T19:22:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/02/26 6:39 PM | End: 09/02/26 7:22 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-02T19:10:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 425 northbound is running about 43 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<MjYrOKBxSLKDVo56uL23uA@geopod-ismtpd-1>"
+      }
+    ],
+    "ingestion_key": "delayed-train-425-northbound-is-running-about-43-minutes-lat",
+    "version_created_at": "2026-09-02T19:10:26-07:00"
+  }
+}

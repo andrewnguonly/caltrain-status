@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-02T18:58:26-07:00",
+  "source_message_id": "<7SskuhJdTJiEOL0N_89iOw@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
+    "title": "Cancelled: Train 429 northbound is cancelled at San Jose Diridon.",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-09-02T18:57:00-07:00",
+    "resolved_at": "2026-09-02T19:47:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Cancelled | Effect: No Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/02/26 6:57 PM | End: 09/02/26 7:47 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-02T18:58:26-07:00",
+        "state": "critical",
+        "message": "Train 429 northbound is cancelled at San Jose Diridon. | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<7SskuhJdTJiEOL0N_89iOw@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-429-northbound-is-cancelled-at-san-jose-diri",
+    "version_created_at": "2026-09-02T18:58:26-07:00"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-02T19:39:29-07:00",
+  "source_message_id": "<SSQdft6QSkKqxZ8pgD0LpA@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260902T193929-delayed-train-527-northbound-is-running-about-33-minutes-lat-ssqdft6qskkqxz8pgd0lpa-g",
+    "title": "Delayed Train 527 northbound is running about 33 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-02T19:16:00-07:00",
+    "resolved_at": "2026-09-02T19:49:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/02/26 7:16 PM | End: 09/02/26 7:49 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-02T19:39:29-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 527 northbound is running about 33 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<SSQdft6QSkKqxZ8pgD0LpA@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-527-northbound-is-running-about-33-minutes-lat",
+    "version_created_at": "2026-09-02T19:39:29-07:00"
+  }
+}
