@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-09T10:40:26-07:00",
+  "source_message_id": "<tgdPMBJGRF6l5FQcv-eCWg@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260909T104026-delayed-train-123-northbound-is-running-about-10-minutes-lat-tgdpmbjgrf6l5fqcv-ecwg-g",
+    "title": "Delayed Train 123 northbound is running about 10 minutes late approaching Lawrence",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-09T10:39:00-07:00",
+    "resolved_at": "2026-09-09T10:49:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/09/26 10:39 AM | End: 09/09/26 10:49 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-09T10:40:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 123 northbound is running about 10 minutes late\r\n approaching Lawrence.",
+        "source_message_id": "<tgdPMBJGRF6l5FQcv-eCWg@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "delayed-train-123-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-09-09T10:40:26-07:00"
+  }
+}

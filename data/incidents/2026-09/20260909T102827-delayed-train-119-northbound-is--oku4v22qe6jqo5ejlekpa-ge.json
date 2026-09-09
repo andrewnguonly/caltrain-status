@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-09T10:28:27-07:00",
+  "source_message_id": "<_oku4V22Qe6jQo5ejLekpA@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260909T102827-delayed-train-119-northbound-is-running-about-12-minutes-lat-oku4v22qe6jqo5ejlekpa-ge",
+    "title": "Delayed Train 119 northbound is running about 12 minutes late approaching San Bruno",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-09T10:27:00-07:00",
+    "resolved_at": "2026-09-09T10:39:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/09/26 10:27 AM | End: 09/09/26 10:39 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-09T10:28:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 119 northbound is running about 12 minutes late\r\n approaching San Bruno.",
+        "source_message_id": "<_oku4V22Qe6jQo5ejLekpA@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-119-northbound-is-running-about-12-minutes-lat",
+    "version_created_at": "2026-09-09T10:28:27-07:00"
+  }
+}
