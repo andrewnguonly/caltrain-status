@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-09T12:08:26-07:00",
+  "source_message_id": "<nOQ9Ok0ZSGSB3opVrIzZ4Q@geopod-ismtpd-8>",
+  "incident": {
+    "id": "inc-20260909T120826-delayed-train-123-northbound-is-running-about-37-minutes-lat-noq9ok0zsgsb3opvrizz4q-g",
+    "title": "Delayed Train 123 northbound is running about 37 minutes late approaching 22nd Street",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-09T11:40:00-07:00",
+    "resolved_at": "2026-09-09T12:17:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/09/26 11:40 AM | End: 09/09/26 12:17 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-09T12:08:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 123 northbound is running about 37 minutes late\r\n approaching 22nd Street.",
+        "source_message_id": "<nOQ9Ok0ZSGSB3opVrIzZ4Q@geopod-ismtpd-8>"
+      }
+    ],
+    "ingestion_key": "delayed-train-123-northbound-is-running-about-37-minutes-lat",
+    "version_created_at": "2026-09-09T12:08:26-07:00"
+  }
+}

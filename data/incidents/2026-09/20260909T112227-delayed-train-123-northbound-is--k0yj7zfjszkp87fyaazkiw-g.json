@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-09T11:22:27-07:00",
+  "source_message_id": "<k0Yj7zFjSZKP87FYAAzKiw@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260909T112227-delayed-train-123-northbound-is-running-about-32-minutes-lat-k0yj7zfjszkp87fyaazkiw-g",
+    "title": "Delayed Train 123 northbound is running about 32 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-09T11:03:00-07:00",
+    "resolved_at": "2026-09-09T11:35:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/09/26 11:03 AM | End: 09/09/26 11:35 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-09T11:22:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 123 northbound is running about 32 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<k0Yj7zFjSZKP87FYAAzKiw@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-123-northbound-is-running-about-32-minutes-lat",
+    "version_created_at": "2026-09-09T11:22:27-07:00"
+  }
+}

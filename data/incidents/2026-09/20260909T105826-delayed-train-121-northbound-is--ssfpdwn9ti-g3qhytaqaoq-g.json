@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-09T10:58:26-07:00",
+  "source_message_id": "<SSfpdWn9TI-G3qhYtAqaoQ@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20260909T105826-delayed-train-121-northbound-is-running-about-30-40-minutes--ssfpdwn9ti-g3qhytaqaoq-g",
+    "title": "Delayed Train 121 northbound is running about 30 - 40 minutes late approaching Palo Alto",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-09T10:58:26-07:00",
+    "resolved_at": "2026-09-09T11:57:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Significant Delays | Cause: Other Cause | Start: * End Date * | End: 09/09/26 11:57 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-09T10:58:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 121 northbound is running about 30 - 40 minutes late\r\n approaching Palo Alto. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<SSfpdWn9TI-G3qhYtAqaoQ@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-121-northbound-is-running-about-30-40-minutes-",
+    "version_created_at": "2026-09-09T10:58:26-07:00"
+  }
+}
