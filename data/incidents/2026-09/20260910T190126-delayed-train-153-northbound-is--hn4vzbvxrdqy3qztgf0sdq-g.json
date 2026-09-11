@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-10T19:01:26-07:00",
+  "source_message_id": "<HN4VzBVxRDqy3qZTgf0SdQ@geopod-ismtpd-15>",
+  "incident": {
+    "id": "inc-20260910T190126-delayed-train-153-northbound-is-running-about-20-minutes-lat-hn4vzbvxrdqy3qztgf0sdq-g",
+    "title": "Delayed Train 153 northbound is running about 20 minutes late approaching Millbrae",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-10T18:54:00-07:00",
+    "resolved_at": "2026-09-10T19:14:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/10/26 6:54 PM | End: 09/10/26 7:14 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-10T19:01:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 153 northbound is running about 20 minutes late\r\n approaching Millbrae.",
+        "source_message_id": "<HN4VzBVxRDqy3qZTgf0SdQ@geopod-ismtpd-15>"
+      }
+    ],
+    "ingestion_key": "delayed-train-153-northbound-is-running-about-20-minutes-lat",
+    "version_created_at": "2026-09-10T19:01:26-07:00"
+  }
+}
