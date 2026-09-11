@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-10T17:15:27-07:00",
+  "source_message_id": "<dNVwW4c4QCm6rlQB_APZhQ@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260910T171527-delayed-train-149-northbound-is-running-about-13-minutes-lat-dnvww4c4qcm6rlqb-apzhq-g",
+    "title": "Delayed Train 149 northbound is running about 13 minutes late approaching Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-10T17:12:00-07:00",
+    "resolved_at": "2026-09-10T17:25:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/10/26 5:12 PM | End: 09/10/26 5:25 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-10T17:15:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 149 northbound is running about 13 minutes late\r\n approaching Sunnyvale.",
+        "source_message_id": "<dNVwW4c4QCm6rlQB_APZhQ@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-149-northbound-is-running-about-13-minutes-lat",
+    "version_created_at": "2026-09-10T17:15:27-07:00"
+  }
+}
