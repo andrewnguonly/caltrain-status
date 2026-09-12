@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-12T13:16:26-07:00",
+  "source_message_id": "<wlbYubGvT0mz7Fb3J0CNvw@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260912T131626-delayed-train-623-northbound-is-running-about-10-minutes-lat-wlbyubgvt0mz7fb3j0cnvw-g",
+    "title": "Delayed Train 623 northbound is running about 10 minutes late approaching San Mateo",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-12T13:16:00-07:00",
+    "resolved_at": "2026-09-12T13:26:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/12/26 1:16 PM | End: 09/12/26 1:26 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-12T13:16:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 623 northbound is running about 10 minutes late\r\n approaching San Mateo.",
+        "source_message_id": "<wlbYubGvT0mz7Fb3J0CNvw@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "delayed-train-623-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-09-12T13:16:26-07:00"
+  }
+}
