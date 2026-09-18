@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-18T08:02:28-07:00",
+  "source_message_id": "<mb8QARLRQNmng6vCm5xKrg@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260918T080228-delayed-train-111-northbound-is-running-about-10-minutes-lat-mb8qarlrqnmng6vcm5xkrg-g",
+    "title": "Delayed Train 111 northbound is running about 10 minutes late approaching Redwood City",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-18T08:03:00-07:00",
+    "resolved_at": "2026-09-18T08:13:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 09/18/26 8:03 AM | End: 09/18/26 8:13 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-18T08:02:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 111 northbound is running about 10 minutes late\r\n approaching Redwood City.",
+        "source_message_id": "<mb8QARLRQNmng6vCm5xKrg@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-111-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-09-18T08:02:28-07:00"
+  }
+}
