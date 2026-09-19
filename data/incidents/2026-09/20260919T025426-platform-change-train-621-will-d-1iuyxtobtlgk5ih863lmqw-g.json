@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-19T02:54:26-07:00",
+  "source_message_id": "<1iUYXTOBTLGk5IH863lMqw@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20260919T025426-platform-change-train-621-will-depart-from-platform-8-at-san-1iuyxtobtlgk5ih863lmqw-g",
+    "title": "Platform change Train 621 will depart from platform 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-19T11:15:00-07:00",
+    "resolved_at": "2026-09-19T11:58:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 09/19/26 11:15 AM | End: 09/19/26 11:58 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-19T02:54:26-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 621 will depart from platform 8 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<1iUYXTOBTLGk5IH863lMqw@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-621-will-depart-from-platform-8-at-san",
+    "version_created_at": "2026-09-19T02:54:26-07:00"
+  }
+}
