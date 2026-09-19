@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-19T08:18:28-07:00",
+  "source_message_id": "<cT9ieucrS2WHsMBb1KmVFQ@geopod-ismtpd-14>",
+  "incident": {
+    "id": "inc-20260919T081828-platform-change-train-609-northbound-will-depart-from-platfo-ct9ieucrs2whsmbb1kmvfq-g",
+    "title": "Platform change Train 609 northbound will depart from platform 3 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-19T08:18:28-07:00",
+    "resolved_at": "2026-09-19T08:56:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Other Effect | Cause: Other Cause | Location: San Jose Diridon | Start: * End Date * | End: 09/19/26 8:56 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-19T08:18:28-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 609 northbound will depart from platform 3 at\r\n San Jose Diridon. | Effect: Other Effect | Cause: Other Cause",
+        "source_message_id": "<cT9ieucrS2WHsMBb1KmVFQ@geopod-ismtpd-14>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-609-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-09-19T08:18:28-07:00"
+  }
+}

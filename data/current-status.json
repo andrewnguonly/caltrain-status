@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Cancelled | Effect: No Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/02/26 6:57 PM | End: 09/02/26 7:47 PM",
-  "updated_at": "2026-09-19T04:29:01-07:00",
+  "updated_at": "2026-09-19T10:27:46-07:00",
   "active_incident_ids": [
     "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
     "inc-20260831T141826-cancelled-train-417-northbound-is-cancelled-train-145-will-a-axssz46tsfawcv-y5pa6gq-g",
@@ -29,7 +29,10 @@
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
     "inc-20260919T025426-platform-change-train-621-will-depart-from-platform-8-at-san-1iuyxtobtlgk5ih863lmqw-g",
     "inc-20260919T025328-platform-change-train-617-will-depart-from-platform-7-at-san-atydt-o-qysccncthdl2vq-g",
+    "inc-20260919T094027-platform-change-train-615-northbound-will-depart-from-platfo-vq7gtt5asool98b7eyddew-g",
+    "inc-20260919T093930-platform-change-train-613-northbound-will-depart-from-platfo-iojk2dokqwqwmw1ahnbhzw-g",
     "inc-20260919T025228-platform-change-train-611-will-depart-from-platform-7-at-san-k-hxqdysrakpijfh22naza-g",
+    "inc-20260919T081828-platform-change-train-609-northbound-will-depart-from-platfo-ct9ieucrs2whsmbb1kmvfq-g",
     "inc-20260918T113227-delayed-train-121-northbound-is-running-about-35-minutes-lat-3xmqytheqmoqv4ndvgc9vq-g",
     "inc-20260918T104826-delayed-train-121-northbound-is-running-about-34-minutes-lat-zn-b3kfosb2ympep7ftgda-g",
     "inc-20260918T100527-delayed-train-121-northbound-is-running-about-11-minutes-lat-uel1lrvgtwg9hh1mss3-pa-g",
@@ -2322,6 +2325,9 @@
     "data/incidents/2026-09/20260918T113227-delayed-train-121-northbound-is--3xmqytheqmoqv4ndvgc9vq-g.json",
     "data/incidents/2026-09/20260919T025228-platform-change-train-611-will-d-k-hxqdysrakpijfh22naza-g.json",
     "data/incidents/2026-09/20260919T025328-platform-change-train-617-will-d-atydt-o-qysccncthdl2vq-g.json",
-    "data/incidents/2026-09/20260919T025426-platform-change-train-621-will-d-1iuyxtobtlgk5ih863lmqw-g.json"
+    "data/incidents/2026-09/20260919T025426-platform-change-train-621-will-d-1iuyxtobtlgk5ih863lmqw-g.json",
+    "data/incidents/2026-09/20260919T081828-platform-change-train-609-northb-ct9ieucrs2whsmbb1kmvfq-g.json",
+    "data/incidents/2026-09/20260919T093930-platform-change-train-613-northb-iojk2dokqwqwmw1ahnbhzw-g.json",
+    "data/incidents/2026-09/20260919T094027-platform-change-train-615-northb-vq7gtt5asool98b7eyddew-g.json"
   ]
 }
