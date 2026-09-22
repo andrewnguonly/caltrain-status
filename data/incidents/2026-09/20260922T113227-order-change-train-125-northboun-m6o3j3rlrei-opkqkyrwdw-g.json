@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-22T11:32:27-07:00",
+  "source_message_id": "<M6o3j3rlRei_opkqKYRWDw@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20260922T113227-order-change-train-125-northbound-delayed-train-127-will-be--m6o3j3rlrei-opkqkyrwdw-g",
+    "title": "Order change Train 125 northbound delayed Train 127 will be ahead of train 125",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-22T11:32:27-07:00",
+    "resolved_at": "2026-09-22T13:30:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: * End Date * | End: 09/22/26 1:30 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-22T11:32:27-07:00",
+        "state": "degraded",
+        "message": "Order change: Train 125 northbound delayed. Train 127 will be ahead\r\n of train 125 | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<M6o3j3rlRei_opkqKYRWDw@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "order-change-train-125-northbound-delayed-train-127-will-be-",
+    "version_created_at": "2026-09-22T11:32:27-07:00"
+  }
+}
