@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-23T06:42:27-07:00",
+  "source_message_id": "<95FC_fe9R1a9lYnwGoBxow@geopod-ismtpd-0>",
+  "incident": {
+    "id": "inc-20260923T064227-train-105-will-be-boarding-on-the-southbound-platform-at-bay-95fc-fe9r1a9lynwgobxow-g",
+    "title": "Train 105 will be boarding on the Southbound platform at Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-23T06:39:00-07:00",
+    "resolved_at": "2026-09-23T07:20:00-07:00",
+    "affected_segments": [
+      "Southbound",
+      "Bayshore"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: Bayshore | Start: 09/23/26 6:39 AM | End: 09/23/26 7:20 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-23T06:42:27-07:00",
+        "state": "degraded",
+        "message": "Train 105 will be boarding on the Southbound platform at Bayshore | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<95FC_fe9R1a9lYnwGoBxow@geopod-ismtpd-0>"
+      }
+    ],
+    "ingestion_key": "train-105-will-be-boarding-on-the-southbound-platform-at-bay",
+    "version_created_at": "2026-09-23T06:42:27-07:00"
+  }
+}

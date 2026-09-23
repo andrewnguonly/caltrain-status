@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-23T05:29:26-07:00",
+  "source_message_id": "<4iO4cC4ZSqKgLvyp0POK4w@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20260923T052926-platform-change-train-401-northbound-will-depart-from-platfo-4io4cc4zsqkglvyp0pok4w-g",
+    "title": "Platform change Train 401 northbound will depart from platform 8 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-23T05:27:00-07:00",
+    "resolved_at": "2026-09-23T05:44:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "San Jose Diridon"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/23/26 5:27 AM | End: 09/23/26 5:44 AM",
+    "updates": [
+      {
+        "timestamp": "2026-09-23T05:29:26-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 401 northbound will depart from platform 8 at\r\n San Jose Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<4iO4cC4ZSqKgLvyp0POK4w@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-401-northbound-will-depart-from-platfo",
+    "version_created_at": "2026-09-23T05:29:26-07:00"
+  }
+}

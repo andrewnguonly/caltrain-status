@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Cancelled | Effect: No Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/02/26 6:57 PM | End: 09/02/26 7:47 PM",
-  "updated_at": "2026-09-22T13:12:25-07:00",
+  "updated_at": "2026-09-23T08:29:45-07:00",
   "active_incident_ids": [
     "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
     "inc-20260831T141826-cancelled-train-417-northbound-is-cancelled-train-145-will-a-axssz46tsfawcv-y5pa6gq-g",
@@ -30,6 +30,16 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20260923T064227-train-105-will-be-boarding-on-the-southbound-platform-at-bay-95fc-fe9r1a9lynwgobxow-g",
+    "inc-20260923T055327-platform-change-train-503-will-depart-from-platform-8-at-san-vl3tjgaqsrujedunpkk4-a-g",
+    "inc-20260923T053526-platform-change-train-101-will-board-on-the-southbound-platf-hwjjtqchs1ka6ltlcsjhka-g",
+    "inc-20260923T053426-platform-change-train-103-will-board-on-the-southbound-platf-ia9qbtwtspkgg8jy4suyqa-g",
+    "inc-20260923T053227-platform-change-train-101-will-board-on-the-northbound-platf-pw2h3g-xrma0vr2uvze1uq-g",
+    "inc-20260923T052926-platform-change-train-401-northbound-will-depart-from-platfo-4io4cc4zsqkglvyp0pok4w-g",
+    "inc-20260923T052626-platform-change-train-401-northbound-will-depart-from-platfo-fm3rgdmthckzqlojezi9a-ge",
+    "inc-20260923T052526-platform-change-train-401-northbound-will-depart-from-platfo-bq2i1w-hsze83xt8lcq5iw-g",
+    "inc-20260923T045726-platform-change-train-401-northbound-will-depart-from-platfo-xviqi9jkttobbiibwsrj4w-g",
+    "inc-20260923T045626-platform-change-train-103-northbound-will-depart-from-platfo-31wterbbrduwlxa8q765xw-g",
     "inc-20260922T120729-delayed-train-125-northbound-is-running-about-30-40-minutes--6vz-zspeqs-lq0ccsrqohg-g",
     "inc-20260922T113227-order-change-train-125-northbound-delayed-train-127-will-be--m6o3j3rlrei-opkqkyrwdw-g",
     "inc-20260922T095627-delayed-train-117-northbound-is-running-about-11-minutes-lat-9raelivlsiwndilegpc52a-g",
@@ -2368,6 +2378,16 @@
     "data/incidents/2026-09/20260922T094327-delayed-train-413-northbound-is--b2imrd06spw-ph4obu5-8g-g.json",
     "data/incidents/2026-09/20260922T095627-delayed-train-117-northbound-is--9raelivlsiwndilegpc52a-g.json",
     "data/incidents/2026-09/20260922T113227-order-change-train-125-northboun-m6o3j3rlrei-opkqkyrwdw-g.json",
-    "data/incidents/2026-09/20260922T120729-delayed-train-125-northbound-is--6vz-zspeqs-lq0ccsrqohg-g.json"
+    "data/incidents/2026-09/20260922T120729-delayed-train-125-northbound-is--6vz-zspeqs-lq0ccsrqohg-g.json",
+    "data/incidents/2026-09/20260923T045626-platform-change-train-103-northb-31wterbbrduwlxa8q765xw-g.json",
+    "data/incidents/2026-09/20260923T045726-platform-change-train-401-northb-xviqi9jkttobbiibwsrj4w-g.json",
+    "data/incidents/2026-09/20260923T052526-platform-change-train-401-northb-bq2i1w-hsze83xt8lcq5iw-g.json",
+    "data/incidents/2026-09/20260923T052626-platform-change-train-401-northb-fm3rgdmthckzqlojezi9a-ge.json",
+    "data/incidents/2026-09/20260923T052926-platform-change-train-401-northb-4io4cc4zsqkglvyp0pok4w-g.json",
+    "data/incidents/2026-09/20260923T053227-platform-change-train-101-will-b-pw2h3g-xrma0vr2uvze1uq-g.json",
+    "data/incidents/2026-09/20260923T053426-platform-change-train-103-will-b-ia9qbtwtspkgg8jy4suyqa-g.json",
+    "data/incidents/2026-09/20260923T053526-platform-change-train-101-will-b-hwjjtqchs1ka6ltlcsjhka-g.json",
+    "data/incidents/2026-09/20260923T055327-platform-change-train-503-will-d-vl3tjgaqsrujedunpkk4-a-g.json",
+    "data/incidents/2026-09/20260923T064227-train-105-will-be-boarding-on-th-95fc-fe9r1a9lynwgobxow-g.json"
   ]
 }
