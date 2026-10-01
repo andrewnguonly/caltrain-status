@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-09-30T20:58:29-07:00",
+  "source_message_id": "<07PZ9zHOSsKdFd1tp_4OMQ@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20260930T205829-platform-change-train-1167-will-depart-from-platform-9-at-sa-07pz9zhosskdfd1tp-4omq-g",
+    "title": "Platform change Train 1167 will depart from platform 9 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-09-30T20:57:00-07:00",
+    "resolved_at": "2026-09-30T21:30:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 09/30/26 8:57 PM | End: 09/30/26 9:30 PM",
+    "updates": [
+      {
+        "timestamp": "2026-09-30T20:58:29-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 1167 will depart from platform 9 at San Jose\r\n Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<07PZ9zHOSsKdFd1tp_4OMQ@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-1167-will-depart-from-platform-9-at-sa",
+    "version_created_at": "2026-09-30T20:58:29-07:00"
+  }
+}
