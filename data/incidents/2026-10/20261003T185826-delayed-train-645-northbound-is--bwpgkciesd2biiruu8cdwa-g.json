@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-03T18:58:26-07:00",
+  "source_message_id": "<bwPGKciESD2BiIRuU8CdWA@geopod-ismtpd-1>",
+  "incident": {
+    "id": "inc-20261003T185826-delayed-train-645-northbound-is-running-about-18-minutes-lat-bwpgkciesd2biiruu8cdwa-g",
+    "title": "Delayed Train 645 northbound is running about 18 minutes late approaching Broadway",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-03T18:51:00-07:00",
+    "resolved_at": "2026-10-03T19:09:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/03/26 6:51 PM | End: 10/03/26 7:09 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-03T18:58:26-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 645 northbound is running about 18 minutes late\r\n approaching Broadway.",
+        "source_message_id": "<bwPGKciESD2BiIRuU8CdWA@geopod-ismtpd-1>"
+      }
+    ],
+    "ingestion_key": "delayed-train-645-northbound-is-running-about-18-minutes-lat",
+    "version_created_at": "2026-10-03T18:58:26-07:00"
+  }
+}
