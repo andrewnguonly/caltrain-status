@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Cancelled | Effect: No Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/02/26 6:57 PM | End: 09/02/26 7:47 PM",
-  "updated_at": "2026-10-03T21:23:04-07:00",
+  "updated_at": "2026-10-04T11:45:41-07:00",
   "active_incident_ids": [
     "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
     "inc-20260831T141826-cancelled-train-417-northbound-is-cancelled-train-145-will-a-axssz46tsfawcv-y5pa6gq-g",
@@ -30,6 +30,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261004T102327-delayed-train-613-northbound-is-running-about-10-minutes-lat-sugb26-0tfosk1lq1m4zra-g",
     "inc-20261003T185826-delayed-train-645-northbound-is-running-about-18-minutes-lat-bwpgkciesd2biiruu8cdwa-g",
     "inc-20261003T181626-delayed-train-645-northbound-is-running-about-10-minutes-lat-gr6mwlhsqlyuqs9nxe4xmq-g",
     "inc-20261003T174426-delayed-train-641-northbound-is-running-about-24-minutes-lat-uqyvdc-ktg2xkj4cteiavq-g",
@@ -2438,6 +2439,7 @@
     "data/incidents/2026-10/20261003T172626-delayed-train-639-northbound-is--copp9oztq1m8tjtbzmzprq-g.json",
     "data/incidents/2026-10/20261003T174426-delayed-train-641-northbound-is--uqyvdc-ktg2xkj4cteiavq-g.json",
     "data/incidents/2026-10/20261003T181626-delayed-train-645-northbound-is--gr6mwlhsqlyuqs9nxe4xmq-g.json",
-    "data/incidents/2026-10/20261003T185826-delayed-train-645-northbound-is--bwpgkciesd2biiruu8cdwa-g.json"
+    "data/incidents/2026-10/20261003T185826-delayed-train-645-northbound-is--bwpgkciesd2biiruu8cdwa-g.json",
+    "data/incidents/2026-10/20261004T102327-delayed-train-613-northbound-is--sugb26-0tfosk1lq1m4zra-g.json"
   ]
 }
