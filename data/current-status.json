@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Cancelled | Effect: No Service | Cause: Other Cause | Location: San Jose Diridon | Start: 09/02/26 6:57 PM | End: 09/02/26 7:47 PM",
-  "updated_at": "2026-10-05T18:52:15-07:00",
+  "updated_at": "2026-10-06T08:20:33-07:00",
   "active_incident_ids": [
     "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
     "inc-20260831T141826-cancelled-train-417-northbound-is-cancelled-train-145-will-a-axssz46tsfawcv-y5pa6gq-g",
@@ -30,6 +30,10 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261006T065028-platform-change-train-409-northbound-will-depart-from-platfo-xcy62wgeq3mnqxhhj-8tg-ge",
+    "inc-20261006T064928-platform-change-train-507-northbound-will-depart-from-platfo-r6gonjxqrc-iquxf6ntycw-g",
+    "inc-20261006T064828-platform-change-train-511-northbound-will-depart-from-platfo-zj1fmsdhq7c-r6h6xv9-sa-g",
+    "inc-20261006T050727-platform-change-train-101-northbound-will-depart-from-track--dwaxju4zrjqhkapnopt5rw-g",
     "inc-20261005T145927-delayed-train-137-northbound-is-running-about-10-minutes-lat-hj0elsxtsker3ust3sxfnw-g",
     "inc-20261004T102327-delayed-train-613-northbound-is-running-about-10-minutes-lat-sugb26-0tfosk1lq1m4zra-g",
     "inc-20261003T185826-delayed-train-645-northbound-is-running-about-18-minutes-lat-bwpgkciesd2biiruu8cdwa-g",
@@ -2442,6 +2446,10 @@
     "data/incidents/2026-10/20261003T181626-delayed-train-645-northbound-is--gr6mwlhsqlyuqs9nxe4xmq-g.json",
     "data/incidents/2026-10/20261003T185826-delayed-train-645-northbound-is--bwpgkciesd2biiruu8cdwa-g.json",
     "data/incidents/2026-10/20261004T102327-delayed-train-613-northbound-is--sugb26-0tfosk1lq1m4zra-g.json",
-    "data/incidents/2026-10/20261005T145927-delayed-train-137-northbound-is--hj0elsxtsker3ust3sxfnw-g.json"
+    "data/incidents/2026-10/20261005T145927-delayed-train-137-northbound-is--hj0elsxtsker3ust3sxfnw-g.json",
+    "data/incidents/2026-10/20261006T050727-platform-change-train-101-northb-dwaxju4zrjqhkapnopt5rw-g.json",
+    "data/incidents/2026-10/20261006T064828-platform-change-train-511-northb-zj1fmsdhq7c-r6h6xv9-sa-g.json",
+    "data/incidents/2026-10/20261006T064928-platform-change-train-507-northb-r6gonjxqrc-iquxf6ntycw-g.json",
+    "data/incidents/2026-10/20261006T065028-platform-change-train-409-northb-xcy62wgeq3mnqxhhj-8tg-ge.json"
   ]
 }
