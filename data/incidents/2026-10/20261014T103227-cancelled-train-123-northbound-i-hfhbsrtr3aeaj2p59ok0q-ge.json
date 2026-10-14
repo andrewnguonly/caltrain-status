@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-14T10:32:27-07:00",
+  "source_message_id": "<-hFHBSRTR3aEAj2P59oK0Q@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20261014T103227-cancelled-train-123-northbound-is-cancelled-train-125-will-a-hfhbsrtr3aeaj2p59ok0q-ge",
+    "title": "Cancelled Train 123 Northbound is cancelled Train 125 will accommodate passengers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-10-14T10:29:00-07:00",
+    "resolved_at": "2026-10-14T12:30:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: No Service | Cause: Other Cause | Start: 10/14/26 10:29 AM | End: 10/14/26 12:30 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-14T10:32:27-07:00",
+        "state": "critical",
+        "message": "Cancelled: Train 123 Northbound is cancelled. Train 125 will\r\n accommodate passengers | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<-hFHBSRTR3aEAj2P59oK0Q@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-123-northbound-is-cancelled-train-125-will-a",
+    "version_created_at": "2026-10-14T10:32:27-07:00"
+  }
+}

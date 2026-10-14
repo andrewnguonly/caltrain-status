@@ -1,9 +1,10 @@
 {
   "service_name": "Caltrain",
   "overall_status": "critical",
-  "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/14/26 10:11 AM | End: 10/14/26 11:11 AM",
-  "updated_at": "2026-10-14T10:24:38-07:00",
+  "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/14/26 10:29 AM | End: 10/14/26 12:30 PM",
+  "updated_at": "2026-10-14T13:50:24-07:00",
   "active_incident_ids": [
+    "inc-20261014T103227-cancelled-train-123-northbound-is-cancelled-train-125-will-a-hfhbsrtr3aeaj2p59ok0q-ge",
     "inc-20261014T101327-cancelled-train-117-northbound-is-cancelled-train-119-will-a-tvs8x5oxq5s-7vl9m1nkgw-g",
     "inc-20261014T100927-cancelled-train-117-northbound-is-cancelled-at-cal-ave-k8ygajt1tqmf5apwhquyaq-g",
     "inc-20260902T185826-cancelled-train-429-northbound-is-cancelled-at-san-jose-diri-7sskuhjdtjieol0n-89iow-g",
@@ -2508,6 +2509,7 @@
     "data/incidents/2026-10/20261014T092728-delayed-train-413-northbound-is--mxtq7j6yracbfuil6lnvya-g.json",
     "data/incidents/2026-10/20261014T093730-delayed-train-117-northbound-is--cvwrv-w1tquijj-7ddahuw-g.json",
     "data/incidents/2026-10/20261014T100927-cancelled-train-117-northbound-i-k8ygajt1tqmf5apwhquyaq-g.json",
-    "data/incidents/2026-10/20261014T101327-cancelled-train-117-northbound-i-tvs8x5oxq5s-7vl9m1nkgw-g.json"
+    "data/incidents/2026-10/20261014T101327-cancelled-train-117-northbound-i-tvs8x5oxq5s-7vl9m1nkgw-g.json",
+    "data/incidents/2026-10/20261014T103227-cancelled-train-123-northbound-i-hfhbsrtr3aeaj2p59ok0q-ge.json"
   ]
 }
