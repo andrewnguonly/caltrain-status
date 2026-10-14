@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-14T10:13:27-07:00",
+  "source_message_id": "<Tvs8x5OxQ5S-7vl9m1NKgw@geopod-ismtpd-3>",
+  "incident": {
+    "id": "inc-20261014T101327-cancelled-train-117-northbound-is-cancelled-train-119-will-a-tvs8x5oxq5s-7vl9m1nkgw-g",
+    "title": "Cancelled Train 117 Northbound is cancelled Train 119 will accommodate passengers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-10-14T10:11:00-07:00",
+    "resolved_at": "2026-10-14T11:11:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: No Service | Cause: Other Cause | Start: 10/14/26 10:11 AM | End: 10/14/26 11:11 AM",
+    "updates": [
+      {
+        "timestamp": "2026-10-14T10:13:27-07:00",
+        "state": "critical",
+        "message": "Cancelled: Train 117 Northbound is cancelled. Train 119 will\r\n accommodate passengers | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<Tvs8x5OxQ5S-7vl9m1NKgw@geopod-ismtpd-3>"
+      }
+    ],
+    "ingestion_key": "cancelled-train-117-northbound-is-cancelled-train-119-will-a",
+    "version_created_at": "2026-10-14T10:13:27-07:00"
+  }
+}
