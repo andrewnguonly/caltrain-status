@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-14T20:32:27-07:00",
+  "source_message_id": "<E5qVaUz-RaSfTy4VENdQgw@geopod-ismtpd-6>",
+  "incident": {
+    "id": "inc-20261014T203227-delayed-train-161-northbound-is-running-about-29-minutes-lat-e5qvauz-rasfty4vendqgw-g",
+    "title": "Delayed Train 161 northbound is running about 29 minutes late approaching Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-14T20:12:00-07:00",
+    "resolved_at": "2026-10-14T20:41:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/14/26 8:12 PM | End: 10/14/26 8:41 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-14T20:32:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 161 northbound is running about 29 minutes late\r\n approaching Sunnyvale.",
+        "source_message_id": "<E5qVaUz-RaSfTy4VENdQgw@geopod-ismtpd-6>"
+      }
+    ],
+    "ingestion_key": "delayed-train-161-northbound-is-running-about-29-minutes-lat",
+    "version_created_at": "2026-10-14T20:32:27-07:00"
+  }
+}
