@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-16T09:01:28-07:00",
+  "source_message_id": "<qSj1pe1oSOa5GjXJTZ8fdA@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20261016T090128-track-change-palo-alto-and-california-ave-effective-9-00-a-m-qsj1pe1osoa5gjxjtz8fda-g",
+    "title": "Track change Palo Alto and California Ave Effective 9 00 a m - 3 p m Starting with train 413 all trains board on the southbound platform",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-16T09:01:28-07:00",
+    "resolved_at": "2026-10-16T15:00:00-07:00",
+    "affected_segments": [
+      "Southbound"
+    ],
+    "summary": "Effect: Modified Service | Cause: Maintenance | Start: * End Date * | End: 10/16/26 3:00 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-16T09:01:28-07:00",
+        "state": "degraded",
+        "message": "Track change: Palo Alto. and California Ave. Effective 9:00 a.m.- 3\r\n p.m. Starting with train 413, all trains board on the southbound platform. | Effect: Modified Service | Cause: Maintenance",
+        "source_message_id": "<qSj1pe1oSOa5GjXJTZ8fdA@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "track-change-palo-alto-and-california-ave-effective-9-00-a-m",
+    "version_created_at": "2026-10-16T09:01:28-07:00"
+  }
+}
