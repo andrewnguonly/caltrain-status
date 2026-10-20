@@ -1,0 +1,29 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-20T15:04:28-07:00",
+  "source_message_id": "<ha0UzaRcRRWCf8FqKruM4A@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20261020T150428-platform-change-train-141-northbound-will-board-on-the-south-ha0uzarcrrwcf8fqkrum4a-g",
+    "title": "Platform change Train 141 northbound will board on the southbound platform at Sunnyvale and Lawrence",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-20T15:00:00-07:00",
+    "resolved_at": "2026-10-20T15:30:00-07:00",
+    "affected_segments": [
+      "Northbound",
+      "Southbound",
+      "Sunnyvale and Lawrence"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Sunnyvale and Lawrence | Start: 10/20/26 3:00 PM | End: 10/20/26 3:30 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-20T15:04:28-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 141 northbound will board on the southbound\r\n platform at Sunnyvale and Lawrence | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<ha0UzaRcRRWCf8FqKruM4A@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-141-northbound-will-board-on-the-south",
+    "version_created_at": "2026-10-20T15:04:28-07:00"
+  }
+}
