@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-20T11:00:28-07:00",
+  "source_message_id": "<ZP874aDjSJWIlwUC4dWpcA@geopod-ismtpd-10>",
+  "incident": {
+    "id": "inc-20261020T110028-delayed-train-121-northbound-is-running-about-11-minutes-lat-zp874adjsjwilwuc4dwpca-g",
+    "title": "Delayed Train 121 northbound is running about 11 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-20T11:00:00-07:00",
+    "resolved_at": "2026-10-20T11:11:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/20/26 11:00 AM | End: 10/20/26 11:11 AM",
+    "updates": [
+      {
+        "timestamp": "2026-10-20T11:00:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 121 northbound is running about 11 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<ZP874aDjSJWIlwUC4dWpcA@geopod-ismtpd-10>"
+      }
+    ],
+    "ingestion_key": "delayed-train-121-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-10-20T11:00:28-07:00"
+  }
+}
