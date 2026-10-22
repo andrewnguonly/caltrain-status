@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-22T13:04:28-07:00",
+  "source_message_id": "<p9H9eEeTSPGif91rddeybA@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20261022T130428-delayed-train-131-northbound-is-running-about-30-minutes-lat-p9h9eeetspgif91rddeyba-g",
+    "title": "Delayed: Train 131 northbound is running about 30 + minutes late.",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-22T13:04:28-07:00",
+    "resolved_at": "2026-10-22T14:15:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Delayed | Effect: Significant Delays | Cause: Other Cause | Start: * End Date * | End: 10/22/26 2:15 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-22T13:04:28-07:00",
+        "state": "degraded",
+        "message": "Train 131 northbound is running about 30 + minutes late. | Effect: Significant Delays | Cause: Other Cause",
+        "source_message_id": "<p9H9eEeTSPGif91rddeybA@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "delayed-train-131-northbound-is-running-about-30-minutes-lat",
+    "version_created_at": "2026-10-22T13:04:28-07:00"
+  }
+}

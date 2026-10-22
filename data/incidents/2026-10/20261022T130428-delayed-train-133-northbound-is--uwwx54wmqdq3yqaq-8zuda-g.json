@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-22T13:04:28-07:00",
+  "source_message_id": "<UWwx54WMQDq3yQaQ_8zUDA@geopod-ismtpd-5>",
+  "incident": {
+    "id": "inc-20261022T130428-delayed-train-133-northbound-is-running-about-10-minutes-lat-uwwx54wmqdq3yqaq-8zuda-g",
+    "title": "Delayed Train 133 northbound is running about 10 minutes late approaching Santa Clara",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-22T13:04:00-07:00",
+    "resolved_at": "2026-10-22T13:14:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/22/26 1:04 PM | End: 10/22/26 1:14 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-22T13:04:28-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 133 northbound is running about 10 minutes late\r\n approaching Santa Clara.",
+        "source_message_id": "<UWwx54WMQDq3yQaQ_8zUDA@geopod-ismtpd-5>"
+      }
+    ],
+    "ingestion_key": "delayed-train-133-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-10-22T13:04:28-07:00"
+  }
+}
