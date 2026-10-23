@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/20/26 3:11 PM | End: 10/20/26 4:30 PM",
-  "updated_at": "2026-10-22T17:05:06-07:00",
+  "updated_at": "2026-10-23T07:23:25-07:00",
   "active_incident_ids": [
     "inc-20261020T151227-cancelled-train-139-northbound-is-cancelled-train-141-will-a-ghbcgekwspsg1ggwy44knq-g",
     "inc-20261017T131526-cancelled-train-621-northbound-is-cancelled-train-623-will-a-m8shdruirr-8iro4jqhj3w-g",
@@ -41,6 +41,8 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261023T063930-delayed-train-107-northbound-is-running-about-10-minutes-lat-cq3fgczvssupfpowdvejia-g",
+    "inc-20261023T043828-platform-change-train-107-will-depart-from-platform-8-at-san-wfna2x7bteaswdlkttx6aa-g",
     "inc-20261022T145927-delayed-train-137-northbound-is-running-about-14-minutes-lat-vh0b7wzhqs-p48n4-ed9nq-g",
     "inc-20261022T140727-delayed-train-137-northbound-is-running-about-13-minutes-lat-kfpo-kzyqmwjcbocospcca-g",
     "inc-20261022T135627-delayed-train-133-northbound-is-running-about-30-minutes-lat-6bkeuhgyrgsaohkt7qi5ww-g",
@@ -2668,6 +2670,8 @@
     "data/incidents/2026-10/20261022T135327-delayed-train-131-northbound-is--ax-0qxw-slalx5btqydabg-g.json",
     "data/incidents/2026-10/20261022T135627-delayed-train-133-northbound-is--6bkeuhgyrgsaohkt7qi5ww-g.json",
     "data/incidents/2026-10/20261022T140727-delayed-train-137-northbound-is--kfpo-kzyqmwjcbocospcca-g.json",
-    "data/incidents/2026-10/20261022T145927-delayed-train-137-northbound-is--vh0b7wzhqs-p48n4-ed9nq-g.json"
+    "data/incidents/2026-10/20261022T145927-delayed-train-137-northbound-is--vh0b7wzhqs-p48n4-ed9nq-g.json",
+    "data/incidents/2026-10/20261023T043828-platform-change-train-107-will-d-wfna2x7bteaswdlkttx6aa-g.json",
+    "data/incidents/2026-10/20261023T063930-delayed-train-107-northbound-is--cq3fgczvssupfpowdvejia-g.json"
   ]
 }
