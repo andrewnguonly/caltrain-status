@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-24T17:08:27-07:00",
+  "source_message_id": "<S3AuMsuFRRCuhG6T0w4bkg@geopod-ismtpd-21>",
+  "incident": {
+    "id": "inc-20261024T170827-delayed-train-637-northbound-is-running-about-14-minutes-lat-s3aumsufrrcuhg6t0w4bkg-g",
+    "title": "Delayed Train 637 northbound is running about 14 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-24T17:05:00-07:00",
+    "resolved_at": "2026-10-24T17:19:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/24/26 5:05 PM | End: 10/24/26 5:19 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-24T17:08:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 637 northbound is running about 14 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<S3AuMsuFRRCuhG6T0w4bkg@geopod-ismtpd-21>"
+      }
+    ],
+    "ingestion_key": "delayed-train-637-northbound-is-running-about-14-minutes-lat",
+    "version_created_at": "2026-10-24T17:08:27-07:00"
+  }
+}
