@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/20/26 3:11 PM | End: 10/20/26 4:30 PM",
-  "updated_at": "2026-10-26T06:15:44-07:00",
+  "updated_at": "2026-10-26T12:21:22-07:00",
   "active_incident_ids": [
     "inc-20261020T151227-cancelled-train-139-northbound-is-cancelled-train-141-will-a-ghbcgekwspsg1ggwy44knq-g",
     "inc-20261017T131526-cancelled-train-621-northbound-is-cancelled-train-623-will-a-m8shdruirr-8iro4jqhj3w-g",
@@ -41,6 +41,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261026T113928-delayed-train-127-northbound-is-running-about-10-minutes-lat-xinrcmb0srwtjgw84s0toa-g",
     "inc-20261026T060927-delayed-train-103-northbound-is-running-about-10-minutes-lat-xxxa3ffzt0-oap-u-sb1yw-g",
     "inc-20261025T195326-delayed-train-649-northbound-is-running-about-21-minutes-lat-nruzst-qqtuz4bwihxoxlq-g",
     "inc-20261025T191126-delayed-train-649-northbound-is-running-about-10-minutes-lat-ekxk8pzxq6kqxh3d6xpunw-g",
@@ -2690,6 +2691,7 @@
     "data/incidents/2026-10/20261024T185327-delayed-train-645-northbound-is--wnvqqgyesh2dxtnzgu-msg-g.json",
     "data/incidents/2026-10/20261025T191126-delayed-train-649-northbound-is--ekxk8pzxq6kqxh3d6xpunw-g.json",
     "data/incidents/2026-10/20261025T195326-delayed-train-649-northbound-is--nruzst-qqtuz4bwihxoxlq-g.json",
-    "data/incidents/2026-10/20261026T060927-delayed-train-103-northbound-is--xxxa3ffzt0-oap-u-sb1yw-g.json"
+    "data/incidents/2026-10/20261026T060927-delayed-train-103-northbound-is--xxxa3ffzt0-oap-u-sb1yw-g.json",
+    "data/incidents/2026-10/20261026T113928-delayed-train-127-northbound-is--xinrcmb0srwtjgw84s0toa-g.json"
   ]
 }
