@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-26T17:11:30-07:00",
+  "source_message_id": "<v1AmvSwaQM-Qn7K5OuHJuA@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20261026T171130-delayed-train-519-northbound-is-running-about-14-minutes-lat-v1amvswaqm-qn7k5ouhjua-g",
+    "title": "Delayed Train 519 northbound is running about 14 minutes late approaching South San Francisco",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-26T17:09:00-07:00",
+    "resolved_at": "2026-10-26T17:23:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/26/26 5:09 PM | End: 10/26/26 5:23 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-26T17:11:30-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 519 northbound is running about 14 minutes late\r\n approaching South San Francisco.",
+        "source_message_id": "<v1AmvSwaQM-Qn7K5OuHJuA@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "delayed-train-519-northbound-is-running-about-14-minutes-lat",
+    "version_created_at": "2026-10-26T17:11:30-07:00"
+  }
+}
