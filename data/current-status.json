@@ -1,9 +1,10 @@
 {
   "service_name": "Caltrain",
   "overall_status": "critical",
-  "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/20/26 3:11 PM | End: 10/20/26 4:30 PM",
-  "updated_at": "2026-10-28T07:26:55-07:00",
+  "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/28/26 2:54 PM | End: 10/28/26 4:22 PM",
+  "updated_at": "2026-10-28T16:35:58-07:00",
   "active_incident_ids": [
+    "inc-20261028T145928-cancelled-train-515-northbound-is-cancelled-train-143-will-a-asz9dr9nqssz4agor0nhmw-g",
     "inc-20261020T151227-cancelled-train-139-northbound-is-cancelled-train-141-will-a-ghbcgekwspsg1ggwy44knq-g",
     "inc-20261017T131526-cancelled-train-621-northbound-is-cancelled-train-623-will-a-m8shdruirr-8iro4jqhj3w-g",
     "inc-20261016T064328-cancelled-train-409-northbound-is-cancelled-train-113-will-a-uaegwbmrtzsa1cisz-cwzw-g",
@@ -30,6 +31,7 @@
     "inc-20260325T061627-cancelled-train-401-northbound-is-cancelled-train-105-will-a-e6zp9zbrquqy9wfitjzgpw-g",
     "inc-20260303T055015-cancelled-train-507-northbound-is-cancelled-train-111-will-a-t4bqyogcqro5jdltqo73dw-g",
     "inc-20260228T235411-cancelled-train-663-northbound-is-cancelled-train-665-will-a-s0hxlzvpq8i4q0-flc4t5w-g",
+    "inc-20261028T140928-service-disruption-expect-delays-of-60-minutes-on-all-trains-9uult0nksf-dgsozedszta-g",
     "inc-20260922T094327-service-disruption-expect-delays-of-60-minutes-on-all-trains-kztgoxwdrcwfg9i-lpml0q-g",
     "inc-20260922T085528-service-disruption-expect-delays-of-60-minutes-on-all-trains-b0qfj9x8qq2mwm29e2r4ba-g",
     "inc-20260922T085029-service-disruption-expect-delays-of-30-minutes-on-all-trains-yofnyv-jrw6f8dabkc4kjq-g",
@@ -41,6 +43,9 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261028T154627-delayed-train-139-northbound-is-running-about-22-minutes-lat-xvzrr-qgr7avvasqe7rw1w-g",
+    "inc-20261028T144427-delayed-train-137-northbound-is-running-about-23-minutes-lat-2nxkn1cvqfggm775nktxrq-g",
+    "inc-20261028T144430-delayed-train-135-northbound-is-running-about-47-minutes-lat-12glnhtrrtgriv923lt4fa-g",
     "inc-20261028T053527-platform-change-train-401-northbound-will-depart-from-platfo-ne8uk7vxr9e8ojxhjul9ca-g",
     "inc-20261027T093327-platform-change-train-121-northbound-will-depart-from-platfo-afkezw6ssxk4hf9aok9uhg-g",
     "inc-20261027T042430-platform-change-train-101-will-depart-from-platform-4-at-san-mp-mhkn-rgaqnc3lu9xyrg-g",
@@ -2706,6 +2711,11 @@
     "data/incidents/2026-10/20261027T042430-platform-change-train-101-will-d-mp-mhkn-rgaqnc3lu9xyrg-g.json",
     "data/incidents/2026-10/20261027T045727-platform-change-train-101-will-d-nlm-eibpto-zokg6hdmwa-ge.json",
     "data/incidents/2026-10/20261027T093327-platform-change-train-121-northb-afkezw6ssxk4hf9aok9uhg-g.json",
-    "data/incidents/2026-10/20261028T053527-platform-change-train-401-northb-ne8uk7vxr9e8ojxhjul9ca-g.json"
+    "data/incidents/2026-10/20261028T053527-platform-change-train-401-northb-ne8uk7vxr9e8ojxhjul9ca-g.json",
+    "data/incidents/2026-10/20261028T140928-service-disruption-expect-delays-9uult0nksf-dgsozedszta-g.json",
+    "data/incidents/2026-10/20261028T144427-delayed-train-137-northbound-is--2nxkn1cvqfggm775nktxrq-g.json",
+    "data/incidents/2026-10/20261028T144430-delayed-train-135-northbound-is--12glnhtrrtgriv923lt4fa-g.json",
+    "data/incidents/2026-10/20261028T145928-cancelled-train-515-northbound-i-asz9dr9nqssz4agor0nhmw-g.json",
+    "data/incidents/2026-10/20261028T154627-delayed-train-139-northbound-is--xvzrr-qgr7avvasqe7rw1w-g.json"
   ]
 }

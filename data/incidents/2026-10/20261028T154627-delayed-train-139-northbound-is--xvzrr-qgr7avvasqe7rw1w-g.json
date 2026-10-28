@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-28T15:46:27-07:00",
+  "source_message_id": "<Xvzrr-qGR7aVVAsqe7rW1w@geopod-ismtpd-canary-0>",
+  "incident": {
+    "id": "inc-20261028T154627-delayed-train-139-northbound-is-running-about-22-minutes-lat-xvzrr-qgr7avvasqe7rw1w-g",
+    "title": "Delayed Train 139 northbound is running about 22 minutes late approaching Bayshore",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-28T15:35:00-07:00",
+    "resolved_at": "2026-10-28T15:57:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/28/26 3:35 PM | End: 10/28/26 3:57 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-28T15:46:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 139 northbound is running about 22 minutes late\r\n approaching Bayshore.",
+        "source_message_id": "<Xvzrr-qGR7aVVAsqe7rW1w@geopod-ismtpd-canary-0>"
+      }
+    ],
+    "ingestion_key": "delayed-train-139-northbound-is-running-about-22-minutes-lat",
+    "version_created_at": "2026-10-28T15:46:27-07:00"
+  }
+}
