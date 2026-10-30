@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-30T04:23:27-07:00",
+  "source_message_id": "<MdwH4QHzQeWxMc5ynOIyBA@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20261030T042327-platform-change-train-401-will-depart-from-platform-4-at-san-mdwh4qhzqewxmc5ynoiyba-g",
+    "title": "Platform change Train 401 will depart from platform 4 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-30T05:15:00-07:00",
+    "resolved_at": "2026-10-30T05:45:00-07:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 10/30/26 5:15 AM | End: 10/30/26 5:45 AM",
+    "updates": [
+      {
+        "timestamp": "2026-10-30T04:23:27-07:00",
+        "state": "degraded",
+        "message": "Platform change: Train 401 will depart from platform 4 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<MdwH4QHzQeWxMc5ynOIyBA@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-401-will-depart-from-platform-4-at-san",
+    "version_created_at": "2026-10-30T04:23:27-07:00"
+  }
+}
