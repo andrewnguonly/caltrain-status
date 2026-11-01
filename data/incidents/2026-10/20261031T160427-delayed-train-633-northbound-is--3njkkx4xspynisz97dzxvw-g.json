@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-10-31T16:04:27-07:00",
+  "source_message_id": "<3Njkkx4xSPyNiSz97dZxvw@geopod-ismtpd-19>",
+  "incident": {
+    "id": "inc-20261031T160427-delayed-train-633-northbound-is-running-about-23-minutes-lat-3njkkx4xspynisz97dzxvw-g",
+    "title": "Delayed Train 633 northbound is running about 23 minutes late approaching Broadway",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-10-31T15:51:00-07:00",
+    "resolved_at": "2026-10-31T16:14:00-07:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 10/31/26 3:51 PM | End: 10/31/26 4:14 PM",
+    "updates": [
+      {
+        "timestamp": "2026-10-31T16:04:27-07:00",
+        "state": "degraded",
+        "message": "Delayed: Train 633 northbound is running about 23 minutes late\r\n approaching Broadway.",
+        "source_message_id": "<3Njkkx4xSPyNiSz97dZxvw@geopod-ismtpd-19>"
+      }
+    ],
+    "ingestion_key": "delayed-train-633-northbound-is-running-about-23-minutes-lat",
+    "version_created_at": "2026-10-31T16:04:27-07:00"
+  }
+}
