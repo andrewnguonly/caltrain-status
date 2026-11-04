@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 10/28/26 2:54 PM | End: 10/28/26 4:22 PM",
-  "updated_at": "2026-11-04T07:46:53-08:00",
+  "updated_at": "2026-11-04T13:32:37-08:00",
   "active_incident_ids": [
     "inc-20261028T145928-cancelled-train-515-northbound-is-cancelled-train-143-will-a-asz9dr9nqssz4agor0nhmw-g",
     "inc-20261020T151227-cancelled-train-139-northbound-is-cancelled-train-141-will-a-ghbcgekwspsg1ggwy44knq-g",
@@ -43,6 +43,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261104T115927-delayed-train-125-northbound-is-running-about-10-minutes-lat-opksd-tbrhgtvog4d5rwua-g",
     "inc-20261104T034928-platform-change-train-111-will-depart-from-platform-8-at-san-4qjtaantsccowng7l2nsfa-g",
     "inc-20261104T034728-platform-change-train-107-will-depart-from-platform-8-at-san-zmmc7atat22sewse-rzb7a-g",
     "inc-20261104T034630-platform-change-train-503-will-depart-from-platform-5-at-san-tzzrbfxisrgufgs-u9jbta-g",
@@ -2740,6 +2741,7 @@
     "data/incidents/2026-11/20261103T050431-platform-change-train-107-northb-hui0y4zxsf-r8qtcsbry-q-g.json",
     "data/incidents/2026-11/20261104T034630-platform-change-train-503-will-d-tzzrbfxisrgufgs-u9jbta-g.json",
     "data/incidents/2026-11/20261104T034728-platform-change-train-107-will-d-zmmc7atat22sewse-rzb7a-g.json",
-    "data/incidents/2026-11/20261104T034928-platform-change-train-111-will-d-4qjtaantsccowng7l2nsfa-g.json"
+    "data/incidents/2026-11/20261104T034928-platform-change-train-111-will-d-4qjtaantsccowng7l2nsfa-g.json",
+    "data/incidents/2026-11/20261104T115927-delayed-train-125-northbound-is--opksd-tbrhgtvog4d5rwua-g.json"
   ]
 }
