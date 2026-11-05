@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-05T12:05:29-08:00",
+  "source_message_id": "<_sFA-85_TA2F-aGemC_Ibg@geopod-ismtpd-18>",
+  "incident": {
+    "id": "inc-20261105T120529-delayed-train-127-northbound-is-running-about-10-minutes-lat-sfa-85-ta2f-agemc-ibg-ge",
+    "title": "Delayed Train 127 northbound is running about 10 minutes late approaching San Carlos",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-05T12:07:00-08:00",
+    "resolved_at": "2026-11-05T12:17:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 11/05/26 12:07 PM | End: 11/05/26 12:17 PM",
+    "updates": [
+      {
+        "timestamp": "2026-11-05T12:05:29-08:00",
+        "state": "degraded",
+        "message": "Delayed: Train 127 northbound is running about 10 minutes late\r\n approaching San Carlos.",
+        "source_message_id": "<_sFA-85_TA2F-aGemC_Ibg@geopod-ismtpd-18>"
+      }
+    ],
+    "ingestion_key": "delayed-train-127-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-11-05T12:05:29-08:00"
+  }
+}

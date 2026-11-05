@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-05T12:25:28-08:00",
+  "source_message_id": "<dXY54HqNQSmeIEarC1Fb1w@geopod-ismtpd-6>",
+  "incident": {
+    "id": "inc-20261105T122528-single-tracking-all-trains-will-board-on-the-southbound-plat-dxy54hqnqsmeiearc1fb1w-g",
+    "title": "Single Tracking All Trains will board on the Southbound platform at Palo Alto and California Ave Stations",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-05T12:11:00-08:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "Southbound",
+      "Palo Alto and California Ave Stations"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: Palo Alto and California Ave Stations | Start: 11/05/26 12:11 PM | End: Caltrain",
+    "updates": [
+      {
+        "timestamp": "2026-11-05T12:25:28-08:00",
+        "state": "degraded",
+        "message": "Single Tracking: All Trains will board on the Southbound platform at\r\n Palo Alto and California Ave Stations | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<dXY54HqNQSmeIEarC1Fb1w@geopod-ismtpd-6>"
+      }
+    ],
+    "ingestion_key": "single-tracking-all-trains-will-board-on-the-southbound-plat",
+    "version_created_at": "2026-11-05T12:25:28-08:00"
+  }
+}
