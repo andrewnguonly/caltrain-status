@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-05T22:04:27-08:00",
+  "source_message_id": "<RzEzMGceRAW46_5_CO-x1A@geopod-ismtpd-13>",
+  "incident": {
+    "id": "inc-20261105T220427-delayed-train-169-northbound-is-running-about-10-minutes-lat-rzezmgceraw46-5-co-x1a-g",
+    "title": "Delayed Train 169 northbound is running about 10 minutes late approaching Santa Clara",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-05T22:04:00-08:00",
+    "resolved_at": "2026-11-05T22:14:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 11/05/26 10:04 PM | End: 11/05/26 10:14 PM",
+    "updates": [
+      {
+        "timestamp": "2026-11-05T22:04:27-08:00",
+        "state": "degraded",
+        "message": "Delayed: Train 169 northbound is running about 10 minutes late\r\n approaching Santa Clara.",
+        "source_message_id": "<RzEzMGceRAW46_5_CO-x1A@geopod-ismtpd-13>"
+      }
+    ],
+    "ingestion_key": "delayed-train-169-northbound-is-running-about-10-minutes-lat",
+    "version_created_at": "2026-11-05T22:04:27-08:00"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-05T23:53:28-08:00",
+  "source_message_id": "<yr-N1fKQQxyrcjL3a271bA@geopod-ismtpd-33>",
+  "incident": {
+    "id": "inc-20261105T235328-delayed-train-173-northbound-is-running-about-22-minutes-lat-yr-n1fkqqxyrcjl3a271ba-g",
+    "title": "Delayed Train 173 northbound is running about 22 minutes late approaching Lawrence",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-05T23:41:00-08:00",
+    "resolved_at": "2026-11-06T00:03:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 11/05/26 11:41 PM | End: 11/06/26 12:03 AM",
+    "updates": [
+      {
+        "timestamp": "2026-11-05T23:53:28-08:00",
+        "state": "degraded",
+        "message": "Delayed: Train 173 northbound is running about 22 minutes late\r\n approaching Lawrence.",
+        "source_message_id": "<yr-N1fKQQxyrcjL3a271bA@geopod-ismtpd-33>"
+      }
+    ],
+    "ingestion_key": "delayed-train-173-northbound-is-running-about-22-minutes-lat",
+    "version_created_at": "2026-11-05T23:53:28-08:00"
+  }
+}
