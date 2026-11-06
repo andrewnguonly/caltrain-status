@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-06T06:41:28-08:00",
+  "source_message_id": "<c3kuy_tzTnmIF3XLW1dz_g@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20261106T064128-platform-change-train-115-will-depart-from-platform-9-at-san-c3kuy-tztnmif3xlw1dz-g-g",
+    "title": "Platform change Train 115 will depart from platform 9 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-06T06:40:00-08:00",
+    "resolved_at": "2026-11-06T08:28:00-08:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 11/06/26 6:40 AM | End: 11/06/26 8:28 AM",
+    "updates": [
+      {
+        "timestamp": "2026-11-06T06:41:28-08:00",
+        "state": "degraded",
+        "message": "Platform change: Train 115 will depart from platform 9 at San Jose\r\n Diridon. | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<c3kuy_tzTnmIF3XLW1dz_g@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-115-will-depart-from-platform-9-at-san",
+    "version_created_at": "2026-11-06T06:41:28-08:00"
+  }
+}
