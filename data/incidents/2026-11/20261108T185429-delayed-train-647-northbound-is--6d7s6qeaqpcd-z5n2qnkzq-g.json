@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-08T18:54:29-08:00",
+  "source_message_id": "<6D7S6qEaQpCD-Z5N2QNkZQ@geopod-ismtpd-17>",
+  "incident": {
+    "id": "inc-20261108T185429-delayed-train-647-northbound-is-running-about-11-minutes-lat-6d7s6qeaqpcd-z5n2qnkzq-g",
+    "title": "Delayed Train 647 northbound is running about 11 minutes late approaching Palo Alto",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-08T18:54:00-08:00",
+    "resolved_at": "2026-11-08T19:05:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Start: 11/08/26 6:54 PM | End: 11/08/26 7:05 PM",
+    "updates": [
+      {
+        "timestamp": "2026-11-08T18:54:29-08:00",
+        "state": "degraded",
+        "message": "Delayed: Train 647 northbound is running about 11 minutes late\r\n approaching Palo Alto.",
+        "source_message_id": "<6D7S6qEaQpCD-Z5N2QNkZQ@geopod-ismtpd-17>"
+      }
+    ],
+    "ingestion_key": "delayed-train-647-northbound-is-running-about-11-minutes-lat",
+    "version_created_at": "2026-11-08T18:54:29-08:00"
+  }
+}
