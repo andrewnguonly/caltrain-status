@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-10T23:34:30-08:00",
+  "source_message_id": "<3OYaOdgtQeWRveeyKbOFWw@geopod-ismtpd-31>",
+  "incident": {
+    "id": "inc-20261110T233430-single-tracking-train-173-will-board-on-the-southbound-platf-3oyaodgtqewrveeykbofww-g",
+    "title": "Single Tracking Train 173 will board on the Southbound platform at Palo Alto and California Ave Stations",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-10T23:33:00-08:00",
+    "resolved_at": "2026-11-10T23:59:00-08:00",
+    "affected_segments": [
+      "Southbound",
+      "Palo Alto and California Ave Stations"
+    ],
+    "summary": "Effect: Modified Service | Cause: Unknown Cause | Location: Palo Alto and California Ave Stations | Start: 11/10/26 11:33 PM | End: 11/10/26 11:59 PM",
+    "updates": [
+      {
+        "timestamp": "2026-11-10T23:34:30-08:00",
+        "state": "degraded",
+        "message": "Single Tracking: Train 173 will board on the Southbound platform at\r\n Palo Alto and California Ave Stations | Effect: Modified Service | Cause: Unknown Cause",
+        "source_message_id": "<3OYaOdgtQeWRveeyKbOFWw@geopod-ismtpd-31>"
+      }
+    ],
+    "ingestion_key": "single-tracking-train-173-will-board-on-the-southbound-platf",
+    "version_created_at": "2026-11-10T23:34:30-08:00"
+  }
+}
