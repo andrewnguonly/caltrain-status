@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 11/05/26 12:53 PM | End: Caltrain",
-  "updated_at": "2026-11-11T02:11:17-08:00",
+  "updated_at": "2026-11-12T05:47:47-08:00",
   "active_incident_ids": [
     "inc-20261105T125627-cancelled-train-127-northbound-is-cancelled-train-129-will-a-8wgxyewkrqow1oxuwb1ekw-g",
     "inc-20261028T145928-cancelled-train-515-northbound-is-cancelled-train-143-will-a-asz9dr9nqssz4agor0nhmw-g",
@@ -49,6 +49,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261112T051829-platform-change-train-405-will-depart-from-platform-9-at-san-cgocwjknsnwjlcum9m4jnw-g",
     "inc-20261110T233430-single-tracking-train-173-will-board-on-the-southbound-platf-3oyaodgtqewrveeykbofww-g",
     "inc-20261110T043532-platform-change-train-101-northbound-will-board-on-the-south-8twqwm9bt0w-gjtsbkt-xg-g",
     "inc-20261108T193729-delayed-train-647-northbound-is-running-about-12-minutes-lat-7482m2c2qugyhioppxfchg-g",
@@ -2826,6 +2827,7 @@
     "data/incidents/2026-11/20261108T185429-delayed-train-647-northbound-is--6d7s6qeaqpcd-z5n2qnkzq-g.json",
     "data/incidents/2026-11/20261108T193729-delayed-train-647-northbound-is--7482m2c2qugyhioppxfchg-g.json",
     "data/incidents/2026-11/20261110T043532-platform-change-train-101-northb-8twqwm9bt0w-gjtsbkt-xg-g.json",
-    "data/incidents/2026-11/20261110T233430-single-tracking-train-173-will-b-3oyaodgtqewrveeykbofww-g.json"
+    "data/incidents/2026-11/20261110T233430-single-tracking-train-173-will-b-3oyaodgtqewrveeykbofww-g.json",
+    "data/incidents/2026-11/20261112T051829-platform-change-train-405-will-d-cgocwjknsnwjlcum9m4jnw-g.json"
   ]
 }
