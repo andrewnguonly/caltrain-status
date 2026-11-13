@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-13T05:15:28-08:00",
+  "source_message_id": "<OZxmIsDSS0OwAqvdj4r8_A@geopod-ismtpd-20>",
+  "incident": {
+    "id": "inc-20261113T051528-platform-change-train-405-will-depart-from-platform-9-at-san-ozxmisdss0owaqvdj4r8-a-g",
+    "title": "Platform change Train 405 will depart from platform 9 at San Jose Diridon",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-13T06:14:00-08:00",
+    "resolved_at": "2026-11-13T06:44:00-08:00",
+    "affected_segments": [
+      "System-wide"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Start: 11/13/26 6:14 AM | End: 11/13/26 6:44 AM",
+    "updates": [
+      {
+        "timestamp": "2026-11-13T05:15:28-08:00",
+        "state": "degraded",
+        "message": "Platform change: Train 405 will depart from platform 9 at San Jose\r\n Diridon | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<OZxmIsDSS0OwAqvdj4r8_A@geopod-ismtpd-20>"
+      }
+    ],
+    "ingestion_key": "platform-change-train-405-will-depart-from-platform-9-at-san",
+    "version_created_at": "2026-11-13T05:15:28-08:00"
+  }
+}
