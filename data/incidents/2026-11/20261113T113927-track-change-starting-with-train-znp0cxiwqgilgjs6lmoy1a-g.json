@@ -1,0 +1,28 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-13T11:39:27-08:00",
+  "source_message_id": "<znP0cXiwQGiLGjs6lMoY1A@geopod-ismtpd-11>",
+  "incident": {
+    "id": "inc-20261113T113927-track-change-starting-with-train-127-all-trains-board-on-the-znp0cxiwqgilgjs6lmoy1a-g",
+    "title": "Track change Starting with train 127 all trains board on the southbound platform at Sunnyvale",
+    "severity": "minor",
+    "status": "investigating",
+    "started_at": "2026-11-13T11:39:27-08:00",
+    "resolved_at": null,
+    "affected_segments": [
+      "Southbound",
+      "Sunnyvale"
+    ],
+    "summary": "Effect: Modified Service | Cause: Other Cause | Location: Sunnyvale | Start: * End Date * | End: Caltrain",
+    "updates": [
+      {
+        "timestamp": "2026-11-13T11:39:27-08:00",
+        "state": "degraded",
+        "message": "Track change: Starting with train 127, all trains board on the\r\n southbound platform at Sunnyvale | Effect: Modified Service | Cause: Other Cause",
+        "source_message_id": "<znP0cXiwQGiLGjs6lMoY1A@geopod-ismtpd-11>"
+      }
+    ],
+    "ingestion_key": "track-change-starting-with-train-127-all-trains-board-on-the",
+    "version_created_at": "2026-11-13T11:39:27-08:00"
+  }
+}
