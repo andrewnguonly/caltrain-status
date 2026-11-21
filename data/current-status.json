@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 11/16/26 6:42 AM | End: 11/16/26 8:53 AM",
-  "updated_at": "2026-11-20T05:21:40-08:00",
+  "updated_at": "2026-11-21T02:10:42-08:00",
   "active_incident_ids": [
     "inc-20261116T064428-cancelled-tran-409-northbound-is-cancelled-train-113-will-ac-qwjg12ncrx2htjxiwazmnw-g",
     "inc-20261105T125627-cancelled-train-127-northbound-is-cancelled-train-129-will-a-8wgxyewkrqow1oxuwb1ekw-g",
@@ -51,6 +51,7 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261120T222730-delayed-train-165-northbound-is-running-about-27-minutes-lat-dpolzkrdsssmqu51tpv4dw-g",
     "inc-20261120T045227-platform-change-train-405-will-depart-from-platform-9-at-san-iledpzjwqiumweupqw-fla-g",
     "inc-20261117T120536-track-change-starting-with-train-129-all-trains-board-on-the-iz3zdgx4tbynzyc-htmfba-g",
     "inc-20261114T103927-platform-change-train-617-northbound-will-arrive-and-depart--ewe5qgryr1isyokom0exkq-g",
@@ -2854,6 +2855,7 @@
     "data/incidents/2026-11/20261116T064428-cancelled-tran-409-northbound-is-qwjg12ncrx2htjxiwazmnw-g.json",
     "data/incidents/2026-11/20261117T120536-track-change-starting-with-train-iz3zdgx4tbynzyc-htmfba-g.json",
     "data/incidents/2026-11/20261118T190228-service-disruption-expect-delays-7giejhrwq0mxnd5jvdtcrg-g.json",
-    "data/incidents/2026-11/20261120T045227-platform-change-train-405-will-d-iledpzjwqiumweupqw-fla-g.json"
+    "data/incidents/2026-11/20261120T045227-platform-change-train-405-will-d-iledpzjwqiumweupqw-fla-g.json",
+    "data/incidents/2026-11/20261120T222730-delayed-train-165-northbound-is--dpolzkrdsssmqu51tpv4dw-g.json"
   ]
 }
