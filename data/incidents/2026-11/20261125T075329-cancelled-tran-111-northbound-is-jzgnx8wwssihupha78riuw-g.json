@@ -1,0 +1,27 @@
+{
+  "schema": "incident-snapshot-v1",
+  "version_created_at": "2026-11-25T07:53:29-08:00",
+  "source_message_id": "<jZgNX8WWSSihUpHA78rIuw@geopod-ismtpd-26>",
+  "incident": {
+    "id": "inc-20261125T075329-cancelled-tran-111-northbound-is-cancelled-train-113-will-ac-jzgnx8wwssihupha78riuw-g",
+    "title": "Cancelled Tran 111 northbound is cancelled Train 113 will accommodate passengers",
+    "severity": "critical",
+    "status": "investigating",
+    "started_at": "2026-11-25T07:52:00-08:00",
+    "resolved_at": "2026-11-25T09:29:00-08:00",
+    "affected_segments": [
+      "Northbound"
+    ],
+    "summary": "Effect: No Service | Cause: Other Cause | Start: 11/25/26 7:52 AM | End: 11/25/26 9:29 AM",
+    "updates": [
+      {
+        "timestamp": "2026-11-25T07:53:29-08:00",
+        "state": "critical",
+        "message": "Cancelled: Tran 111 northbound is cancelled. Train 113 will\r\n accommodate passengers. | Effect: No Service | Cause: Other Cause",
+        "source_message_id": "<jZgNX8WWSSihUpHA78rIuw@geopod-ismtpd-26>"
+      }
+    ],
+    "ingestion_key": "cancelled-tran-111-northbound-is-cancelled-train-113-will-ac",
+    "version_created_at": "2026-11-25T07:53:29-08:00"
+  }
+}
