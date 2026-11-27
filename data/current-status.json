@@ -2,7 +2,7 @@
   "service_name": "Caltrain",
   "overall_status": "critical",
   "status_message": "Effect: No Service | Cause: Other Cause | Start: 11/25/26 7:52 AM | End: 11/25/26 9:29 AM",
-  "updated_at": "2026-11-25T14:39:27-08:00",
+  "updated_at": "2026-11-27T06:24:11-08:00",
   "active_incident_ids": [
     "inc-20261125T075329-cancelled-tran-111-northbound-is-cancelled-train-113-will-ac-jzgnx8wwssihupha78riuw-g",
     "inc-20261116T064428-cancelled-tran-409-northbound-is-cancelled-train-113-will-ac-qwjg12ncrx2htjxiwazmnw-g",
@@ -52,6 +52,10 @@
     "inc-20260226T114010-delayed-train-123-is-delayed-by-45-minutes-uonpcax0qs6f8hmtyvpw0w-g",
     "inc-20260226T113910-delayed-train-123-is-delayed-by-45-minutes-pjgfxlj8slkaiim6nczmna-g",
     "inc-20260226T105912-delayed-train-123-is-delayed-by-30-minutes-e9bemsnuq8ubrul42hw-aq-g",
+    "inc-20261127T061126-platform-change-train-111-will-depart-from-platform-8-at-san-drqln5rfruualrjht0-sna-g",
+    "inc-20261127T062330-platform-change-train-109-will-depart-from-platform-4-at-san-xfs2fva0rf-nulvpzbxoea-g",
+    "inc-20261127T041827-platform-change-train-109-will-depart-from-platform-4-at-san-jjm2q-b9sqsocypbjaujrq-g",
+    "inc-20261127T041727-platform-change-train-107-will-depart-from-platform-7-at-san-qt1wg2vit9eanejedksida-g",
     "inc-20261125T083930-platform-change-train-413-northbound-will-depart-from-platfo-s-vulr69tcs4vzomhlbovq-g",
     "inc-20261125T074527-train-409-northbound-will-run-ahead-of-train-111-piyjtbhqrdci2ktet50rwg-g",
     "inc-20261125T074128-delayed-train-111-northbound-is-running-about-12-minutes-lat-6o-zizdxraeths56zeaolw-g",
@@ -2880,6 +2884,10 @@
     "data/incidents/2026-11/20261125T074128-delayed-train-111-northbound-is--6o-zizdxraeths56zeaolw-g.json",
     "data/incidents/2026-11/20261125T074527-train-409-northbound-will-run-ah-piyjtbhqrdci2ktet50rwg-g.json",
     "data/incidents/2026-11/20261125T075329-cancelled-tran-111-northbound-is-jzgnx8wwssihupha78riuw-g.json",
-    "data/incidents/2026-11/20261125T083930-platform-change-train-413-northb-s-vulr69tcs4vzomhlbovq-g.json"
+    "data/incidents/2026-11/20261125T083930-platform-change-train-413-northb-s-vulr69tcs4vzomhlbovq-g.json",
+    "data/incidents/2026-11/20261127T041727-platform-change-train-107-will-d-qt1wg2vit9eanejedksida-g.json",
+    "data/incidents/2026-11/20261127T041827-platform-change-train-109-will-d-jjm2q-b9sqsocypbjaujrq-g.json",
+    "data/incidents/2026-11/20261127T061126-platform-change-train-111-will-d-drqln5rfruualrjht0-sna-g.json",
+    "data/incidents/2026-11/20261127T062330-platform-change-train-109-will-d-xfs2fva0rf-nulvpzbxoea-g.json"
   ]
 }
